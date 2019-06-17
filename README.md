@@ -18,20 +18,8 @@ Most of the work presented in this article is included in the research carried o
 
 You can report any errors that you found to the authors: 
 
-<<<<<<< HEAD:README-Template.md
-Xabat Oregi (Tecnalia) - xabat.oregi@tecnalia.com | xabat.oregi@ehu.eus,.
-
-Lara Mabe (Tecnalia) - lara.mabe@tecnalia.com.
-
-Juan Pedrero (Tecnalia) - juan.pedrero@tecnalia.com.
-
-Gonçal Costa (LaSalle BCN) - goncal.costa@salle.url.edu.
-
-Alvaro Sicilia (LaSalle BCN) - alvaro.sicilia@salle.url.edu.
-=======
-Xabat Oregi (Tecnalia) - xabat.oregi@tecnalia.com | xabat.oregi@ehu.eus 
-Lara Mabe (Tecnalia) - lara.mabe@tecnalia.com
-Juan Pedrero (Tecnalia) - juan.pedrero@tecnalia.com
-Gonçal Costa (LaSalle BCN) - goncal.costa@salle.url.edu 
-Alvaro Sicilia (LaSalle BCN) - alvaro.sicilia@salle.url.edu
->>>>>>> e7ba9d55438a7b6cb8a2285b474a642dfc31d011:README.md
+Xabat Oregi (Tecnalia) - xabat.oregi@tecnalia.com | xabat.oregi@ehu.eus, 
+Lara Mabe (Tecnalia) - lara.mabe@tecnalia.com, 
+Juan Pedrero (Tecnalia) - juan.pedrero@tecnalia.com, 
+Gonçal Costa (LaSalle BCN) - goncal.costa@salle.url.edu, 
+Alvaro Sicilia (LaSalle BCN) - alvaro.sicilia@salle.url.edu, 
