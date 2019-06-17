@@ -1,0 +1,29 @@
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix simcore: <http://www.opteemal.eu/schema/2017/01/SimModelCore#> .
+@prefix simres: <http://www.opteemal.eu/schema/2017/01/ResourcesGeneral#> .
+@prefix simgeom: <http://www.opteemal.eu/schema/2017/01/ResourcesGeometry#> .
+@prefix simbldg: <http://www.opteemal.eu/schema/2017/01/BuildingModel#> .
+@prefix simmep: <http://www.opteemal.eu/schema/2017/01/MepModel#> .
+@prefix simmodel: <http://www.opteemal.eu/schema/2017/01/Model#> .
+@prefix list: <https://w3id.org/list#> .
+@prefix inst: <http://to.replace#> .
+@prefix xpath: <http://www.opteemal.eu/xpath/prop#> .
+
+# last review: 2019.03.01
+
+# ================================================================================================
+# 4.8 PTHP System - Upgrade of the System Level Control: Load Following (CO.DE.PL.TV)
+# ================================================================================================
+#
+# This control ECM consists in the installation of a set of thermostatic-valves and enables to 
+# reduce the temperature of return water-flow thereby improving the system efficiency.
+
+inst:SimSimulationParameters_Algorithm_CO_DE_PL_TV
+	a									simres:SimSimulationParameters_Algorithm ;
+	simres:simSimParams_Algorithm		"ValveType:1" ;
+	simcore:sourceModelObjectType  		"None" ;
+	simcore:sourceModelSchema      		"InstanceCreator" ;
+	simcore:refId                 		"XXX"^^xsd:ID ;
+	.

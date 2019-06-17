@@ -1,0 +1,62 @@
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix simcore: <http://www.opteemal.eu/schema/2017/01/SimModelCore#> .
+@prefix simres: <http://www.opteemal.eu/schema/2017/01/ResourcesGeneral#> .
+@prefix simgeom: <http://www.opteemal.eu/schema/2017/01/ResourcesGeometry#> .
+@prefix simbldg: <http://www.opteemal.eu/schema/2017/01/BuildingModel#> .
+@prefix simmep: <http://www.opteemal.eu/schema/2017/01/MepModel#> .
+@prefix simmodel: <http://www.opteemal.eu/schema/2017/01/Model#> .
+@prefix list: <https://w3id.org/list#> .
+@prefix inst: <http://to.replace#> .
+@prefix xpath: <http://www.opteemal.eu/xpath/prop#> .
+
+# last review: 2018.08.02
+
+# ================================================================================================
+# Cavity wall - Air chamber insulation (A3.1 - PA.FA.ID.CW.01)  
+# ================================================================================================
+# Cavity wall in retrofitting is referred to the space between two wall layers of the wall. 
+# It is normally ventilated in order to avoid moisture. The space considerate air chamber is projected
+# with different materials of insulation, depending in each case, creating a better thermal behavior.
+#  ||    ||    ||
+#  || <->||<-> ||
+#  ||    ||    ||
+
+# IMPORTANT!!!
+# We are unable to know in advance the thickness of the layer, which already exists.
+# So, we will not modify the list and the layer, only the link to the new material.
+	
+# ------------------------------------------------------------------------------------------------
+# LAYER X - A3.1_L1 Insulation - Cellulose Acetate Flakes (projected)
+# ------------------------------------------------------------------------------------------------
+
+inst:SimMaterial_OpaqueMaterial_Default_MOD_PA_FA_ID_CW_1
+        a                            			simres:SimMaterial_OpaqueMaterial_Default ;		
+		simres:category                			"Insulation" ;
+		simcore:isTemplateObject       			false ;
+		simcore:simModelSubtype        			"Default" ;
+        simcore:simModelType           			"OpaqueMaterial" ;
+        simcore:sourceModelObjectType  			"SimMaterial" ;
+        simcore:sourceModelSchema      			"InstanceCreator" ;
+		simres:name				       			"PA.FA.ID.CW.02-Cellulose Acetate Flakes" ;
+		# Properties from the ECM catalogue
+		simres:simMaterial_Density    			"43.0"^^xsd:double ;
+        simres:simMaterial_SpecificHeat			"1380.0"^^xsd:double ; 
+        simres:simMaterial_Cond       			"0.042"^^xsd:double ;  
+		simres:simMaterial_ThermalAbsorptance 	"0.9"^^xsd:double ;
+		simres:simMaterial_SolarAbsorptance 	"0.6"^^xsd:double ;
+		simres:simMaterial_Rough 				"Rough" ;
+		simres:simMaterial_VisAbsorptance 		"0.6"^^xsd:double ;
+		simres:simMaterial_ThermalResist 		 "1.19"^^xsd:double ;
+		simcore:refId                 			"XXX"^^xsd:ID ;
+		xpath:property	
+			"{simres:simMaterial_Density='//ECM/component_catalogue/level[@id='7']/layer[@id='1']/density/text()'}",
+			"{simres:simMaterial_SpecificHeat='//ECM/component_catalogue/level[@id='7']/layer[@id='1']/specific_heat/text()'}",
+			"{simres:simMaterial_Cond='//ECM/component_catalogue/level[@id='7']/layer[@id='1']/thermal_conductivity/text()'}",
+			"{simres:simMaterial_ThermalAbsorptance='//ECM/component_catalogue/level[@id='7']/layer[@id='1']/thermal_absorptance/text()'}",
+			"{simres:simMaterial_SolarAbsorptance='//ECM/component_catalogue/level[@id='7']/layer[@id='1']/solar_absorptance/text()'}",
+			"{simres:simMaterial_Rough='//ECM/component_catalogue/level[@id='7']/layer[@id='1']/roughness/text()'}",
+			"{simres:simMaterial_VisAbsorptance='//ECM/component_catalogue/level[@id='7']/layer[@id='1']/visible_absorptance/text()'}",
+			"{simres:simMaterial_ThermalResist='//ECM/component_catalogue/level[@id='7']/layer[@id='1']/thermal_resistance/text()'}";
+		.

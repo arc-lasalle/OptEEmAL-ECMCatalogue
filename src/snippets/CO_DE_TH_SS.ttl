@@ -1,0 +1,1948 @@
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix simcore: <http://www.opteemal.eu/schema/2017/01/SimModelCore#> .
+@prefix simres: <http://www.opteemal.eu/schema/2017/01/ResourcesGeneral#> .
+@prefix list: <https://w3id.org/list#> .
+@prefix inst: <http://to.replace#> .
+@prefix xpath: <http://www.opteemal.eu/xpath/prop#> .
+
+# last review: 2018.10.24
+
+# ================================================================================================
+# Thermostat - System Scheduling (CO.DE.TH.SS)
+# ================================================================================================
+# This control ECM enables to modify the building/district energy consumption by changing the scheduling
+# of heating systems with respect to the baseline. Modification in the usage of heating systems and
+# boilers include start and stop time as well as zone temperature set-points.
+
+# OPERATION: REPLACE
+
+# Thermostat object must already exist in model. 
+# The java class should only update two values:
+# - Start Time: 7
+# - Stop Time: 	22
+
+# ------------------------------------------------------------------------------------------------
+# SCHEDULE 1 - System Scheduling for heating 7h - 21h (CO.DE.TH.SS.01)
+# ------------------------------------------------------------------------------------------------
+
+inst:SimTimeSeriesSchedule_Year_Default_PL_CO_DE_TH_SS_1
+    a                               						simres:SimTimeSeriesSchedule_Year ;
+	simres:simTimeSeriesSched_Name  						"CO.DE.TH.SS.01" ;
+	simres:simTimeSeriesSched_StartDay_1_53             	inst:IntegerList_StartDay_PL_CO_DE_TH_SS_1 ; 
+    simres:simTimeSeriesSched_EndDay_1_53               	inst:IntegerList_EndDay_PL_CO_DE_TH_SS_1 ;
+	simres:simTimeSeriesSched_StartMonth_1_53           	inst:IntegerList_StartMonth_PL_CO_DE_TH_SS_1 ; 
+    simres:simTimeSeriesSched_EndMonth_1_53             	inst:IntegerList_EndMonth_PL_CO_DE_TH_SS_1 ;
+    simres:simTimeSeriesSched_SchedTypeLimitsName       	inst:SimTimeSeriesSchedule_Limits_Default_PL_CO_DE_TH_SS_1 ;
+    simres:simTimeSeriesSched_Sched_WeekName_1_53       	inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_1_0 ;
+    simcore:isTemplateObject        						false ;
+    simcore:refId                  							"XXX"^^xsd:ID ;  						# to be overwritten.
+    simcore:simModelType            						"Year" ;
+    simcore:simUniqueID             						"none" ;
+    simcore:sourceModelSchema 								"OptEEmAL BES Catalogue"^^xsd:string ;
+	.
+inst:IntegerList_StartDay_PL_CO_DE_TH_SS_1
+    a                 simcore:IntegerList ;
+    list:hasContents  1 ;
+	.	
+inst:IntegerList_EndDay_PL_CO_DE_TH_SS_1
+    a                 simcore:IntegerList ;
+    list:hasContents  31 ;
+	.
+inst:IntegerList_StartMonth_PL_CO_DE_TH_SS_1
+    a                 simcore:IntegerList ;
+    list:hasContents  1 ;
+	.	
+inst:IntegerList_EndMonth_PL_CO_DE_TH_SS_1
+    a                 simcore:IntegerList ;
+    list:hasContents  12 ;
+	.	
+inst:SimTimeSeriesSchedule_Limits_Default_PL_CO_DE_TH_SS_1
+    a                               									simres:SimTimeSeriesSchedule_Limits_Default ;
+    simres:simTimeSeriesSched_LowLimitVal					        	"0.0"^^xsd:double ;
+	simres:simTimeSeriesSched_UpLimitVal								"1.0"^^xsd:double ;
+    simres:simTimeSeriesSched_Name  									"SCHEDULE-LIMITS_PL_CO_DE_TH_SS_1" ;
+    simres:simTimeSeriesSched_NumericType								"Continuous" ;
+    simres:simTimeSeriesSched_UnitType 									"Dimensionless"^^xsd:string ;
+	simcore:simModelSubtype         									"Default" ;
+    simcore:simModelType            									"Limits" ;
+    simcore:isTemplateObject        									false ;
+    simcore:refId                  										"XXX"^^xsd:ID ;  						# to be overwritten.
+	simcore:simUniqueID             									"none" ;
+	simcore:sourceModelSchema 											"OptEEmAL BES Catalogue"^^xsd:string ;
+	.	
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_1_0
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_1 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_1_1 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_1_1
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_1 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_1_2 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_1_2
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_1 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_1_3 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_1_3
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_1 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_1_4 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_1_4
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_1 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_1_5 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_1_5
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_1 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_1_6 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_1_6
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_1 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_1_7 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_1_7
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_1 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_1_8 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_1_8
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_1 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_1_9 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_1_9
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_1 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_1_10 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_1_10
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_1 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_1_11 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_1_11
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_1 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_1_12 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_1_12
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_1 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_1_13 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_1_13
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_1 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_1_14 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_1_14
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_1 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_1_15 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_1_15
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_1 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_1_16 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_1_16
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_1 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_1_17 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_1_17
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_1 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_1_18 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_1_18
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_1 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_1_19 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_1_19
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_1 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_1_20 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_1_20
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_1 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_1_21 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_1_21
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_1 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_1_22 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_1_22
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_1 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_1_23 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_1_23
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_1 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_1_24 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_1_24
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_1 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_1_25 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_1_25
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_1 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_1_26 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_1_26
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_1 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_1_27 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_1_27
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_1 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_1_28 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_1_28
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_1 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_1_29 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_1_29
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_1 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_1_30 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_1_30
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_1 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_1_31 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_1_31
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_1 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_1_32 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_1_32
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_1 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_1_33 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_1_33
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_1 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_1_34 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_1_34
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_1 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_1_35 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_1_35
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_1 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_1_36 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_1_36
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_1 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_1_37 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_1_37
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_1 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_1_38 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_1_38
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_1 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_1_39 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_1_39
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_1 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_1_40 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_1_40
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_1 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_1_41 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_1_41
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_1 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_1_42 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_1_42
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_1 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_1_43 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_1_43
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_1 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_1_44 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_1_44
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_1 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_1_45 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_1_45
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_1 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_1_46 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_1_46
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_1 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_1_47 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_1_47
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_1 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_1_48 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_1_48
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_1 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_1_49 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_1_49
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_1 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_1_50 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_1_50
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_1 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_1_51 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_1_51
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_1 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_1_52 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_1_52
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_1 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_1_53 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_1_53
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_1 ;
+	.	
+inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_1
+	rdf:type 															simres:SimTimeSeriesSchedule_Week_Daily ;
+	simres:simTimeSeriesSched_Name  									"SCHEDULE_WEEK_PL_CO_DE_TH_SS_1" ;												# to be overwritten.
+	simres:simTimeSeriesSched_CustomDay_1_2_SchedDayName				inst:SimTimeSeriesSched_CustomDay_1_2_SchedDayName_List_1_PL_CO_DE_TH_SS_1 ;
+	simres:simTimeSeriesSched_SundaySched_DayName 						inst:SimTimeSeriesSchedule_Day_Hourly_PL_CO_DE_TH_SS_1 ;						# to be overwritten.
+	simres:simTimeSeriesSched_MondaySched_DayName 						inst:SimTimeSeriesSchedule_Day_Hourly_PL_CO_DE_TH_SS_1 ;						# to be overwritten.
+	simres:simTimeSeriesSched_TuesdaySched_DayName 						inst:SimTimeSeriesSchedule_Day_Hourly_PL_CO_DE_TH_SS_1 ;						# to be overwritten.
+	simres:simTimeSeriesSched_WedSched_DayName 							inst:SimTimeSeriesSchedule_Day_Hourly_PL_CO_DE_TH_SS_1 ;						# to be overwritten.
+	simres:simTimeSeriesSched_ThursdaySched_DayName 					inst:SimTimeSeriesSchedule_Day_Hourly_PL_CO_DE_TH_SS_1 ;						# to be overwritten.
+	simres:simTimeSeriesSched_FridaySched_DayName 						inst:SimTimeSeriesSchedule_Day_Hourly_PL_CO_DE_TH_SS_1 ;						# to be overwritten.	
+	simres:simTimeSeriesSched_SaturdaySched_DayName 					inst:SimTimeSeriesSchedule_Day_Hourly_PL_CO_DE_TH_SS_1 ;						# to be overwritten.	
+	simres:simTimeSeriesSched_HolidaySched_DayName 						inst:SimTimeSeriesSchedule_Day_Hourly_PL_CO_DE_TH_SS_1 ;						# to be overwritten.			
+	simres:simTimeSeriesSched_SummerDesignDaySched_DayName 				inst:SimTimeSeriesSchedule_Day_Hourly_PL_CO_DE_TH_SS_1 ;						# to be overwritten.
+	simres:simTimeSeriesSched_WinterDesignDaySched_DayName 				inst:SimTimeSeriesSchedule_Day_Hourly_PL_CO_DE_TH_SS_1 ;						# to be overwritten.
+	simcore:sourceModelObjectType 										"SimTimeSeriesSchedule"^^xsd:string ;
+	simcore:simModelType 												"Week"^^xsd:string ;
+	simcore:simModelSubtype 											"Daily"^^xsd:string ;
+	simcore:isTemplateObject 											false ;
+	simcore:refId              											"XXX"^^xsd:ID ;  													# to be overwritten.
+	simcore:simUniqueID 												"none"^^xsd:string ;
+	simcore:simModelName 												"OptEEmAL BES Catalogue"^^xsd:string ;
+	.
+inst:SimTimeSeriesSched_CustomDay_1_2_SchedDayName_List_1_PL_CO_DE_TH_SS_1
+    a                 simres:SimTimeSeriesSched_CustomDay_1_2_SchedDayName_List ;
+    list:hasContents  inst:SimTimeSeriesSchedule_Day_Hourly_PL_CO_DE_TH_SS_1 ;
+    list:hasNext      inst:SimTimeSeriesSched_CustomDay_1_2_SchedDayName_List_2_PL_CO_DE_TH_SS_1 ;
+	.	
+inst:SimTimeSeriesSched_CustomDay_1_2_SchedDayName_List_2_PL_CO_DE_TH_SS_1
+    a                 simres:SimTimeSeriesSched_CustomDay_1_2_SchedDayName_List ;
+    list:hasContents  inst:SimTimeSeriesSchedule_Day_Hourly_PL_CO_DE_TH_SS_1 ;
+	.	
+inst:SimTimeSeriesSchedule_Day_Hourly_PL_CO_DE_TH_SS_1
+    a                               									simres:SimTimeSeriesSchedule_Day_Hourly ;
+    simres:simTimeSeriesSched_Hour_1_24     							inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_01_0 ;
+    simres:simTimeSeriesSched_Name  									"SCHEDULE-DAY_CO.DE.TH.SS.01" ;
+	simres:simTimeSeriesSched_SchedTypeLimitsName    					inst:SimTimeSeriesSchedule_Limits_Default_PL_CO_DE_TH_SS_1 ;	
+	simcore:simModelSubtype         									"Hourly" ;
+	simcore:simModelType            									"Day" ;
+    simcore:isTemplateObject        									false ;
+    simcore:refId                   									"XXX"^^xsd:ID ;  
+    simcore:simUniqueID             									"none" ;
+    simcore:sourceModelSchema 											"OptEEmAL BES Catalogue"^^xsd:string ;
+	.
+inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_01_0
+    a                 simcore:DoubleList ;
+	list:hasContents  "0.0"^^xsd:double ;					
+	list:hasNext      inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_01_1 ;
+	.	
+inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_01_1
+    a                 simcore:DoubleList ;
+	list:hasContents  "0.0"^^xsd:double ;					
+	list:hasNext      inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_01_2 ;
+	.
+inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_01_2
+    a                 simcore:DoubleList ;
+	list:hasContents  "0.0"^^xsd:double ;					
+	list:hasNext      inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_01_3 ;
+	.
+inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_01_3
+    a                 simcore:DoubleList ;
+	list:hasContents  "0.0"^^xsd:double ;					
+	list:hasNext      inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_01_4 ;
+	.
+inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_01_4
+    a                 simcore:DoubleList ;
+	list:hasContents  "0.0"^^xsd:double ;					
+	list:hasNext      inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_01_5 ;
+	.
+inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_01_5
+    a                 simcore:DoubleList ;
+	list:hasContents  "0.0"^^xsd:double ;					
+	list:hasNext      inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_01_6 ;
+	.
+inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_01_6
+    a                 simcore:DoubleList ;
+	list:hasContents  "0.0"^^xsd:double ;					
+	list:hasNext      inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_01_7 ;
+	.
+inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_01_7
+    a                 simcore:DoubleList ;
+	list:hasContents  "1.0"^^xsd:double ;					
+	list:hasNext      inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_01_8 ;
+	.
+inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_01_8
+    a                 simcore:DoubleList ;
+	list:hasContents  "1.0"^^xsd:double ;					
+	list:hasNext      inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_01_9 ;
+	.
+inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_01_9
+    a                 simcore:DoubleList ;
+	list:hasContents  "1.0"^^xsd:double ;					
+	list:hasNext      inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_01_10 ;
+	.
+inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_01_10
+    a                 simcore:DoubleList ;
+	list:hasContents  "1.0"^^xsd:double ;					
+	list:hasNext      inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_01_11 ;
+	.
+inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_01_11
+    a                 simcore:DoubleList ;
+	list:hasContents  "1.0"^^xsd:double ;					
+	list:hasNext      inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_01_12 ;
+	.
+inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_01_12
+    a                 simcore:DoubleList ;
+	list:hasContents  "1.0"^^xsd:double ;					
+	list:hasNext      inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_01_13 ;
+	.
+inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_01_13
+    a                 simcore:DoubleList ;
+	list:hasContents  "1.0"^^xsd:double ;					
+	list:hasNext      inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_01_14 ;
+	.
+inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_01_14
+    a                 simcore:DoubleList ;
+	list:hasContents  "1.0"^^xsd:double ;					
+	list:hasNext      inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_01_15 ;
+	.
+inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_01_15
+    a                 simcore:DoubleList ;
+	list:hasContents  "1.0"^^xsd:double ;					
+	list:hasNext      inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_01_16 ;
+	.	
+inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_01_16
+    a                 simcore:DoubleList ;
+	list:hasContents  "1.0"^^xsd:double ;					
+	list:hasNext      inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_01_17 ;
+	.
+inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_01_17
+    a                 simcore:DoubleList ;
+	list:hasContents  "1.0"^^xsd:double ;					
+	list:hasNext      inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_01_18 ;
+	.
+inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_01_18
+    a                 simcore:DoubleList ;
+	list:hasContents  "1.0"^^xsd:double ;					
+	list:hasNext      inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_01_19 ;
+	.	
+inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_01_19
+    a                 simcore:DoubleList ;
+	list:hasContents  "1.0"^^xsd:double ;					
+	list:hasNext      inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_01_20 ;
+	.
+inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_01_20
+    a                 simcore:DoubleList ;
+	list:hasContents  "1.0"^^xsd:double ;					
+	list:hasNext      inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_01_21 ;
+	.
+inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_01_21
+    a                 simcore:DoubleList ;
+	list:hasContents  "0.0"^^xsd:double ;					
+	list:hasNext      inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_01_22 ;
+	.
+inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_01_22
+    a                 simcore:DoubleList ;
+	list:hasContents  "0.0"^^xsd:double ;					
+	list:hasNext      inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_01_23 ;
+	.
+inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_01_23
+    a                 simcore:DoubleList ;
+	list:hasContents  "0.0"^^xsd:double ;					
+	.
+	
+# ------------------------------------------------------------------------------------------------
+# SCHEDULE 2 - System Scheduling for heating 7h - 20h (CO.DE.TH.SS.02)
+# ------------------------------------------------------------------------------------------------
+	
+inst:SimTimeSeriesSchedule_Year_Default_PL_CO_DE_TH_SS_2
+    a                               						simres:SimTimeSeriesSchedule_Year ;
+	simres:simTimeSeriesSched_Name  						"CO.DE.TH.SS.02" ;
+	simres:simTimeSeriesSched_StartDay_1_53             	inst:IntegerList_StartDay_PL_CO_DE_TH_SS_2 ; 
+    simres:simTimeSeriesSched_EndDay_1_53               	inst:IntegerList_EndDay_PL_CO_DE_TH_SS_2 ;
+	simres:simTimeSeriesSched_StartMonth_1_53           	inst:IntegerList_StartMonth_PL_CO_DE_TH_SS_2 ; 
+    simres:simTimeSeriesSched_EndMonth_1_53             	inst:IntegerList_EndMonth_PL_CO_DE_TH_SS_2 ;
+    simres:simTimeSeriesSched_SchedTypeLimitsName       	inst:SimTimeSeriesSchedule_Limits_Default_PL_CO_DE_TH_SS_2 ;
+    simres:simTimeSeriesSched_Sched_WeekName_1_53       	inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_2_0 ;
+    simcore:isTemplateObject        						false ;
+    simcore:refId                  							"XXX"^^xsd:ID ;  						# to be overwritten.
+    simcore:simModelType            						"Year" ;
+    simcore:simUniqueID             						"none" ;
+    simcore:sourceModelSchema 								"OptEEmAL BES Catalogue"^^xsd:string ;
+	.
+inst:IntegerList_StartDay_PL_CO_DE_TH_SS_2
+    a                 simcore:IntegerList ;
+    list:hasContents  1 ;
+	.	
+inst:IntegerList_EndDay_PL_CO_DE_TH_SS_2
+    a                 simcore:IntegerList ;
+    list:hasContents  31 ;
+	.
+inst:IntegerList_StartMonth_PL_CO_DE_TH_SS_2
+    a                 simcore:IntegerList ;
+    list:hasContents  1 ;
+	.	
+inst:IntegerList_EndMonth_PL_CO_DE_TH_SS_2
+    a                 simcore:IntegerList ;
+    list:hasContents  12 ;
+	.	
+inst:SimTimeSeriesSchedule_Limits_Default_PL_CO_DE_TH_SS_2
+    a                               									simres:SimTimeSeriesSchedule_Limits_Default ;
+    simres:simTimeSeriesSched_LowLimitVal					        	"0.0"^^xsd:double ;
+	simres:simTimeSeriesSched_UpLimitVal								"1.0"^^xsd:double ;
+    simres:simTimeSeriesSched_Name  									"SCHEDULE-LIMITS_PL_CO_DE_TH_SS_2" ;
+    simres:simTimeSeriesSched_NumericType								"Continuous" ;
+    simres:simTimeSeriesSched_UnitType 									"Dimensionless"^^xsd:string ;
+	simcore:simModelSubtype         									"Default" ;
+    simcore:simModelType            									"Limits" ;
+    simcore:isTemplateObject        									false ;
+    simcore:refId                  										"XXX"^^xsd:ID ;  						# to be overwritten.
+	simcore:simUniqueID             									"none" ;
+	simcore:sourceModelSchema 											"OptEEmAL BES Catalogue"^^xsd:string ;
+	.	
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_2_0
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_2 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_2_1 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_2_1
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_2 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_2_2 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_2_2
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_2 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_2_3 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_2_3
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_2 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_2_4 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_2_4
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_2 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_2_5 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_2_5
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_2 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_2_6 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_2_6
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_2 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_2_7 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_2_7
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_2 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_2_8 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_2_8
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_2 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_2_9 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_2_9
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_2 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_2_10 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_2_10
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_2 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_2_11 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_2_11
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_2 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_2_12 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_2_12
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_2 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_2_13 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_2_13
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_2 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_2_14 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_2_14
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_2 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_2_15 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_2_15
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_2 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_2_16 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_2_16
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_2 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_2_17 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_2_17
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_2 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_2_18 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_2_18
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_2 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_2_19 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_2_19
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_2 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_2_20 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_2_20
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_2 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_2_21 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_2_21
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_2 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_2_22 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_2_22
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_2 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_2_23 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_2_23
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_2 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_2_24 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_2_24
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_2 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_2_25 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_2_25
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_2 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_2_26 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_2_26
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_2 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_2_27 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_2_27
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_2 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_2_28 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_2_28
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_2 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_2_29 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_2_29
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_2 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_2_30 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_2_30
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_2 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_2_31 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_2_31
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_2 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_2_32 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_2_32
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_2 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_2_33 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_2_33
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_2 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_2_34 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_2_34
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_2 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_2_35 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_2_35
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_2 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_2_36 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_2_36
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_2 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_2_37 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_2_37
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_2 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_2_38 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_2_38
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_2 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_2_39 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_2_39
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_2 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_2_40 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_2_40
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_2 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_2_41 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_2_41
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_2 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_2_42 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_2_42
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_2 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_2_43 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_2_43
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_2 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_2_44 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_2_44
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_2 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_2_45 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_2_45
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_2 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_2_46 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_2_46
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_2 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_2_47 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_2_47
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_2 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_2_48 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_2_48
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_2 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_2_49 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_2_49
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_2 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_2_50 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_2_50
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_2 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_2_51 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_2_51
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_2 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_2_52 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_2_52
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_2 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_2_53 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_2_53
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_2 ;
+	.	
+inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_2
+	rdf:type 															simres:SimTimeSeriesSchedule_Week_Daily ;
+	simres:simTimeSeriesSched_Name  									"SCHEDULE_WEEK_PL_CO_DE_TH_SS_2" ;												# to be overwritten.
+	simres:simTimeSeriesSched_CustomDay_1_2_SchedDayName				inst:SimTimeSeriesSched_CustomDay_1_2_SchedDayName_List_1_PL_CO_DE_TH_SS_2 ;
+	simres:simTimeSeriesSched_SundaySched_DayName 						inst:SimTimeSeriesSchedule_Day_Hourly_PL_CO_DE_TH_SS_2 ;						# to be overwritten.
+	simres:simTimeSeriesSched_MondaySched_DayName 						inst:SimTimeSeriesSchedule_Day_Hourly_PL_CO_DE_TH_SS_2 ;						# to be overwritten.
+	simres:simTimeSeriesSched_TuesdaySched_DayName 						inst:SimTimeSeriesSchedule_Day_Hourly_PL_CO_DE_TH_SS_2 ;						# to be overwritten.
+	simres:simTimeSeriesSched_WedSched_DayName 							inst:SimTimeSeriesSchedule_Day_Hourly_PL_CO_DE_TH_SS_2 ;						# to be overwritten.
+	simres:simTimeSeriesSched_ThursdaySched_DayName 					inst:SimTimeSeriesSchedule_Day_Hourly_PL_CO_DE_TH_SS_2 ;						# to be overwritten.
+	simres:simTimeSeriesSched_FridaySched_DayName 						inst:SimTimeSeriesSchedule_Day_Hourly_PL_CO_DE_TH_SS_2 ;						# to be overwritten.	
+	simres:simTimeSeriesSched_SaturdaySched_DayName 					inst:SimTimeSeriesSchedule_Day_Hourly_PL_CO_DE_TH_SS_2 ;						# to be overwritten.	
+	simres:simTimeSeriesSched_HolidaySched_DayName 						inst:SimTimeSeriesSchedule_Day_Hourly_PL_CO_DE_TH_SS_2 ;						# to be overwritten.			
+	simres:simTimeSeriesSched_SummerDesignDaySched_DayName 				inst:SimTimeSeriesSchedule_Day_Hourly_PL_CO_DE_TH_SS_2 ;						# to be overwritten.
+	simres:simTimeSeriesSched_WinterDesignDaySched_DayName 				inst:SimTimeSeriesSchedule_Day_Hourly_PL_CO_DE_TH_SS_2 ;						# to be overwritten.
+	simcore:sourceModelObjectType 										"SimTimeSeriesSchedule"^^xsd:string ;
+	simcore:simModelType 												"Week"^^xsd:string ;
+	simcore:simModelSubtype 											"Daily"^^xsd:string ;
+	simcore:isTemplateObject 											false ;
+	simcore:refId              											"XXX"^^xsd:ID ;  													# to be overwritten.
+	simcore:simUniqueID 												"none"^^xsd:string ;
+	simcore:simModelName 												"OptEEmAL BES Catalogue"^^xsd:string ;
+	.
+inst:SimTimeSeriesSched_CustomDay_1_2_SchedDayName_List_1_PL_CO_DE_TH_SS_2
+    a                 simres:SimTimeSeriesSched_CustomDay_1_2_SchedDayName_List ;
+    list:hasContents  inst:SimTimeSeriesSchedule_Day_Hourly_PL_CO_DE_TH_SS_2 ;
+    list:hasNext      inst:SimTimeSeriesSched_CustomDay_1_2_SchedDayName_List_2_PL_CO_DE_TH_SS_2 ;
+	.	
+inst:SimTimeSeriesSched_CustomDay_1_2_SchedDayName_List_2_PL_CO_DE_TH_SS_2
+    a                 simres:SimTimeSeriesSched_CustomDay_1_2_SchedDayName_List ;
+    list:hasContents  inst:SimTimeSeriesSchedule_Day_Hourly_PL_CO_DE_TH_SS_2 ;
+	.	
+inst:SimTimeSeriesSchedule_Day_Hourly_PL_CO_DE_TH_SS_2
+    a                               									simres:SimTimeSeriesSchedule_Day_Hourly ;
+    simres:simTimeSeriesSched_Hour_1_24     							inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_02_0 ;
+    simres:simTimeSeriesSched_Name  									"SCHEDULE-DAY_CO.DE.TH.SS.02" ;
+	simres:simTimeSeriesSched_SchedTypeLimitsName    					inst:SimTimeSeriesSchedule_Limits_Default_PL_CO_DE_TH_SS_2 ;	
+	simcore:simModelSubtype         									"Hourly" ;
+	simcore:simModelType            									"Day" ;
+    simcore:isTemplateObject        									false ;
+    simcore:refId                   									"XXX"^^xsd:ID ;  
+    simcore:simUniqueID             									"none" ;
+    simcore:sourceModelSchema 											"OptEEmAL BES Catalogue"^^xsd:string ;
+	.	
+inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_02_0
+    a                 simcore:DoubleList ;
+	list:hasContents  "0.0"^^xsd:double ;					
+	list:hasNext      inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_02_1 ;
+	.	
+inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_02_1
+    a                 simcore:DoubleList ;
+	list:hasContents  "0.0"^^xsd:double ;					
+	list:hasNext      inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_02_2 ;
+	.
+inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_02_2
+    a                 simcore:DoubleList ;
+	list:hasContents  "0.0"^^xsd:double ;					
+	list:hasNext      inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_02_3 ;
+	.
+inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_02_3
+    a                 simcore:DoubleList ;
+	list:hasContents  "0.0"^^xsd:double ;					
+	list:hasNext      inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_02_4 ;
+	.
+inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_02_4
+    a                 simcore:DoubleList ;
+	list:hasContents  "0.0"^^xsd:double ;					
+	list:hasNext      inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_02_5 ;
+	.
+inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_02_5
+    a                 simcore:DoubleList ;
+	list:hasContents  "0.0"^^xsd:double ;					
+	list:hasNext      inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_02_6 ;
+	.
+inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_02_6
+    a                 simcore:DoubleList ;
+	list:hasContents  "0.0"^^xsd:double ;					
+	list:hasNext      inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_02_7 ;
+	.
+inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_02_7
+    a                 simcore:DoubleList ;
+	list:hasContents  "1.0"^^xsd:double ;					
+	list:hasNext      inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_02_8 ;
+	.
+inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_02_8
+    a                 simcore:DoubleList ;
+	list:hasContents  "1.0"^^xsd:double ;					
+	list:hasNext      inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_02_9 ;
+	.
+inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_02_9
+    a                 simcore:DoubleList ;
+	list:hasContents  "1.0"^^xsd:double ;					
+	list:hasNext      inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_02_10 ;
+	.
+inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_02_10
+    a                 simcore:DoubleList ;
+	list:hasContents  "1.0"^^xsd:double ;					
+	list:hasNext      inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_02_11 ;
+	.
+inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_02_11
+    a                 simcore:DoubleList ;
+	list:hasContents  "1.0"^^xsd:double ;					
+	list:hasNext      inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_02_12 ;
+	.
+inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_02_12
+    a                 simcore:DoubleList ;
+	list:hasContents  "1.0"^^xsd:double ;					
+	list:hasNext      inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_02_13 ;
+	.
+inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_02_13
+    a                 simcore:DoubleList ;
+	list:hasContents  "1.0"^^xsd:double ;					
+	list:hasNext      inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_02_14 ;
+	.
+inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_02_14
+    a                 simcore:DoubleList ;
+	list:hasContents  "1.0"^^xsd:double ;					
+	list:hasNext      inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_02_15 ;
+	.
+inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_02_15
+    a                 simcore:DoubleList ;
+	list:hasContents  "1.0"^^xsd:double ;					
+	list:hasNext      inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_02_16 ;
+	.	
+inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_02_16
+    a                 simcore:DoubleList ;
+	list:hasContents  "1.0"^^xsd:double ;					
+	list:hasNext      inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_02_17 ;
+	.
+inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_02_17
+    a                 simcore:DoubleList ;
+	list:hasContents  "1.0"^^xsd:double ;					
+	list:hasNext      inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_02_18 ;
+	.
+inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_02_18
+    a                 simcore:DoubleList ;
+	list:hasContents  "1.0"^^xsd:double ;					
+	list:hasNext      inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_02_19 ;
+	.	
+inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_02_19
+    a                 simcore:DoubleList ;
+	list:hasContents  "1.0"^^xsd:double ;					
+	list:hasNext      inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_02_20 ;
+	.
+inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_02_20
+    a                 simcore:DoubleList ;
+	list:hasContents  "0.0"^^xsd:double ;					
+	list:hasNext      inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_02_21 ;
+	.
+inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_02_21
+    a                 simcore:DoubleList ;
+	list:hasContents  "0.0"^^xsd:double ;					
+	list:hasNext      inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_02_22 ;
+	.
+inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_02_22
+    a                 simcore:DoubleList ;
+	list:hasContents  "0.0"^^xsd:double ;					
+	list:hasNext      inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_02_23 ;
+	.
+inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_02_23
+    a                 simcore:DoubleList ;
+	list:hasContents  "0.0"^^xsd:double ;					
+	.
+	
+# ------------------------------------------------------------------------------------------------
+# SCHEDULE 3 - System Scheduling for cooling 10h - 18h (CO.DE.TH.SS.03)
+# ------------------------------------------------------------------------------------------------
+
+inst:SimTimeSeriesSchedule_Year_Default_PL_CO_DE_TH_SS_3
+    a                               						simres:SimTimeSeriesSchedule_Year ;
+	simres:simTimeSeriesSched_Name  						"CO.DE.TH.SS.03" ;
+	simres:simTimeSeriesSched_StartDay_1_53             	inst:IntegerList_StartDay_PL_CO_DE_TH_SS_3 ; 
+    simres:simTimeSeriesSched_EndDay_1_53               	inst:IntegerList_EndDay_PL_CO_DE_TH_SS_3 ;
+	simres:simTimeSeriesSched_StartMonth_1_53           	inst:IntegerList_StartMonth_PL_CO_DE_TH_SS_3 ; 
+    simres:simTimeSeriesSched_EndMonth_1_53             	inst:IntegerList_EndMonth_PL_CO_DE_TH_SS_3 ;
+    simres:simTimeSeriesSched_SchedTypeLimitsName       	inst:SimTimeSeriesSchedule_Limits_Default_PL_CO_DE_TH_SS_3 ;
+    simres:simTimeSeriesSched_Sched_WeekName_1_53       	inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_3_0 ;
+    simcore:isTemplateObject        						false ;
+    simcore:refId                  							"XXX"^^xsd:ID ;  						# to be overwritten.
+    simcore:simModelType            						"Year" ;
+    simcore:simUniqueID             						"none" ;
+    simcore:sourceModelSchema 								"OptEEmAL BES Catalogue"^^xsd:string ;
+	.
+inst:IntegerList_StartDay_PL_CO_DE_TH_SS_3
+    a                 simcore:IntegerList ;
+    list:hasContents  1 ;
+	.	
+inst:IntegerList_EndDay_PL_CO_DE_TH_SS_3
+    a                 simcore:IntegerList ;
+    list:hasContents  31 ;
+	.
+inst:IntegerList_StartMonth_PL_CO_DE_TH_SS_3
+    a                 simcore:IntegerList ;
+    list:hasContents  1 ;
+	.	
+inst:IntegerList_EndMonth_PL_CO_DE_TH_SS_3
+    a                 simcore:IntegerList ;
+    list:hasContents  12 ;
+	.	
+inst:SimTimeSeriesSchedule_Limits_Default_PL_CO_DE_TH_SS_3
+    a                               									simres:SimTimeSeriesSchedule_Limits_Default ;
+    simres:simTimeSeriesSched_LowLimitVal					        	"0.0"^^xsd:double ;
+	simres:simTimeSeriesSched_UpLimitVal								"1.0"^^xsd:double ;
+    simres:simTimeSeriesSched_Name  									"SCHEDULE-LIMITS_PL_CO_DE_TH_SS_3" ;
+    simres:simTimeSeriesSched_NumericType								"Continuous" ;
+    simres:simTimeSeriesSched_UnitType 									"Dimensionless"^^xsd:string ;
+	simcore:simModelSubtype         									"Default" ;
+    simcore:simModelType            									"Limits" ;
+    simcore:isTemplateObject        									false ;
+    simcore:refId                  										"XXX"^^xsd:ID ;  						# to be overwritten.
+	simcore:simUniqueID             									"none" ;
+	simcore:sourceModelSchema 											"OptEEmAL BES Catalogue"^^xsd:string ;
+	.	
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_3_0
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_3 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_3_1 ;
+	.
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_3_1
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_3 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_3_2 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_3_2
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_3 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_3_3 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_3_3
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_3 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_3_4 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_3_4
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_3 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_3_5 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_3_5
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_3 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_3_6 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_3_6
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_3 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_3_7 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_3_7
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_3 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_3_8 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_3_8
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_3 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_3_9 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_3_9
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_3 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_3_10 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_3_10
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_3 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_3_11 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_3_11
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_3 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_3_12 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_3_12
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_3 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_3_13 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_3_13
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_3 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_3_14 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_3_14
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_3 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_3_15 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_3_15
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_3 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_3_16 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_3_16
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_3 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_3_17 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_3_17
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_3 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_3_18 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_3_18
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_3 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_3_19 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_3_19
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_3 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_3_20 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_3_20
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_3 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_3_21 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_3_21
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_3 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_3_22 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_3_22
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_3 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_3_23 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_3_23
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_3 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_3_24 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_3_24
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_3 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_3_25 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_3_25
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_3 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_3_26 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_3_26
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_3 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_3_27 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_3_27
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_3 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_3_28 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_3_28
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_3 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_3_29 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_3_29
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_3 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_3_30 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_3_30
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_3 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_3_31 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_3_31
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_3 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_3_32 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_3_32
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_3 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_3_33 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_3_33
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_3 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_3_34 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_3_34
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_3 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_3_35 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_3_35
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_3 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_3_36 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_3_36
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_3 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_3_37 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_3_37
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_3 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_3_38 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_3_38
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_3 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_3_39 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_3_39
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_3 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_3_40 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_3_40
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_3 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_3_41 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_3_41
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_3 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_3_42 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_3_42
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_3 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_3_43 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_3_43
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_3 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_3_44 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_3_44
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_3 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_3_45 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_3_45
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_3 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_3_46 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_3_46
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_3 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_3_47 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_3_47
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_3 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_3_48 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_3_48
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_3 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_3_49 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_3_49
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_3 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_3_50 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_3_50
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_3 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_3_51 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_3_51
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_3 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_3_52 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_3_52
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_3 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_3_53 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_3_53
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_3 ;
+	.	
+inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_3
+	rdf:type 															simres:SimTimeSeriesSchedule_Week_Daily ;
+	simres:simTimeSeriesSched_Name  									"SCHEDULE_WEEK_PL_CO_DE_TH_SS_3" ;												# to be overwritten.
+	simres:simTimeSeriesSched_CustomDay_1_2_SchedDayName				inst:SimTimeSeriesSched_CustomDay_1_2_SchedDayName_List_1_PL_CO_DE_TH_SS_3 ;
+	simres:simTimeSeriesSched_SundaySched_DayName 						inst:SimTimeSeriesSchedule_Day_Hourly_PL_CO_DE_TH_SS_3 ;						# to be overwritten.
+	simres:simTimeSeriesSched_MondaySched_DayName 						inst:SimTimeSeriesSchedule_Day_Hourly_PL_CO_DE_TH_SS_3 ;						# to be overwritten.
+	simres:simTimeSeriesSched_TuesdaySched_DayName 						inst:SimTimeSeriesSchedule_Day_Hourly_PL_CO_DE_TH_SS_3 ;						# to be overwritten.
+	simres:simTimeSeriesSched_WedSched_DayName 							inst:SimTimeSeriesSchedule_Day_Hourly_PL_CO_DE_TH_SS_3 ;						# to be overwritten.
+	simres:simTimeSeriesSched_ThursdaySched_DayName 					inst:SimTimeSeriesSchedule_Day_Hourly_PL_CO_DE_TH_SS_3 ;						# to be overwritten.
+	simres:simTimeSeriesSched_FridaySched_DayName 						inst:SimTimeSeriesSchedule_Day_Hourly_PL_CO_DE_TH_SS_3 ;						# to be overwritten.	
+	simres:simTimeSeriesSched_SaturdaySched_DayName 					inst:SimTimeSeriesSchedule_Day_Hourly_PL_CO_DE_TH_SS_3 ;						# to be overwritten.	
+	simres:simTimeSeriesSched_HolidaySched_DayName 						inst:SimTimeSeriesSchedule_Day_Hourly_PL_CO_DE_TH_SS_3 ;						# to be overwritten.			
+	simres:simTimeSeriesSched_SummerDesignDaySched_DayName 				inst:SimTimeSeriesSchedule_Day_Hourly_PL_CO_DE_TH_SS_3 ;						# to be overwritten.
+	simres:simTimeSeriesSched_WinterDesignDaySched_DayName 				inst:SimTimeSeriesSchedule_Day_Hourly_PL_CO_DE_TH_SS_3 ;						# to be overwritten.
+	simcore:sourceModelObjectType 										"SimTimeSeriesSchedule"^^xsd:string ;
+	simcore:simModelType 												"Week"^^xsd:string ;
+	simcore:simModelSubtype 											"Daily"^^xsd:string ;
+	simcore:isTemplateObject 											false ;
+	simcore:refId              											"XXX"^^xsd:ID ;  													# to be overwritten.
+	simcore:simUniqueID 												"none"^^xsd:string ;
+	simcore:simModelName 												"OptEEmAL BES Catalogue"^^xsd:string ;
+	.
+inst:SimTimeSeriesSched_CustomDay_1_2_SchedDayName_List_1_PL_CO_DE_TH_SS_3
+    a                 simres:SimTimeSeriesSched_CustomDay_1_2_SchedDayName_List ;
+    list:hasContents  inst:SimTimeSeriesSchedule_Day_Hourly_PL_CO_DE_TH_SS_3 ;
+    list:hasNext      inst:SimTimeSeriesSched_CustomDay_1_2_SchedDayName_List_2_PL_CO_DE_TH_SS_3 ;
+	.	
+inst:SimTimeSeriesSched_CustomDay_1_2_SchedDayName_List_2_PL_CO_DE_TH_SS_3
+    a                 simres:SimTimeSeriesSched_CustomDay_1_2_SchedDayName_List ;
+    list:hasContents  inst:SimTimeSeriesSchedule_Day_Hourly_PL_CO_DE_TH_SS_3 ;
+	.
+inst:SimTimeSeriesSchedule_Day_Hourly_PL_CO_DE_TH_SS_3
+    a                               									simres:SimTimeSeriesSchedule_Day_Hourly ;
+    simres:simTimeSeriesSched_Hour_1_24     							inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_03_0 ;
+    simres:simTimeSeriesSched_Name  									"SCHEDULE-DAY_CO.DE.TH.SS.03" ;
+	simres:simTimeSeriesSched_SchedTypeLimitsName    					inst:SimTimeSeriesSchedule_Limits_Default_PL_CO_DE_TH_SS_3 ;	
+	simcore:simModelSubtype         									"Hourly" ;
+	simcore:simModelType            									"Day" ;
+    simcore:isTemplateObject        									false ;
+    simcore:refId                   									"XXX"^^xsd:ID ;  
+    simcore:simUniqueID             									"none" ;
+    simcore:sourceModelSchema 											"OptEEmAL BES Catalogue"^^xsd:string ;
+	.	
+inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_03_0
+    a                 simcore:DoubleList ;
+	list:hasContents  "0.0"^^xsd:double ;					
+	list:hasNext      inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_03_1 ;
+	.	
+inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_03_1
+    a                 simcore:DoubleList ;
+	list:hasContents  "0.0"^^xsd:double ;					
+	list:hasNext      inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_03_2 ;
+	.
+inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_03_2
+    a                 simcore:DoubleList ;
+	list:hasContents  "0.0"^^xsd:double ;					
+	list:hasNext      inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_03_3 ;
+	.
+inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_03_3
+    a                 simcore:DoubleList ;
+	list:hasContents  "0.0"^^xsd:double ;					
+	list:hasNext      inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_03_4 ;
+	.
+inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_03_4
+    a                 simcore:DoubleList ;
+	list:hasContents  "0.0"^^xsd:double ;					
+	list:hasNext      inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_03_5 ;
+	.
+inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_03_5
+    a                 simcore:DoubleList ;
+	list:hasContents  "0.0"^^xsd:double ;					
+	list:hasNext      inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_03_6 ;
+	.
+inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_03_6
+    a                 simcore:DoubleList ;
+	list:hasContents  "0.0"^^xsd:double ;					
+	list:hasNext      inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_03_7 ;
+	.
+inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_03_7
+    a                 simcore:DoubleList ;
+	list:hasContents  "0.0"^^xsd:double ;					
+	list:hasNext      inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_03_8 ;
+	.
+inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_03_8
+    a                 simcore:DoubleList ;
+	list:hasContents  "0.0"^^xsd:double ;					
+	list:hasNext      inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_03_9 ;
+	.
+inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_03_9
+    a                 simcore:DoubleList ;
+	list:hasContents  "0.0"^^xsd:double ;					
+	list:hasNext      inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_03_10 ;
+	.
+inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_03_10
+    a                 simcore:DoubleList ;
+	list:hasContents  "1.0"^^xsd:double ;					
+	list:hasNext      inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_03_11 ;
+	.
+inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_03_11
+    a                 simcore:DoubleList ;
+	list:hasContents  "1.0"^^xsd:double ;					
+	list:hasNext      inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_03_12 ;
+	.
+inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_03_12
+    a                 simcore:DoubleList ;
+	list:hasContents  "1.0"^^xsd:double ;					
+	list:hasNext      inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_03_13 ;
+	.
+inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_03_13
+    a                 simcore:DoubleList ;
+	list:hasContents  "1.0"^^xsd:double ;					
+	list:hasNext      inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_03_14 ;
+	.
+inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_03_14
+    a                 simcore:DoubleList ;
+	list:hasContents  "1.0"^^xsd:double ;					
+	list:hasNext      inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_03_15 ;
+	.
+inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_03_15
+    a                 simcore:DoubleList ;
+	list:hasContents  "1.0"^^xsd:double ;					
+	list:hasNext      inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_03_16 ;
+	.	
+inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_03_16
+    a                 simcore:DoubleList ;
+	list:hasContents  "1.0"^^xsd:double ;					
+	list:hasNext      inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_03_17 ;
+	.
+inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_03_17
+    a                 simcore:DoubleList ;
+	list:hasContents  "1.0"^^xsd:double ;					
+	list:hasNext      inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_03_18 ;
+	.
+inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_03_18
+    a                 simcore:DoubleList ;
+	list:hasContents  "0.0"^^xsd:double ;					
+	list:hasNext      inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_03_19 ;
+	.	
+inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_03_19
+    a                 simcore:DoubleList ;
+	list:hasContents  "0.0"^^xsd:double ;					
+	list:hasNext      inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_03_20 ;
+	.
+inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_03_20
+    a                 simcore:DoubleList ;
+	list:hasContents  "0.0"^^xsd:double ;					
+	list:hasNext      inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_03_21 ;
+	.
+inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_03_21
+    a                 simcore:DoubleList ;
+	list:hasContents  "0.0"^^xsd:double ;					
+	list:hasNext      inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_03_22 ;
+	.
+inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_03_22
+    a                 simcore:DoubleList ;
+	list:hasContents  "0.0"^^xsd:double ;					
+	list:hasNext      inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_03_23 ;
+	.
+inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_03_23
+    a                 simcore:DoubleList ;
+	list:hasContents  "0.0"^^xsd:double ;					
+	.
+
+# ------------------------------------------------------------------------------------------------
+# SCHEDULE 4 - System Scheduling for cooling 11h - 18h (CO.DE.TH.SS.04)
+# ------------------------------------------------------------------------------------------------
+
+inst:SimTimeSeriesSchedule_Year_Default_PL_CO_DE_TH_SS_4
+    a                               						simres:SimTimeSeriesSchedule_Year ;
+	simres:simTimeSeriesSched_Name  						"CO.DE.TH.SS.04" ;
+	simres:simTimeSeriesSched_StartDay_1_53             	inst:IntegerList_StartDay_PL_CO_DE_TH_SS_4 ; 
+    simres:simTimeSeriesSched_EndDay_1_53               	inst:IntegerList_EndDay_PL_CO_DE_TH_SS_4 ;
+	simres:simTimeSeriesSched_StartMonth_1_53           	inst:IntegerList_StartMonth_PL_CO_DE_TH_SS_4 ; 
+    simres:simTimeSeriesSched_EndMonth_1_53             	inst:IntegerList_EndMonth_PL_CO_DE_TH_SS_4 ;
+    simres:simTimeSeriesSched_SchedTypeLimitsName       	inst:SimTimeSeriesSchedule_Limits_Default_PL_CO_DE_TH_SS_4 ;
+    simres:simTimeSeriesSched_Sched_WeekName_1_53       	inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_4_0 ;
+    simcore:isTemplateObject        						false ;
+    simcore:refId                  							"XXX"^^xsd:ID ;  						# to be overwritten.
+    simcore:simModelType            						"Year" ;
+    simcore:simUniqueID             						"none" ;
+    simcore:sourceModelSchema 								"OptEEmAL BES Catalogue"^^xsd:string ;
+	.
+inst:IntegerList_StartDay_PL_CO_DE_TH_SS_4
+    a                 simcore:IntegerList ;
+    list:hasContents  1 ;
+	.	
+inst:IntegerList_EndDay_PL_CO_DE_TH_SS_4
+    a                 simcore:IntegerList ;
+    list:hasContents  31 ;
+	.
+inst:IntegerList_StartMonth_PL_CO_DE_TH_SS_4
+    a                 simcore:IntegerList ;
+    list:hasContents  1 ;
+	.	
+inst:IntegerList_EndMonth_PL_CO_DE_TH_SS_4
+    a                 simcore:IntegerList ;
+    list:hasContents  12 ;
+	.	
+inst:SimTimeSeriesSchedule_Limits_Default_PL_CO_DE_TH_SS_4
+    a                               									simres:SimTimeSeriesSchedule_Limits_Default ;
+    simres:simTimeSeriesSched_LowLimitVal					        	"0.0"^^xsd:double ;
+	simres:simTimeSeriesSched_UpLimitVal								"1.0"^^xsd:double ;
+    simres:simTimeSeriesSched_Name  									"SCHEDULE-LIMITS_PL_CO_DE_TH_SS_4" ;
+    simres:simTimeSeriesSched_NumericType								"Continuous" ;
+    simres:simTimeSeriesSched_UnitType 									"Dimensionless"^^xsd:string ;
+	simcore:simModelSubtype         									"Default" ;
+    simcore:simModelType            									"Limits" ;
+    simcore:isTemplateObject        									false ;
+    simcore:refId                  										"XXX"^^xsd:ID ;  						# to be overwritten.
+	simcore:simUniqueID             									"none" ;
+	simcore:sourceModelSchema 											"OptEEmAL BES Catalogue"^^xsd:string ;
+	.	
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_4_0
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_4 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_4_1 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_4_1
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_4 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_4_2 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_4_2
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_4 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_4_3 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_4_3
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_4 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_4_4 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_4_4
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_4 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_4_5 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_4_5
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_4 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_4_6 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_4_6
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_4 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_4_7 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_4_7
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_4 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_4_8 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_4_8
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_4 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_4_9 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_4_9
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_4 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_4_10 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_4_10
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_4 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_4_11 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_4_11
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_4 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_4_12 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_4_12
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_4 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_4_13 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_4_13
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_4 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_4_14 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_4_14
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_4 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_4_15 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_4_15
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_4 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_4_16 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_4_16
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_4 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_4_17 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_4_17
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_4 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_4_18 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_4_18
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_4 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_4_19 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_4_19
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_4 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_4_20 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_4_20
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_4 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_4_21 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_4_21
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_4 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_4_22 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_4_22
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_4 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_4_23 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_4_23
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_4 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_4_24 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_4_24
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_4 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_4_25 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_4_25
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_4 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_4_26 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_4_26
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_4 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_4_27 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_4_27
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_4 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_4_28 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_4_28
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_4 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_4_29 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_4_29
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_4 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_4_30 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_4_30
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_4 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_4_31 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_4_31
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_4 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_4_32 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_4_32
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_4 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_4_33 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_4_33
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_4 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_4_34 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_4_34
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_4 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_4_35 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_4_35
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_4 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_4_36 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_4_36
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_4 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_4_37 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_4_37
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_4 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_4_38 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_4_38
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_4 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_4_39 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_4_39
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_4 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_4_40 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_4_40
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_4 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_4_41 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_4_41
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_4 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_4_42 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_4_42
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_4 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_4_43 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_4_43
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_4 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_4_44 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_4_44
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_4 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_4_45 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_4_45
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_4 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_4_46 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_4_46
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_4 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_4_47 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_4_47
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_4 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_4_48 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_4_48
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_4 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_4_49 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_4_49
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_4 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_4_50 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_4_50
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_4 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_4_51 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_4_51
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_4 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_4_52 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_4_52
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_4 ;
+    list:hasNext      													inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_4_53 ;
+	.		
+inst:SimTimeSeriesSched_Sched_WeekName_1_53_List_PL_CO_DE_TH_SS_4_53
+    a                 													simres:SimTimeSeriesSched_Sched_WeekName_1_53_List ;
+    list:hasContents  													inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_4 ;
+	.	
+inst:SimTimeSeriesSchedule_Week_Daily_PL_CO_DE_TH_SS_4
+	rdf:type 															simres:SimTimeSeriesSchedule_Week_Daily ;
+	simres:simTimeSeriesSched_Name  									"SCHEDULE_WEEK_PL_CO_DE_TH_SS_4" ;												# to be overwritten.
+	simres:simTimeSeriesSched_CustomDay_1_2_SchedDayName				inst:SimTimeSeriesSched_CustomDay_1_2_SchedDayName_List_1_PL_CO_DE_TH_SS_4 ;
+	simres:simTimeSeriesSched_SundaySched_DayName 						inst:SimTimeSeriesSchedule_Day_Hourly_PL_CO_DE_TH_SS_4 ;						# to be overwritten.
+	simres:simTimeSeriesSched_MondaySched_DayName 						inst:SimTimeSeriesSchedule_Day_Hourly_PL_CO_DE_TH_SS_4 ;						# to be overwritten.
+	simres:simTimeSeriesSched_TuesdaySched_DayName 						inst:SimTimeSeriesSchedule_Day_Hourly_PL_CO_DE_TH_SS_4 ;						# to be overwritten.
+	simres:simTimeSeriesSched_WedSched_DayName 							inst:SimTimeSeriesSchedule_Day_Hourly_PL_CO_DE_TH_SS_4 ;						# to be overwritten.
+	simres:simTimeSeriesSched_ThursdaySched_DayName 					inst:SimTimeSeriesSchedule_Day_Hourly_PL_CO_DE_TH_SS_4 ;						# to be overwritten.
+	simres:simTimeSeriesSched_FridaySched_DayName 						inst:SimTimeSeriesSchedule_Day_Hourly_PL_CO_DE_TH_SS_4 ;						# to be overwritten.	
+	simres:simTimeSeriesSched_SaturdaySched_DayName 					inst:SimTimeSeriesSchedule_Day_Hourly_PL_CO_DE_TH_SS_4 ;						# to be overwritten.	
+	simres:simTimeSeriesSched_HolidaySched_DayName 						inst:SimTimeSeriesSchedule_Day_Hourly_PL_CO_DE_TH_SS_4 ;						# to be overwritten.			
+	simres:simTimeSeriesSched_SummerDesignDaySched_DayName 				inst:SimTimeSeriesSchedule_Day_Hourly_PL_CO_DE_TH_SS_4 ;						# to be overwritten.
+	simres:simTimeSeriesSched_WinterDesignDaySched_DayName 				inst:SimTimeSeriesSchedule_Day_Hourly_PL_CO_DE_TH_SS_4 ;						# to be overwritten.
+	simcore:sourceModelObjectType 										"SimTimeSeriesSchedule"^^xsd:string ;
+	simcore:simModelType 												"Week"^^xsd:string ;
+	simcore:simModelSubtype 											"Daily"^^xsd:string ;
+	simcore:isTemplateObject 											false ;
+	simcore:refId              											"XXX"^^xsd:ID ;  													# to be overwritten.
+	simcore:simUniqueID 												"none"^^xsd:string ;
+	simcore:simModelName 												"OptEEmAL BES Catalogue"^^xsd:string ;
+	.
+inst:SimTimeSeriesSched_CustomDay_1_2_SchedDayName_List_1_PL_CO_DE_TH_SS_4
+    a                 simres:SimTimeSeriesSched_CustomDay_1_2_SchedDayName_List ;
+    list:hasContents  inst:SimTimeSeriesSchedule_Day_Hourly_PL_CO_DE_TH_SS_4 ;
+    list:hasNext      inst:SimTimeSeriesSched_CustomDay_1_2_SchedDayName_List_2_PL_CO_DE_TH_SS_4 ;
+	.	
+inst:SimTimeSeriesSched_CustomDay_1_2_SchedDayName_List_2_PL_CO_DE_TH_SS_4
+    a                 simres:SimTimeSeriesSched_CustomDay_1_2_SchedDayName_List ;
+    list:hasContents  inst:SimTimeSeriesSchedule_Day_Hourly_PL_CO_DE_TH_SS_4 ;
+	.
+inst:SimTimeSeriesSchedule_Day_Hourly_PL_CO_DE_TH_SS_4
+    a                               									simres:SimTimeSeriesSchedule_Day_Hourly ;
+    simres:simTimeSeriesSched_Hour_1_24     							inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_04_0 ;
+    simres:simTimeSeriesSched_Name  									"SCHEDULE-DAY_CO.DE.TH.SS.04" ;
+	simres:simTimeSeriesSched_SchedTypeLimitsName    					inst:SimTimeSeriesSchedule_Limits_Default_PL_CO_DE_TH_SS_4 ;	
+	simcore:simModelSubtype         									"Hourly" ;
+	simcore:simModelType            									"Day" ;
+    simcore:isTemplateObject        									false ;
+    simcore:refId                   									"XXX"^^xsd:ID ;  
+    simcore:simUniqueID             									"none" ;
+    simcore:sourceModelSchema 											"OptEEmAL BES Catalogue"^^xsd:string ;
+	.	
+inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_04_0
+    a                 simcore:DoubleList ;
+	list:hasContents  "0.0"^^xsd:double ;					
+	list:hasNext      inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_04_1 ;
+	.	
+inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_04_1
+    a                 simcore:DoubleList ;
+	list:hasContents  "0.0"^^xsd:double ;					
+	list:hasNext      inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_04_2 ;
+	.
+inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_04_2
+    a                 simcore:DoubleList ;
+	list:hasContents  "0.0"^^xsd:double ;					
+	list:hasNext      inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_04_3 ;
+	.
+inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_04_3
+    a                 simcore:DoubleList ;
+	list:hasContents  "0.0"^^xsd:double ;					
+	list:hasNext      inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_04_4 ;
+	.
+inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_04_4
+    a                 simcore:DoubleList ;
+	list:hasContents  "0.0"^^xsd:double ;					
+	list:hasNext      inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_04_5 ;
+	.
+inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_04_5
+    a                 simcore:DoubleList ;
+	list:hasContents  "0.0"^^xsd:double ;					
+	list:hasNext      inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_04_6 ;
+	.
+inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_04_6
+    a                 simcore:DoubleList ;
+	list:hasContents  "0.0"^^xsd:double ;					
+	list:hasNext      inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_04_7 ;
+	.
+inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_04_7
+    a                 simcore:DoubleList ;
+	list:hasContents  "0.0"^^xsd:double ;					
+	list:hasNext      inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_04_8 ;
+	.
+inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_04_8
+    a                 simcore:DoubleList ;
+	list:hasContents  "0.0"^^xsd:double ;					
+	list:hasNext      inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_04_9 ;
+	.
+inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_04_9
+    a                 simcore:DoubleList ;
+	list:hasContents  "0.0"^^xsd:double ;					
+	list:hasNext      inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_04_10 ;
+	.
+inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_04_10
+    a                 simcore:DoubleList ;
+	list:hasContents  "0.0"^^xsd:double ;					
+	list:hasNext      inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_04_11 ;
+	.
+inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_04_11
+    a                 simcore:DoubleList ;
+	list:hasContents  "1.0"^^xsd:double ;					
+	list:hasNext      inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_04_12 ;
+	.
+inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_04_12
+    a                 simcore:DoubleList ;
+	list:hasContents  "1.0"^^xsd:double ;					
+	list:hasNext      inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_04_13 ;
+	.
+inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_04_13
+    a                 simcore:DoubleList ;
+	list:hasContents  "1.0"^^xsd:double ;					
+	list:hasNext      inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_04_14 ;
+	.
+inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_04_14
+    a                 simcore:DoubleList ;
+	list:hasContents  "1.0"^^xsd:double ;					
+	list:hasNext      inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_04_15 ;
+	.
+inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_04_15
+    a                 simcore:DoubleList ;
+	list:hasContents  "1.0"^^xsd:double ;					
+	list:hasNext      inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_04_16 ;
+	.	
+inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_04_16
+    a                 simcore:DoubleList ;
+	list:hasContents  "1.0"^^xsd:double ;					
+	list:hasNext      inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_04_17 ;
+	.
+inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_04_17
+    a                 simcore:DoubleList ;
+	list:hasContents  "1.0"^^xsd:double ;					
+	list:hasNext      inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_04_18 ;
+	.
+inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_04_18
+    a                 simcore:DoubleList ;
+	list:hasContents  "0.0"^^xsd:double ;					
+	list:hasNext      inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_04_19 ;
+	.	
+inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_04_19
+    a                 simcore:DoubleList ;
+	list:hasContents  "0.0"^^xsd:double ;					
+	list:hasNext      inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_04_20 ;
+	.
+inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_04_20
+    a                 simcore:DoubleList ;
+	list:hasContents  "0.0"^^xsd:double ;					
+	list:hasNext      inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_04_21 ;
+	.
+inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_04_21
+    a                 simcore:DoubleList ;
+	list:hasContents  "0.0"^^xsd:double ;					
+	list:hasNext      inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_04_22 ;
+	.
+inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_04_22
+    a                 simcore:DoubleList ;
+	list:hasContents  "0.0"^^xsd:double ;					
+	list:hasNext      inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_04_23 ;
+	.
+inst:DoubleList_Day_Hourly_PL_CO_DE_TH_SS_04_23
+    a                 simcore:DoubleList ;
+	list:hasContents  "0.0"^^xsd:double ;					
+	.	

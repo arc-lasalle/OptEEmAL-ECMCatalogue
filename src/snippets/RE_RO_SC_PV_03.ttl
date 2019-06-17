@@ -1,0 +1,79 @@
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix simcore: <http://www.opteemal.eu/schema/2017/01/SimModelCore#> .
+@prefix simres: <http://www.opteemal.eu/schema/2017/01/ResourcesGeneral#> .
+@prefix simgeom: <http://www.opteemal.eu/schema/2017/01/ResourcesGeometry#> .
+@prefix simbldg: <http://www.opteemal.eu/schema/2017/01/BuildingModel#> .
+@prefix simmep: <http://www.opteemal.eu/schema/2017/01/MepModel#> .
+@prefix simmodel: <http://www.opteemal.eu/schema/2017/01/Model#> .
+@prefix list: <https://w3id.org/list#> .
+@prefix inst: <http://to.replace#> .
+@prefix xpath: <http://www.opteemal.eu/xpath/prop#> .
+
+# last review: 2018.10.26
+
+# -------------------------------------------------------------------------
+# ECM ID: RE.RO.SC.PV.03
+# ECM name: Monocrystalline photovoltaic panel connected to the grid
+# -------------------------------------------------------------------------
+# MODELS: 
+# -------------------------------------------------------------------------
+# - Description: Photovoltaic (PV) solar technologies generate electricity 
+#   by exploiting the photovoltaic effect. Light shining on a semiconductor 
+#   such as silicon (Si) generates electron-hole pairs that are separated 
+#   spatially by an internal electric field created by introducing special 
+#   impurities into the semiconductor on either side of an interface known 
+#   as a p-n junction. This creates negative charges on one side of the 
+#   interface and positive charges are on the other side. This resulting 
+#   charge separation creates a voltage. When the two sides of the illuminated
+#   cell are connected to a load, current flows from one side of the device 
+#   via the load to the other side of the cell.
+# - Application scale: Building.
+# -------------------------------------------------------------------------
+
+inst:SimList_EquipmentList_ElectricalLoadCenter_RE_RO_SC_PV_03
+	a                          											simbldg:SimList_EquipmentList_ElectricalLoadCenter ;
+	simcore:description													"ECM-PV-GENERATOR" ;								
+	simbldg:simList_GeneratorName_1_30									inst:SimList_GeneratorName_1_30_List_RE_RO_SC_PV_03 ;	
+	simbldg:simList_GeneratorObjectType_1_30    						"Generator:Photovoltaic" ;				# 		
+	simbldg:simList_GeneratorRatedElecPowerOutput_1_30    				inst:DoubleList_RE_RO_SC_PV_03 ;		# rated_power		
+	simcore:simModelType   												"EquipmentList" ;						# Standardized prop.
+	simcore:simModelSubtype												"ElectricalLoadCenter" ;
+	simcore:isTemplateObject   											false ;									# Standardized prop.
+	simcore:refId              											"XXX"^^xsd:ID ;  						# Standardized prop.
+	simcore:simUniqueID        											"none" ;								# Standardized prop.
+	simcore:sourceModelSchema  											"OptEEmAL BES Catalogue" ;				# Standardized prop.
+	simcore:tag															"RE.RO.SC.PV.03" ;
+	.
+	
+	
+inst:simbldg:SimList_GeneratorName_1_30_List_RE_RO_SC_PV_03
+	a					simbldg:SimList_GeneratorName_1_30_List ;
+	list:hasContents 	inst:SimFlowPlant_ElectricalGenerator_Photovoltaic_RE_RO_SC_PV_03
+	.
+	
+inst:DoubleList_RE_RO_SC_PV_03
+    a                 simcore:DoubleList ;
+    list:hasContents  "120.0"^^xsd:double ;
+	xpath:property
+			"{list:hasContents='//ECM/component_catalogue/level[@id='7']/renewable_ecm[@id='1']/rated_power/text()'}"
+			;	
+	.
+		
+inst:SimFlowPlant_ElectricalGenerator_Photovoltaic_RE_RO_SC_PV_03
+	a                          											simmep:SimFlowPlant_ElectricalGenerator_Photovoltaic ;
+	simmep:photovoltaicPerformance_Simple_Name							"ECM-PV-ARRAY" ;								
+	simmep:photovoltaicPerformance_Simple_ValueforCellEfficiencyifFixed	"9.8"^^xsd:double ;								# module_efficiency 		
+	simmep:pVPerf_Sandia_ActiveArea    									"55.19463320105352"^^xsd:double ;								# 		
+	simcore:simModelType   												"ElectricalGenerator" ;					# Standardized prop.
+	simcore:simModelSubtype												"Photovoltaic" ;
+	simcore:isTemplateObject   											false ;									# Standardized prop.
+	simcore:refId              											"XXX"^^xsd:ID ;  						# Standardized prop.
+	simcore:simUniqueID        											"none" ;								# Standardized prop.
+	simcore:sourceModelSchema  											"OptEEmAL BES Catalogue" ;				# Standardized prop.
+	simcore:tag															"RE.RO.SC.PV.03" ;
+	xpath:property
+			"{simmep:photovoltaicPerformance_Simple_ValueforCellEfficiencyifFixed='//ECM/component_catalogue/level[@id='7']/renewable_ecm[@id='1']/module_efficiency/text()'}"
+			;	
+	.

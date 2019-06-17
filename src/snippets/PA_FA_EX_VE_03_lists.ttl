@@ -1,0 +1,139 @@
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix simcore: <http://www.opteemal.eu/schema/2017/01/SimModelCore#> .
+@prefix simres: <http://www.opteemal.eu/schema/2017/01/ResourcesGeneral#> .
+@prefix simgeom: <http://www.opteemal.eu/schema/2017/01/ResourcesGeometry#> .
+@prefix simbldg: <http://www.opteemal.eu/schema/2017/01/BuildingModel#> .
+@prefix simmep: <http://www.opteemal.eu/schema/2017/01/MepModel#> .
+@prefix simmodel: <http://www.opteemal.eu/schema/2017/01/Model#> .
+@prefix list: <https://w3id.org/list#> .
+@prefix inst: <http://to.replace#> .
+@prefix xpath: <http://www.opteemal.eu/xpath/prop#> .
+
+# This snippet contains the information of three layer to be added in each external wall.
+
+# ------------------------------------------------------------------------------------------------
+# LIST PART
+# ------------------------------------------------------------------------------------------------
+
+inst:MaterialLayers_List_MOD_1
+        a                 simres:MaterialLayers_List ;
+        list:hasContents  inst:SimMaterialLayer_OpaqueMaterialLayer_Default_MOD_1 ;
+        list:hasNext      inst:MaterialLayers_List_MOD_2 ;
+		.
+inst:MaterialLayers_List_MOD_2
+		a                 simres:MaterialLayers_List ;
+        list:hasContents  inst:SimMaterialLayer_OpaqueMaterialLayer_Default_MOD_2 ;
+        list:hasNext      inst:MaterialLayers_List_MOD_3 ;
+		.
+inst:MaterialLayers_List_MOD_3
+		a                 simres:MaterialLayers_List ;
+        list:hasContents  inst:SimMaterialLayer_OpaqueMaterialLayer_Default_MOD_3 ;        
+		.
+
+# ------------------------------------------------------------------------------------------------
+# LAYER 1 - Concrete polymer 
+# ------------------------------------------------------------------------------------------------
+
+inst:SimMaterialLayer_OpaqueMaterialLayer_Default_MOD_1
+        a                             			simres:SimMaterialLayer_OpaqueMaterialLayer_Default ;
+        simres:simMatLayer_LayerThickness   	"0.02"^^xsd:double ;
+		simres:isVentilated           			"true"^^xsd:boolean ;
+        simres:layerMaterial          			inst:SimMaterial_OpaqueMaterial_Default_MOD_1 ;
+        simres:materialLayerName				"MATERIAL-LAYER-VF-1-Insulation"^^xsd:string ;
+        simcore:simModelSubtype        			"Default"^^xsd:string ;
+        simres:simModelType           			"OpaqueMaterialLayer"^^xsd:string ;
+        simres:sourceModelObjectType  			"SimMaterialLayer"^^xsd:string ;
+        simcore:sourceModelSchema      			"InstanceCreator"^^xsd:string ;
+        simcore:refId                 			"XXX"^^xsd:id ;
+		.
+		
+inst:SimMaterial_OpaqueMaterial_Default_MOD_1
+        a                            			simres:SimMaterial_OpaqueMaterial_Default ;		
+		simcore:simModelSubtype        			"Default"^^xsd:string ;
+        simres:simModelType           			"OpaqueMaterial"^^xsd:string ;
+        simres:sourceModelObjectType  			"SimMaterial"^^xsd:string ;
+        simcore:sourceModelSchema      			"InstanceCreator"^^xsd:string ;
+		simres:name				       			"Structure + Concrete bonded polymer particle board"^^xsd:string ;
+		# Properties from the ECM catalogue
+		simres:simMaterial_Density    			"1100."^^xsd:double ; 
+        simres:simMaterial_SpecificHeat			"1000."^^xsd:double ; 
+        simres:simMaterial_Cond       			"0.23"^^xsd:double ;  
+		simres:simMaterial_ThermalAbsorptance 	"0.9"^^xsd:double ;
+		simres:simMaterial_SolarAbsorptance 	"0.7"^^xsd:double ;
+		simres:simMaterial_Rough 				"MediumSmooth"^^xsd:string ;
+		simres:simMaterial_VisAbsorptance 		"0.7"^^xsd:double ;
+		simres:simMaterial_ThermalResist 		"0.087"^^xsd:double ;
+		simcore:refId                 			"XXX"^^xsd:id ;
+		.		
+		
+# ------------------------------------------------------------------------------------------------
+# LAYER 2 - Air chamber 150 mm
+# ------------------------------------------------------------------------------------------------
+inst:SimMaterialLayer_OpaqueMaterialLayer_Default_MOD_2
+        a                             			simres:SimMaterialLayer_OpaqueMaterialLayer_Default ;
+        simres:isVentilated           			"true"^^xsd:boolean ;
+        simres:layerMaterial          			inst:SimMaterial_OpaqueMaterial_Default_MOD_2 ;
+        simres:simMatLayer_LayerThickness   	"0.15"^^xsd:double ; 
+        simres:materialLayerName				"MATERIAL-LAYER-VF-2-Chamber"^^xsd:string ;
+        simcore:simModelSubtype        			"Default"^^xsd:string ;
+        simres:simModelType           			"OpaqueMaterialLayer"^^xsd:string ;
+        simres:sourceModelObjectType  			"SimMaterialLayer"^^xsd:string ;
+        simcore:sourceModelSchema      			"InstanceCreator"^^xsd:string ;
+        simcore:refId                 			"XXX"^^xsd:id .
+		
+inst:SimMaterial_OpaqueMaterial_Default_MOD_2
+        a                            			simres:SimMaterial_OpaqueMaterial_Default ;		
+		simcore:simModelSubtype        			"Default"^^xsd:string ;
+        simres:simModelType           			"OpaqueMaterial"^^xsd:string ;
+        simres:sourceModelObjectType  			"SimMaterial"^^xsd:string ;
+        simcore:sourceModelSchema      			"InstanceCreator"^^xsd:string ;
+		simres:name				       			"Ventilated air chamber"^^xsd:string ;
+		# Properties from the ECM catalogue
+		simres:simMaterial_Density    			"0.0"^^xsd:double ; 
+        simres:simMaterial_SpecificHeat			"0.0"^^xsd:double ; 
+        simres:simMaterial_Cond       			"0.0"^^xsd:double ;  
+		simres:simMaterial_ThermalAbsorptance 	"0.0"^^xsd:double ;
+		simres:simMaterial_SolarAbsorptance 	"0.0"^^xsd:double ;
+		simres:simMaterial_Rough 				"MediumSmooth"^^xsd:string ;
+		simres:simMaterial_VisAbsorptance 		"0.0"^^xsd:double ;
+		simres:simMaterial_ThermalResist 		"0.08"^^xsd:double ;
+		simcore:refId                 			"XXX"^^xsd:id ;
+		.
+		
+# ------------------------------------------------------------------------------------------------
+# LAYER 3 - Mineral wool [50]
+# ------------------------------------------------------------------------------------------------
+
+inst:SimMaterialLayer_OpaqueMaterialLayer_Default_MOD_3
+        a                             			simres:SimMaterialLayer_OpaqueMaterialLayer_Default ;
+        simres:isVentilated           			"true"^^xsd:boolean ;
+        simres:layerMaterial          			inst:SimMaterial_OpaqueMaterial_Default_MOD_3 ;
+        simres:simMatLayer_LayerThickness   	"0.05"^^xsd:double ;
+        simres:materialLayerName				"MATERIAL-LAYER-VF-3-Cladding"^^xsd:string ;
+        simcore:simModelSubtype        			"Default"^^xsd:string ;
+        simres:simModelType           			"OpaqueMaterialLayer"^^xsd:string ;
+        simres:sourceModelObjectType  			"SimMaterialLayer"^^xsd:string ;
+        simcore:sourceModelSchema      			"InstanceCreator"^^xsd:string ;
+        simcore:refId                 			"XXX"^^xsd:id .
+		
+inst:SimMaterial_OpaqueMaterial_Default_MOD_3
+        a                            			simres:SimMaterial_OpaqueMaterial_Default ;		
+		simcore:simModelSubtype        			"Default"^^xsd:string ;
+        simres:simModelType           			"OpaqueMaterial"^^xsd:string ;
+        simres:sourceModelObjectType  			"SimMaterial"^^xsd:string ;
+        simcore:sourceModelSchema      			"InstanceCreator"^^xsd:string ;
+		simres:name				       			"Mineral wool (High performance)"^^xsd:string ;
+		# Properties from the ECM catalogue
+		simres:simMaterial_Density    			"30."^^xsd:double ; 
+        simres:simMaterial_SpecificHeat			"840."^^xsd:double ; 
+        simres:simMaterial_Cond       			"0.034"^^xsd:double ;  
+		simres:simMaterial_ThermalAbsorptance 	"0.9"^^xsd:double ;
+		simres:simMaterial_SolarAbsorptance 	"0.6"^^xsd:double ;
+		simres:simMaterial_Rough 				"Rough"^^xsd:string ;
+		simres:simMaterial_VisAbsorptance 		"0.6"^^xsd:double ;
+		simres:simMaterial_ThermalResist 		"0.0"^^xsd:double ;
+		simcore:refId                 			"XXX"^^xsd:id ;
+		.
+

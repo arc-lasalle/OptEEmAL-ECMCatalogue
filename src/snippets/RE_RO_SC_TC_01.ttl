@@ -1,0 +1,49 @@
+﻿@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix simcore: <http://www.opteemal.eu/schema/2017/01/SimModelCore#> .
+@prefix simres: <http://www.opteemal.eu/schema/2017/01/ResourcesGeneral#> .
+@prefix simgeom: <http://www.opteemal.eu/schema/2017/01/ResourcesGeometry#> .
+@prefix simbldg: <http://www.opteemal.eu/schema/2017/01/BuildingModel#> .
+@prefix simmep: <http://www.opteemal.eu/schema/2017/01/MepModel#> .
+@prefix simmodel: <http://www.opteemal.eu/schema/2017/01/Model#> .
+@prefix list: <https://w3id.org/list#> .
+@prefix inst: <http://to.replace#> .
+@prefix xpath: <http://www.opteemal.eu/xpath/prop#> .
+
+# last review: 2018.10.26
+
+# -------------------------------------------------------------------------
+# ECM ID: RE.RO.SC.TC.01
+# ECM name: Evacuated tube solar collector
+# -------------------------------------------------------------------------
+# MODELS: 
+# -------------------------------------------------------------------------
+# - The solar thermal technology has been used traditionally to produce heat from solar radiation with the aim of covering the buildings energy requirements for water heating. Today the technology has improved and a wide range of applications are possible including technologies for electricity generation and for solar cooling. Therefore, it can be considered a technology with a high potential of contribution in meeting climate change objectives considering that the proportion of thermal energy in the final energy demand is very important.
+# - Application scale: Building.
+# -------------------------------------------------------------------------
+
+
+		
+inst:SimFlowPlant_SolarDevice_SolarThermalWater_RE_RO_SC_TC_01
+	a                          											simmep:SimFlowPlant_SolarDevice_SolarThermalWater ;
+	simmep:solarCollectPerf_FlatPlate_Name								"SOLAR-COLLECTOR-ECM" ;								
+	simmep:solarCollectPerf_FlatPlate_GrossArea    						"73.59284426807136"^^xsd:double ;		# 		
+	simmep:solarCollectPerf_FlatPlate_Coef1ofEffEquation				"0.75"^^xsd:double ;					#  		
+	simmep:solarCollectPerf_FlatPlate_Coef2ofEffEquation				"1.18"^^xsd:double ;					#  		
+	simmep:solarCollectPerf_FlatPlate_Coef3ofEffEquation				"0.0095"^^xsd:double ;					#  		
+	simcore:simModelType   												"SolarDevice" ;							# Standardized prop.
+	simcore:simModelSubtype												"SolarThermalWater" ;					# Standardized prop.
+	simcore:isTemplateObject   											false ;									# Standardized prop.
+	simcore:refId              											"XXX"^^xsd:ID ;  						# Standardized prop.
+	simcore:simUniqueID        											"none" ;								# Standardized prop.
+	simcore:sourceModelSchema  											"OptEEmAL ECM Catalogue" ;				# Standardized prop.
+	simcore:tag															"RE.RO.SC.TC.01" ;
+	xpath:property
+			"{simmep:solarCollectPerf_FlatPlate_Coef1ofEffEquation='//ECM/component_catalogue/level[@id='7']/renewable_ecm[@id='1']/zero_loss_efficiency_Î·0/text()'}",
+			"{simmep:solarCollectPerf_FlatPlate_Coef2ofEffEquation='//ECM/component_catalogue/level[@id='7']/renewable_ecm[@id='1']/heat_loss_coefficient_k1/text()'}",
+			"{simmep:solarCollectPerf_FlatPlate_Coef3ofEffEquation='//ECM/component_catalogue/level[@id='7']/renewable_ecm[@id='1']/heat_loss_coefficientk2/text()'}"
+			;	
+	.
+	
+	#EYE ON THIS!: 	the property of the XML is "zero_loss_efficiency_η0" but we put "zero_loss_efficiency_Î·0" because someone has a different codification of the XML file

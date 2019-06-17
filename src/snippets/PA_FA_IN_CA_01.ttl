@@ -1,0 +1,237 @@
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix simcore: <http://www.opteemal.eu/schema/2017/01/SimModelCore#> .
+@prefix simres: <http://www.opteemal.eu/schema/2017/01/ResourcesGeneral#> .
+@prefix simgeom: <http://www.opteemal.eu/schema/2017/01/ResourcesGeometry#> .
+@prefix simbldg: <http://www.opteemal.eu/schema/2017/01/BuildingModel#> .
+@prefix simmep: <http://www.opteemal.eu/schema/2017/01/MepModel#> .
+@prefix simmodel: <http://www.opteemal.eu/schema/2017/01/Model#> .
+@prefix list: <https://w3id.org/list#> .
+@prefix inst: <http://to.replace#> .
+@prefix xpath: <http://www.opteemal.eu/xpath/prop#> .
+
+# last review: 2018.08.02
+
+# ================================================================================================
+# Internal Wall Insulation - Plasterboard (A2.1 - PA.FA.IN.CA.01) 
+# ================================================================================================
+# This snippet contains the information of 4 layers to be added in each external wall.
+# Internal wall insulation is insulation of the internal surface of external (heat losing) walls, 
+# so it is an alternative to external wall insulation. 
+# It is use where there is not a cavity or when external insulation is restricted because of 
+# historic building facade protection
+# ext ||  int
+#     || 
+#     || <----
+#     || 
+
+# ------------------------------------------------------------------------------------------------
+# LIST PART
+# ------------------------------------------------------------------------------------------------
+
+inst:MaterialLayers_List_MOD_PA_FA_IN_CA_1
+        a                 simres:MaterialLayers_List ;
+        list:hasContents  inst:SimMaterialLayer_OpaqueMaterialLayer_Default_MOD_PA_FA_IN_CA_1 ;
+        list:hasNext      inst:MaterialLayers_List_MOD_PA_FA_IN_CA_2 ;
+		.
+inst:MaterialLayers_List_MOD_PA_FA_IN_CA_2
+		a                 simres:MaterialLayers_List ;
+        list:hasContents  inst:SimMaterialLayer_OpaqueMaterialLayer_Default_MOD_PA_FA_IN_CA_2 ;
+        list:hasNext      inst:MaterialLayers_List_MOD_PA_FA_IN_CA_3 ;
+		.
+inst:MaterialLayers_List_MOD_PA_FA_IN_CA_3
+		a                 simres:MaterialLayers_List ;
+        list:hasContents  inst:SimMaterialLayer_OpaqueMaterialLayer_Default_MOD_PA_FA_IN_CA_3 ;        
+		list:hasNext      inst:MaterialLayers_List_MOD_PA_FA_IN_CA_4 ;
+		.
+inst:MaterialLayers_List_MOD_PA_FA_IN_CA_4
+		a                 simres:MaterialLayers_List ;
+        list:hasContents  inst:SimMaterialLayer_OpaqueMaterialLayer_Default_MOD_PA_FA_IN_CA_4 ;
+		.		
+
+# ------------------------------------------------------------------------------------------------
+# LAYER 1 - A2.1_L1 Air chamber - Non-Ventilated air chamber
+# ------------------------------------------------------------------------------------------------
+
+inst:SimMaterialLayer_OpaqueMaterialLayer_Default_MOD_PA_FA_IN_CA_1
+        a                             			simres:SimMaterialLayer_OpaqueMaterialLayer_Default ;
+        simres:layerThickness				   	"0.02"^^xsd:double ;
+		simres:isVentilated           			true ;
+        simres:layerMaterial          			inst:SimMaterial_OpaqueMaterial_AirGap_MOD_PA_FA_IN_CA_1 ;
+        simres:materialLayerName				"PA.FA.IN.CA.01-AIR CHAMBER LAYER" ;
+        simcore:simModelSubtype        			"Default" ;
+        simcore:simModelType           			"OpaqueMaterialLayer" ;
+        simcore:sourceModelObjectType  			"SimMaterialLayer" ;
+        simcore:sourceModelSchema      			"InstanceCreator" ;
+        simcore:refId                 			"XXX"^^xsd:ID ;
+		#xpath:property							"{simres:layerThickness='//ECM/component_catalogue/level[@id='7']/layer[@id='1']/thickness/text()'}" ;
+		.		
+inst:SimMaterial_OpaqueMaterial_AirGap_MOD_PA_FA_IN_CA_1
+        a                            			simres:SimMaterial_OpaqueMaterial_AirGap ;
+		simres:category                			"Air chamber" ;
+		simcore:simModelSubtype        			"Default" ;
+        simcore:simModelType           			"OpaqueMaterial" ;
+        simcore:sourceModelObjectType  			"SimMaterial" ;
+        simcore:sourceModelSchema      			"InstanceCreator" ;
+		simres:name				       			"PA.FA.IN.CA.01-Non-Ventilated air chamber" ;
+		# Properties from the ECM catalogue
+		simres:simMaterial_Density    			"1.225"^^xsd:double ; 		
+        simres:simMaterial_SpecificHeat			"1006.0"^^xsd:double ; 
+        simres:simMaterial_Cond       			"0.0257"^^xsd:double ;  
+		simres:simMaterial_ThermalAbsorptance 	"0.9"^^xsd:double ; #ASG 2018.08.18 Eplus range for this value is 0-1. ECM XML value: 1.22		
+		simres:simMaterial_SolarAbsorptance 	"0.2"^^xsd:double ;		
+		simres:simMaterial_Rough 				"VerySmooth" ;		
+		simres:simMaterial_VisAbsorptance 		"0.0"^^xsd:double ;		
+		simres:simMaterial_ThermalResist 		"0.17"^^xsd:double ;
+		simcore:refId                 			"XXX"^^xsd:ID ;
+		xpath:property	
+			#"{simres:simMaterial_Density='//ECM/component_catalogue/level[@id='7']/layer[@id='1']/density/text()'}",
+			#"{simres:simMaterial_SpecificHeat='//ECM/component_catalogue/level[@id='7']/layer[@id='1']/specific_heat/text()'}",
+			#"{simres:simMaterial_Cond='//ECM/component_catalogue/level[@id='7']/layer[@id='1']/thermal_conductivity/text()'}",
+			#"{simres:simMaterial_ThermalAbsorptance='//ECM/component_catalogue/level[@id='7']/layer[@id='1']/thermal_absorptance/text()'}",
+			#"{simres:simMaterial_SolarAbsorptance='//ECM/component_catalogue/level[@id='7']/layer[@id='1']/solar_absorptance/text()'}",
+			#"{simres:simMaterial_Rough='//ECM/component_catalogue/level[@id='7']/layer[@id='1']/roughness/text()'}",
+			#"{simres:simMaterial_VisAbsorptance='//ECM/component_catalogue/level[@id='7']/layer[@id='1']/visible_absorptance/text()'}",
+			"{simres:simMaterial_ThermalResist='//ECM/component_catalogue/level[@id='7']/layer[@id='1']/thermal_resistance/text()'}";
+		.		
+		
+# ------------------------------------------------------------------------------------------------
+# LAYER 2 - A2.1_L2 Insulation - Mineral wool (High performance)
+# ------------------------------------------------------------------------------------------------
+inst:SimMaterialLayer_OpaqueMaterialLayer_Default_MOD_PA_FA_IN_CA_2
+        a                             			simres:SimMaterialLayer_OpaqueMaterialLayer_Default ;
+        simres:isVentilated           			true ;
+        simres:layerMaterial          			inst:SimMaterial_OpaqueMaterial_Default_MOD_PA_FA_IN_CA_2 ;
+        simres:layerThickness				   	"0.04"^^xsd:double ; 		# Value that changes along the ECM family
+        simres:materialLayerName				"PA.FA.IN.CA.01-INSULATION LAYER" ;
+        simcore:simModelSubtype        			"Default" ;
+        simcore:simModelType           			"OpaqueMaterialLayer" ;
+        simcore:sourceModelObjectType  			"SimMaterialLayer" ;
+        simcore:sourceModelSchema      			"InstanceCreator" ;
+        simcore:refId                 			"XXX"^^xsd:ID ;
+		xpath:property
+			"{simres:layerThickness='//ECM/component_catalogue/level[@id='7']/layer[@id='2']/thickness/text()'}" ;
+		.		
+inst:SimMaterial_OpaqueMaterial_Default_MOD_PA_FA_IN_CA_2
+        a                            			simres:SimMaterial_OpaqueMaterial_Default ;		
+		simres:category                			"Insulation" ;
+		simcore:simModelSubtype        			"Default" ;
+        simcore:simModelType           			"OpaqueMaterial" ;
+        simcore:sourceModelObjectType  			"SimMaterial" ;
+        simcore:sourceModelSchema      			"InstanceCreator" ;
+		simres:name				       			"PA.FA.IN.CA.01-Mineral wool (High performance)" ;
+		# Properties from the ECM catalogue
+		simres:simMaterial_Density    			"30.0"^^xsd:double ; 		
+        simres:simMaterial_SpecificHeat			"840.0"^^xsd:double ; 
+        simres:simMaterial_Cond       			"0.034"^^xsd:double ;  
+		simres:simMaterial_ThermalAbsorptance 	"0.9"^^xsd:double ;		
+		simres:simMaterial_SolarAbsorptance 	"0.6"^^xsd:double ;		
+		simres:simMaterial_Rough 				"Rough" ;		
+		simres:simMaterial_VisAbsorptance 		"0.6"^^xsd:double ;		
+		simres:simMaterial_ThermalResist 		"1.18"^^xsd:double ;
+		simcore:refId                 			"XXX"^^xsd:ID ;	
+		xpath:property	
+			"{simres:simMaterial_Density='//ECM/component_catalogue/level[@id='7']/layer[@id='2']/density/text()'}",
+			"{simres:simMaterial_SpecificHeat='//ECM/component_catalogue/level[@id='7']/layer[@id='2']/specific_heat/text()'}",
+			"{simres:simMaterial_Cond='//ECM/component_catalogue/level[@id='7']/layer[@id='2']/thermal_conductivity/text()'}",
+			"{simres:simMaterial_ThermalAbsorptance='//ECM/component_catalogue/level[@id='7']/layer[@id='2']/thermal_absorptance/text()'}",
+			"{simres:simMaterial_SolarAbsorptance='//ECM/component_catalogue/level[@id='7']/layer[@id='2']/solar_absorptance/text()'}",
+			#"{simres:simMaterial_Rough='//ECM/component_catalogue/level[@id='7']/layer[@id='2']/roughness/text()'}",
+			"{simres:simMaterial_VisAbsorptance='//ECM/component_catalogue/level[@id='7']/layer[@id='2']/visible_absorptance/text()'}",
+			"{simres:simMaterial_ThermalResist='//ECM/component_catalogue/level[@id='7']/layer[@id='2']/thermal_resistance/text()'}";
+		.
+		
+# ------------------------------------------------------------------------------------------------
+# LAYER 3 - A2.1_L3 VCL - Aluminium composite with polyester
+# ------------------------------------------------------------------------------------------------
+
+inst:SimMaterialLayer_OpaqueMaterialLayer_Default_MOD_PA_FA_IN_CA_3
+        a                             			simres:SimMaterialLayer_OpaqueMaterialLayer_Default ;
+        simres:isVentilated           			true ;
+        simres:layerMaterial          			inst:SimMaterial_OpaqueMaterial_Default_MOD_PA_FA_IN_CA_3 ;
+		simres:layerThickness				   	"0.002"^^xsd:double ;
+        simres:materialLayerName				"PA.FA.IN.CA.01-VCL LAYER" ;
+        simcore:simModelSubtype        			"Default" ;
+        simcore:simModelType           			"OpaqueMaterialLayer" ;
+        simcore:sourceModelObjectType  			"SimMaterialLayer" ;
+        simcore:sourceModelSchema      			"InstanceCreator" ;
+        simcore:refId                 			"XXX"^^xsd:ID ;
+		xpath:property
+			"{simres:layerThickness='//ECM/component_catalogue/level[@id='7']/layer[@id='3']/thickness/text()'}" ;
+		.		
+inst:SimMaterial_OpaqueMaterial_Default_MOD_PA_FA_IN_CA_3
+        a                            			simres:SimMaterial_OpaqueMaterial_Default ;		
+		simres:category                			"Aluminium" ;
+		simcore:simModelSubtype        			"Default" ;
+        simcore:simModelType           			"OpaqueMaterial" ;
+        simcore:sourceModelObjectType  			"SimMaterial" ;
+        simcore:sourceModelSchema      			"InstanceCreator" ;
+		simres:name				       			"PA.FA.IN.CA.01-Aluminium composite with polyester" ;
+		# Properties from the ECM catalogue
+		simres:simMaterial_Density    			"1000."^^xsd:double ; 
+        simres:simMaterial_SpecificHeat			"840."^^xsd:double ; 
+        simres:simMaterial_Cond       			"1.0"^^xsd:double ;  
+		simres:simMaterial_ThermalAbsorptance 	"0.9"^^xsd:double ;
+		simres:simMaterial_SolarAbsorptance 	"0.7"^^xsd:double ;
+		simres:simMaterial_Rough 				"Smooth" ;
+		simres:simMaterial_VisAbsorptance 		"0.7"^^xsd:double ;
+		simres:simMaterial_ThermalResist 		"0.002"^^xsd:double ;
+		simcore:refId                 			"XXX"^^xsd:ID ;
+		xpath:property	
+			"{simres:simMaterial_Density='//ECM/component_catalogue/level[@id='7']/layer[@id='3']/density/text()'}",
+			"{simres:simMaterial_SpecificHeat='//ECM/component_catalogue/level[@id='7']/layer[@id='3']/specific_heat/text()'}",
+			"{simres:simMaterial_Cond='//ECM/component_catalogue/level[@id='7']/layer[@id='3']/thermal_conductivity/text()'}",
+			"{simres:simMaterial_ThermalAbsorptance='//ECM/component_catalogue/level[@id='7']/layer[@id='3']/thermal_absorptance/text()'}",
+			"{simres:simMaterial_SolarAbsorptance='//ECM/component_catalogue/level[@id='7']/layer[@id='3']/solar_absorptance/text()'}",
+			#"{simres:simMaterial_Rough='//ECM/component_catalogue/level[@id='7']/layer[@id='3']/roughness/text()'}",
+			"{simres:simMaterial_VisAbsorptance='//ECM/component_catalogue/level[@id='7']/layer[@id='3']/visible_absorptance/text()'}",
+			"{simres:simMaterial_ThermalResist='//ECM/component_catalogue/level[@id='7']/layer[@id='3']/thermal_resistance/text()'}";		
+		.
+
+# ------------------------------------------------------------------------------------------------
+# LAYER 4 - A2.1_L4 Finishing layer - Laminated gypsum board + fixing elements
+# ------------------------------------------------------------------------------------------------
+
+inst:SimMaterialLayer_OpaqueMaterialLayer_Default_MOD_PA_FA_IN_CA_4
+        a                             			simres:SimMaterialLayer_OpaqueMaterialLayer_Default ;
+        simres:isVentilated           			true ;
+        simres:layerMaterial          			inst:SimMaterial_OpaqueMaterial_Default_MOD_PA_FA_IN_CA_4 ;
+		simres:layerThickness				   	"0.015"^^xsd:double ;
+        simres:materialLayerName				"PA.FA.IN.CA.01-FINISHING LAYER" ;
+        simcore:simModelSubtype        			"Default" ;
+        simcore:simModelType           			"OpaqueMaterialLayer" ;
+        simcore:sourceModelObjectType  			"SimMaterialLayer" ;
+        simcore:sourceModelSchema      			"InstanceCreator" ;
+        simcore:refId                 			"XXX"^^xsd:ID ;
+		xpath:property
+			"{simres:layerThickness='//ECM/component_catalogue/level[@id='7']/layer[@id='4']/thickness/text()'}" ;
+		.		
+inst:SimMaterial_OpaqueMaterial_Default_MOD_PA_FA_IN_CA_4
+        a                            			simres:SimMaterial_OpaqueMaterial_Default ;		
+		simres:category                			"Laminated gypsum board" ;
+		simcore:simModelSubtype        			"Default" ;
+        simcore:simModelType           			"OpaqueMaterial" ;
+        simcore:sourceModelObjectType  			"SimMaterial" ;
+        simcore:sourceModelSchema      			"InstanceCreator" ;
+		simres:name				       			"PA.FA.IN.CA.01-Laminated gypsum board + fixing elements" ;
+		# Properties from the ECM catalogue
+		simres:simMaterial_Density    			"30."^^xsd:double ; 
+        simres:simMaterial_SpecificHeat			"1000."^^xsd:double ; 
+        simres:simMaterial_Cond       			"0.25"^^xsd:double ;  
+		simres:simMaterial_ThermalAbsorptance 	"0.9"^^xsd:double ;
+		simres:simMaterial_SolarAbsorptance 	"0.5"^^xsd:double ;
+		simres:simMaterial_Rough 				"MediumSmooth" ;
+		simres:simMaterial_VisAbsorptance 		"0.5"^^xsd:double ;
+		simres:simMaterial_ThermalResist 		"0.06"^^xsd:double ;
+		simcore:refId                 			"XXX"^^xsd:ID ;
+		xpath:property	
+			"{simres:simMaterial_Density='//ECM/component_catalogue/level[@id='7']/layer[@id='4']/density/text()'}",
+			"{simres:simMaterial_SpecificHeat='//ECM/component_catalogue/level[@id='7']/layer[@id='4']/specific_heat/text()'}",
+			"{simres:simMaterial_Cond='//ECM/component_catalogue/level[@id='7']/layer[@id='4']/thermal_conductivity/text()'}",
+			"{simres:simMaterial_ThermalAbsorptance='//ECM/component_catalogue/level[@id='7']/layer[@id='4']/thermal_absorptance/text()'}",
+			"{simres:simMaterial_SolarAbsorptance='//ECM/component_catalogue/level[@id='7']/layer[@id='4']/solar_absorptance/text()'}",
+			#"{simres:simMaterial_Rough='//ECM/component_catalogue/level[@id='7']/layer[@id='4']/roughness/text()'}",
+			"{simres:simMaterial_VisAbsorptance='//ECM/component_catalogue/level[@id='7']/layer[@id='4']/visible_absorptance/text()'}",
+			"{simres:simMaterial_ThermalResist='//ECM/component_catalogue/level[@id='7']/layer[@id='4']/thermal_resistance/text()'}";		
+		.

@@ -1,0 +1,326 @@
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix simcore: <http://www.opteemal.eu/schema/2017/01/SimModelCore#> .
+@prefix simres: <http://www.opteemal.eu/schema/2017/01/ResourcesGeneral#> .
+@prefix simgeom: <http://www.opteemal.eu/schema/2017/01/ResourcesGeometry#> .
+@prefix simbldg: <http://www.opteemal.eu/schema/2017/01/BuildingModel#> .
+@prefix simmep: <http://www.opteemal.eu/schema/2017/01/MepModel#> .
+@prefix simmodel: <http://www.opteemal.eu/schema/2017/01/Model#> .
+@prefix list: <https://w3id.org/list#> .
+@prefix inst: <http://to.replace#> .
+@prefix xpath: <http://www.opteemal.eu/xpath/prop#> .
+
+# This snippet contains the information of three layer to be added in each external cavity wall of a ventilated façade.
+
+inst:SimVentilationAssembly_VentilationAssembly_ExteriorNaturallyVentilatedCavity_MOD_1
+    rdf:type           														simres:SimVentilationAssembly_VentilationAssembly_ExteriorNaturallyVentilatedCavity ;
+	simbldg:simVentilationAssembly_Name										"XXX"^^xsd:string ;										# e.g., cavity1				- Name
+	simbldg:simVentilationAssembly_BoundaryCondModelName					inst:SimWall_OtherSideConditionsModel_Default_MOD_1 ;	# e.g., Cavity_Model		- Boundary Conditions Model Name	
+	simbldg:simVentilationAssembly_AreaFractOpngs							"0.02"^^xsd:double ;																#- Area Fraction of Openings {dimensionless}			
+	simbldg:simVentilationAssembly_ThermalEmisExtBaffleMatl					"0.9"^^xsd:double ;																	#- Thermal Emissivity of Exterior Baffle Material {dimensionless}					
+	simbldg:simVentilationAssembly_SolarAbsorbExtBaffle						"0.7"^^xsd:double ;																	#- Solar Absorbtivity of Exterior Baffle {dimensionless}
+	simbldg:simVentilationAssembly_HeightScaleForBuoyancyDrivenVent			"0.05"^^xsd:double ;																#- Height Scale for Buoyancy-Driven Ventilation {m}
+	simbldg:simVentilationAssembly_EffecThickCavityBehindExtBaffle			"0.05"^^xsd:double ;																#- Effective Thickness of Cavity Behind Exterior Baffle {m}
+	simbldg:simVentilationAssembly_RatioActSurfAreaToProjSurfArea			"0.98"^^xsd:double ;																#- Ratio of Actual Surface Area to Projected Surface Area {dimensionless}
+	simbldg:simVentilationAssembly_RoughExtSurf								"MediumSmooth"^^xsd:string ;														#- Roughness of Exterior Surface
+	simbldg:simVentilationAssembly_EffectForPerfWithRespectToWind			"0.25"^^xsd:double ;																#- Effectiveness for Perforations with Respect to Wind {dimensionless}
+	simbldg:simVentilationAssembly_DischargeCoefForOpngsBuoyancyDrivenFlow 	"0.65"^^xsd:double ;																#- Discharge Coefficient for Openings with Respect to Buoyancy Driven Flow {dimensionless}
+	simbldg:simVentilationAssembly_SurfName_1_10							inst:SimVentilationAssembly_SurfName_1_10_List_MOD_1 ;	# e.g., ZONE SURFACE NORTH	#- Name
+	.		
+ 
+inst:SimWall_OtherSideConditionsModel_Default_MOD_1		
+	rdf:type																simbldg:SimWall_OtherSideConditionsModel_Default ;
+	simbldg:name															"XXXX"^^xsd:string ;									# e.g., ZONE SURFACE NORTH,            	#- Name
+	simbldg:wallThickness													"0.12"^^xsd:double ;									# 0.02 (L1) + 0.05 (L2) + 0.05 (L3)
+	simbldg:surfProp_OtherSideCondsModel_TypeOfModeling						"GapConvectionRadiation"^^xsd:string ;					# e.g., GapConvectionRadiation;  		#- Type of Modeling
+	simbldg:simWall_SurfType												"Wall"^^xsd:string ;	
+	#simbldg:containedBldgElementArrays						
+	#simbldg:representation
+	#simbldg:constructionType
+	#simbldg:wallIsExternal
+	#simbldg:compositeThermalTrans
+	#simbldg:photoVotaicArrayOnElement
+	#simbldg:photoVotaicArrayOnElement
+	#simbldg:wallHeight
+	#simbldg:wallLength	
+	#simbldg:wallGrossSideArea
+	#simbldg:wallNetSideArea
+	#simbldg:wallGrossVolume
+	#simbldg:wallNetVolume
+	#simbldg:classRef_UniFormat
+	#simbldg:materialLayerSet												inst:MaterialLayers_List_MOD_1
+	#simbldg:connectedSlabs
+	#simbldg:connectedWalls
+	#simbldg:simWall_Name	
+	#simbldg:simWall_ConstructionName										"LTWALL"^^xsd:string ;
+	#simbldg:simWall_ZoneName												"ZONE ONE"^^xsd:string ;                #- Zone Name
+	#simbldg:simWall_OutsdBndCond
+	#simbldg:simWall_OutsdBndCondObject
+	#simbldg:simWall_SunExposure
+	#simbldg:simWall_WindExposure
+	#simbldg:simWall_ViewFactToGnd
+	#simbldg:simWall_NumbVerts
+	#simbldg:simWall_Vertex_1_120_X_Coord
+	#simbldg:simWall_Vertex_1_120_Y_Coord
+	#simbldg:simWall_Vertex_1_120_Z_Coord
+	#simbldg:surfProp_OtherSideCondsModel_Name	
+	.
+	
+inst:SimVentilationAssembly_SurfName_1_10_List_MOD_1
+	rdf:type           	simres:SimVentilationAssembly_SurfName_1_10_List ;
+	list:hasContents	inst:SimWall_OtherSideConditionsModel_Detailed_MOD_1 ;
+	.
+	
+inst:SimWall_OtherSideConditionsModel_Detailed_MOD_1
+	rdf:type											simbldg:SimWall_OtherSideConditionsModel_Detailed ;			# BuildingSurface:Detailed
+	#simbldg:containedBldgElementArrays
+	simbldg:name										"XXX"^^xsd:string ;	
+	#simbldg:representation								
+	#simbldg:constructionType
+	#simbldg:wallIsExternal
+	#simbldg:compositeThermalTrans
+	#simbldg:photoVotaicArrayOnElement
+	#simbldg:wallHeight
+	#simbldg:wallLength
+	simbldg:wallThickness								"0.12"^^xsd:double ; 										# 0.02 (L1) + 0.05 (L2) + 0.05 (L3)
+	#simbldg:wallGrossSideArea
+	#simbldg:wallNetSideArea
+	#simbldg:wallGrossVolume
+	#simbldg:wallNetVolume
+	#simbldg:classRef_UniFormat
+	#simbldg:materialLayerSet							inst:MaterialLayers_List_MOD_1
+	#simbldg:connectedSlabs
+	#simbldg:connectedWalls
+	#simbldg:simWall_Name
+	simbldg:simWall_ConstructionName					"LTWALL"^^xsd:string ;
+	simbldg:simWall_ZoneName							"ZONE ONE"^^xsd:string ;                				#- Zone Name
+	simbldg:simWall_OutsdBndCond						"OtherSideConditionsModel"^^xsd:string ;  				#- Outside Boundary Condition
+	simbldg:simWall_OutsdBndCondObject					inst:SimWall_OtherSideConditionsModel_Default_MOD_1 ;	#- Outside Boundary Condition Object
+	simbldg:simWall_SunExposure							"SunExposed"^^xsd:string ;             					#- Sun Exposure
+	simbldg:simWall_WindExposure						"WindExposed"^^xsd:string ;  							#- Wind Exposure
+	simbldg:simWall_ViewFactToGnd						"0.5000000"^^xsd:double ;								#- View Factor to Ground
+	simbldg:simWall_NumbVerts							"4.0"^^xsd:double ;									#- Number of Vertices
+	simbldg:simWall_VertexXCoord_1_10					inst:simWall_VertexXCoord_1_10_X_1 ; 					#- Vertex 1 X-coordinate {m}
+	simbldg:simWall_VertexYCoord_1_10					inst:simWall_VertexXCoord_1_10_Y_1 ;					#- Vertex 1 Y-coordinate {m}
+	simbldg:simWall_VertexZCoord_1_10					inst:simWall_VertexXCoord_1_10_Z_1 ;					#- Vertex 1 Z-coordinate {m}
+	.
+inst:simWall_VertexXCoord_1_10_X_1	
+	rdf:type						simcore:doubleList ;
+	list:hasContents  				"X1"^^xsd:double ;
+    list:hasNext      				inst:simWall_VertexXCoord_1_10_X_2 ;
+	.	
+inst:simWall_VertexXCoord_1_10_X_2
+rdf:type							simcore:doubleList ;
+	list:hasContents  				"X2"^^xsd:double ;
+    list:hasNext      				inst:simWall_VertexXCoord_1_10_X_3 ;
+	.	
+inst:simWall_VertexXCoord_1_10_X_3
+rdf:type							simcore:doubleList ;
+	list:hasContents  				"X3"^^xsd:double ;
+    list:hasNext      				inst:simWall_VertexXCoord_1_10_X_4 ;
+	.	
+inst:simWall_VertexXCoord_1_10_X_4
+rdf:type							simcore:doubleList ;
+	list:hasContents  				"X4"^^xsd:double ;
+	.	
+	
+inst:simWall_VertexXCoord_1_10_Y_1	
+	rdf:type						simcore:doubleList ;
+	list:hasContents  				"Y1"^^xsd:double ;
+    list:hasNext      				inst:simWall_VertexXCoord_1_10_Y_2 ;
+	.	
+inst:simWall_VertexXCoord_1_10_Y_2
+rdf:type							simcore:doubleList ;
+	list:hasContents  				"Y2"^^xsd:double ;
+    list:hasNext      				inst:simWall_VertexXCoord_1_10_Y_3 ;
+	.	
+inst:simWall_VertexXCoord_1_10_Y_3
+rdf:type							simcore:doubleList ;
+	list:hasContents  				"Y3"^^xsd:double ;
+    list:hasNext      				inst:simWall_VertexXCoord_1_10_Y_4 ;
+	.	
+inst:simWall_VertexXCoord_1_10_Y_4
+rdf:type							simcore:doubleList ;
+	list:hasContents  				"Y4"^^xsd:double ;
+	.
+	
+inst:simWall_VertexXCoord_1_10_Z_1	
+	rdf:type						simcore:doubleList ;
+	list:hasContents  				"Z1"^^xsd:double ;
+    list:hasNext      				inst:simWall_VertexXCoord_1_10_Z_2 ;
+	.	
+inst:simWall_VertexXCoord_1_10_Z_2
+rdf:type							simcore:doubleList ;
+	list:hasContents  				"Z2"^^xsd:double ;
+    list:hasNext      				inst:simWall_VertexXCoord_1_10_Z_3 ;
+	.	
+inst:simWall_VertexXCoord_1_10_Z_3
+rdf:type							simcore:doubleList ;
+	list:hasContents  				"Z3"^^xsd:double ;
+    list:hasNext      				inst:simWall_VertexXCoord_1_10_Z_4 ;
+	.	
+inst:simWall_VertexXCoord_1_10_Z_4
+rdf:type							simcore:doubleList ;
+	list:hasContents  				"Z4"^^xsd:double ;
+	.
+	
+	
+# ------------------------------------------------------------------------------------------------
+# LIST PART
+# ------------------------------------------------------------------------------------------------
+
+inst:MaterialLayers_List_MOD_1
+    a                 						simres:MaterialLayers_List ;
+    list:hasContents  						inst:SimMaterialLayer_OpaqueMaterialLayer_Default_MOD_1 ;
+	.		
+inst:SimMaterialLayer_OpaqueMaterialLayer_Default_MOD_1
+    a                             			simres:SimMaterialLayer_OpaqueMaterialLayer_Default ;
+    simres:layerThickness				   	"0.12"^^xsd:double ;											# 0.02 (L1) + 0.05 (L2) + 0.05 (L3)
+	simres:isVentilated           			"true"^^xsd:boolean ;
+    simres:layerMaterial          			inst:SimMaterial_OpaqueMaterial_Default_MOD_1 ;
+    simres:materialLayerName				"MATERIAL-LAYER-VF-1-Insulation"^^xsd:string ;
+    simcore:simModelSubtype        			"Default"^^xsd:string ;
+    simres:simModelType           			"OpaqueMaterialLayer"^^xsd:string ;
+    simres:sourceModelObjectType  			"SimMaterialLayer"^^xsd:string ;
+    simcore:sourceModelSchema      			"InstanceCreator"^^xsd:string ;
+    simcore:refId                 			"XXX"^^xsd:ID ;
+	.
+inst:SimMaterial_OpaqueMaterial_Default_MOD_1
+    a                            			simres:SimMaterial_OpaqueMaterial_Default ;		
+	simres:name				       			"Insulation"^^xsd:string ;
+    simres:simModelType           			"OpaqueMaterial"^^xsd:string ;
+	simcore:simModelSubtype        			"Default"^^xsd:string ;
+    simres:sourceModelObjectType  			"SimMaterial"^^xsd:string ;
+    simcore:sourceModelSchema      			"InstanceCreator"^^xsd:string ;	
+	# Properties from the ECM catalogue
+	simres:simMaterial_Density    			"1100."^^xsd:double ; 
+    simres:simMaterial_SpecificHeat			"1000."^^xsd:double ; 
+    simres:simMaterial_Cond       			"0.23"^^xsd:double ;  
+	simres:simMaterial_ThermalAbsorptance 	"0.9"^^xsd:double ;
+	simres:simMaterial_SolarAbsorptance 	"0.7"^^xsd:double ;
+	simres:simMaterial_Rough 				"MediumSmooth"^^xsd:string ;
+	simres:simMaterial_VisAbsorptance 		"0.7"^^xsd:double ;
+	simres:simMaterial_ThermalResist 		"0.087"^^xsd:double ;
+	simcore:refId    	 					"XXX"^^xsd:ID ;
+	.		
+
+#inst:MaterialLayers_List_MOD_1
+#        a                 simres:MaterialLayers_List ;
+#        list:hasContents  inst:SimMaterialLayer_OpaqueMaterialLayer_Default_MOD_1 ;
+#        list:hasNext      inst:MaterialLayers_List_MOD_2 ;
+#		.
+#inst:MaterialLayers_List_MOD_2
+#		a                 simres:MaterialLayers_List ;
+#        list:hasContents  inst:SimMaterialLayer_OpaqueMaterialLayer_Default_MOD_2 ;
+#        list:hasNext      inst:MaterialLayers_List_MOD_3 ;
+#		.
+#inst:MaterialLayers_List_MOD_3
+#		a                 simres:MaterialLayers_List ;
+#        list:hasContents  inst:SimMaterialLayer_OpaqueMaterialLayer_Default_MOD_3 ;        
+#		.
+#	
+# ------------------------------------------------------------------------------------------------
+# LAYER 1 - Concrete polymer 
+# ------------------------------------------------------------------------------------------------
+#
+#inst:SimMaterialLayer_OpaqueMaterialLayer_Default_MOD_1
+#       a                             			simres:SimMaterialLayer_OpaqueMaterialLayer_Default ;
+#       simres:layerThickness				   	"0.02"^^xsd:double ;
+#		simres:isVentilated           			"true"^^xsd:boolean ;
+#       simres:layerMaterial          			inst:SimMaterial_OpaqueMaterial_Default_MOD_1 ;
+#       simres:materialLayerName				"MATERIAL-LAYER-VF-1-Insulation"^^xsd:string ;
+#       simcore:simModelSubtype        			"Default"^^xsd:string ;
+#       simres:simModelType           			"OpaqueMaterialLayer"^^xsd:string ;
+#       simres:sourceModelObjectType  			"SimMaterialLayer"^^xsd:string ;
+#       simcore:sourceModelSchema      			"InstanceCreator"^^xsd:string ;
+#       simcore:refId                 			"XXX"^^xsd:ID ;
+#		.		
+#inst:SimMaterial_OpaqueMaterial_Default_MOD_1
+#       a                            			simres:SimMaterial_OpaqueMaterial_Default ;		
+#		simcore:simModelSubtype        			"Default"^^xsd:string ;
+#       simres:simModelType           			"OpaqueMaterial"^^xsd:string ;
+#       simres:sourceModelObjectType  			"SimMaterial"^^xsd:string ;
+#       simcore:sourceModelSchema      			"InstanceCreator"^^xsd:string ;
+#		simres:name				       			"Structure + Concrete bonded polymer particle board"^^xsd:string ;
+#		# Properties from the ECM catalogue
+#		simres:simMaterial_Density    			"1100."^^xsd:double ; 
+#       simres:simMaterial_SpecificHeat			"1000."^^xsd:double ; 
+#       simres:simMaterial_Cond       			"0.23"^^xsd:double ;  
+#		simres:simMaterial_ThermalAbsorptance 	"0.9"^^xsd:double ;
+#		simres:simMaterial_SolarAbsorptance 	"0.7"^^xsd:double ;
+#		simres:simMaterial_Rough 				"MediumSmooth"^^xsd:string ;
+#		simres:simMaterial_VisAbsorptance 		"0.7"^^xsd:double ;
+#		simres:simMaterial_ThermalResist 		"0.087"^^xsd:double ;
+#		simcore:refId                 			"XXX"^^xsd:ID ;
+#		.		
+#		
+# ------------------------------------------------------------------------------------------------
+# LAYER 2 - Air chamber 50 mm
+# ------------------------------------------------------------------------------------------------
+#inst:SimMaterialLayer_OpaqueMaterialLayer_Default_MOD_2
+#       a                             			simres:SimMaterialLayer_OpaqueMaterialLayer_Default ;
+#       simres:isVentilated           			"true"^^xsd:boolean ;
+#       simres:layerMaterial          			inst:SimMaterial_OpaqueMaterial_Default_MOD_2 ;
+#       simres:layerThickness				   	"0.05"^^xsd:double ; 
+#       simres:materialLayerName				"MATERIAL-LAYER-VF-2-Chamber"^^xsd:string ;
+#       simcore:simModelSubtype        			"Default"^^xsd:string ;
+#       simres:simModelType           			"OpaqueMaterialLayer"^^xsd:string ;
+#       simres:sourceModelObjectType  			"SimMaterialLayer"^^xsd:string ;
+#       simcore:sourceModelSchema      			"InstanceCreator"^^xsd:string ;
+#       simcore:refId                 			"XXX"^^xsd:ID ;
+#		.		
+#inst:SimMaterial_OpaqueMaterial_Default_MOD_2
+#       a                            			simres:SimMaterial_OpaqueMaterial_Default ;		
+#		simcore:simModelSubtype        			"Default"^^xsd:string ;
+#       simres:simModelType           			"OpaqueMaterial"^^xsd:string ;
+#       simres:sourceModelObjectType  			"SimMaterial"^^xsd:string ;
+#       simcore:sourceModelSchema      			"InstanceCreator"^^xsd:string ;
+#		simres:name				       			"Ventilated air chamber"^^xsd:string ;
+#		# Properties from the ECM catalogue
+#		simres:simMaterial_Density    			"0.0"^^xsd:double ; 
+#       simres:simMaterial_SpecificHeat			"0.0"^^xsd:double ; 
+#       simres:simMaterial_Cond       			"0.0"^^xsd:double ;  
+#		simres:simMaterial_ThermalAbsorptance 	"0.0"^^xsd:double ;
+#		simres:simMaterial_SolarAbsorptance 	"0.0"^^xsd:double ;
+#		simres:simMaterial_Rough 				"MediumSmooth"^^xsd:string ;
+#		simres:simMaterial_VisAbsorptance 		"0.0"^^xsd:double ;
+#		simres:simMaterial_ThermalResist 		"0.08"^^xsd:double ;
+#		simcore:refId                 			"XXX"^^xsd:ID ;
+#		.
+#		
+# ------------------------------------------------------------------------------------------------
+# LAYER 3 - Mineral wool [50]
+# ------------------------------------------------------------------------------------------------
+#
+#inst:SimMaterialLayer_OpaqueMaterialLayer_Default_MOD_3
+#       a                             			simres:SimMaterialLayer_OpaqueMaterialLayer_Default ;
+#       simres:isVentilated           			"true"^^xsd:boolean ;
+#       simres:layerMaterial          			inst:SimMaterial_OpaqueMaterial_Default_MOD_3 ;
+#      	simres:layerThickness				   	"0.05"^^xsd:double ;
+#		simres:materialLayerName				"MATERIAL-LAYER-VF-3-Cladding"^^xsd:string ;
+#    	simcore:simModelSubtype        			"Default"^^xsd:string ;
+#   	simres:simModelType           			"OpaqueMaterialLayer"^^xsd:string ;
+#  		simres:sourceModelObjectType  			"SimMaterialLayer"^^xsd:string ;
+# 		simcore:sourceModelSchema      			"InstanceCreator"^^xsd:string ;
+#       simcore:refId                 			"XXX"^^xsd:ID ;
+#		.		
+#inst:SimMaterial_OpaqueMaterial_Default_MOD_3
+#        a                            			simres:SimMaterial_OpaqueMaterial_Default ;		
+#		simcore:simModelSubtype        			"Default"^^xsd:string ;
+#       simres:simModelType           			"OpaqueMaterial"^^xsd:string ;
+#        simres:sourceModelObjectType  			"SimMaterial"^^xsd:string ;
+#       simcore:sourceModelSchema      			"InstanceCreator"^^xsd:string ;
+#		simres:name				       			"Mineral wool (High performance)"^^xsd:string ;
+#		# Properties from the ECM catalogue
+#		simres:simMaterial_Density    			"30."^^xsd:double ; 
+#       simres:simMaterial_SpecificHeat			"840."^^xsd:double ; 
+#        simres:simMaterial_Cond       			"0.034"^^xsd:double ;  
+#		simres:simMaterial_ThermalAbsorptance 	"0.9"^^xsd:double ;
+#		simres:simMaterial_SolarAbsorptance 	"0.6"^^xsd:double ;
+#		simres:simMaterial_Rough 				"Rough"^^xsd:string ;
+#		simres:simMaterial_VisAbsorptance 		"0.6"^^xsd:double ;
+#		simres:simMaterial_ThermalResist 		"0.0"^^xsd:double ;
+#		simcore:refId                 			"XXX"^^xsd:ID ;
+#		.
+

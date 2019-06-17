@@ -1,0 +1,190 @@
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix simcore: <http://www.opteemal.eu/schema/2017/01/SimModelCore#> .
+@prefix simres: <http://www.opteemal.eu/schema/2017/01/ResourcesGeneral#> .
+@prefix simgeom: <http://www.opteemal.eu/schema/2017/01/ResourcesGeometry#> .
+@prefix simbldg: <http://www.opteemal.eu/schema/2017/01/BuildingModel#> .
+@prefix simmep: <http://www.opteemal.eu/schema/2017/01/MepModel#> .
+@prefix simmodel: <http://www.opteemal.eu/schema/2017/01/Model#> .
+@prefix list: <https://w3id.org/list#> .
+@prefix inst: <http://to.replace#> .
+@prefix xpath: <http://www.opteemal.eu/xpath/prop#> .
+
+# last review: 2019.02.11
+
+# ================================================================================================
+# Roof Pitched - External insulation (PA.OP.DG.DE.02)
+# ================================================================================================
+# Replacement of the windows of the buildings improves thermal behaviour and also comfort. 
+# Its modification also gives a new and better aesthetical appearance to the building, 
+# increasing its value.
+#
+# Actions:
+#
+#	Install three NEW material layers (with their properties) replacing the old ones 
+#	from previous baseline window wall (elements: windows and curtain walls)
+#   order layers: from the exterior to interior (according to the current ECM catalogue):
+#	-remove all previous layers.
+#	+1. L1: Glass
+#   +1. L2: Gas
+#	+1. L3: Glass
+#         |   |
+#         -----   
+#         || ||
+# ext --> || || <-- int
+#         || ||   
+#         -----   
+#         |   |
+
+# IMPORTANT: framework material layers are not currently transformed from the SimModel.
+
+inst:SimList_MaterialList_MOD_PA_OP_DG_DE_1
+	a                 				simbldg:SimList_MaterialList ;
+	simbldg:name                   	"CONSTRUCTION-LIST-XXXXX" ;
+	simbldg:materials         		inst:Materials_List_MOD_PA_OP_DG_DE_1 ;
+	simcore:isTemplateObject       	false ;
+	simcore:refId                  	"XXX"^^xsd:ID ;
+	simcore:simModelType           	"MaterialList" ;
+	simcore:simUniqueID            	"not defined" ;
+	simcore:sourceModelObjectType  	"IfcMaterialConstituentSet" ;
+	simcore:sourceModelSchema      	"IFC4" ;
+	.
+inst:Materials_List_MOD_PA_OP_DG_DE_1
+	a                 simbldg:Materials_List ;
+	list:hasContents  inst:SimMaterial_GlazingMaterial_Glazing_MOD_PA_OP_DG_DE_1 ;
+	list:hasNext      inst:Materials_List_MOD_PA_OP_DG_DE_2 ;
+	.
+inst:Materials_List_MOD_PA_OP_DG_DE_2
+	a                 simbldg:Materials_List ;
+	list:hasContents  inst:SimMaterial_GlazingMaterial_Gas_MOD_PA_OP_DG_DE_2 ;
+	list:hasNext      inst:Materials_List_MOD_PA_OP_DG_DE_3 ;
+	.
+inst:Materials_List_MOD_PA_OP_DG_DE_3
+	a                 simbldg:Materials_List ;
+	list:hasContents  inst:SimMaterial_GlazingMaterial_Glazing_MOD_PA_OP_DG_DE_3 ;
+	.	
+
+# ------------------------------------------------------------------------------------------------
+# LAYER 1 - L1 Glass
+# ------------------------------------------------------------------------------------------------
+	
+inst:SimMaterial_GlazingMaterial_Glazing_MOD_PA_OP_DG_DE_1
+	a														simres:SimMaterial_GlazingMaterial_Glazing ;
+	simres:name				       							"MATERIAL-XXX" ;
+	simres:category											"Glass" ;
+	simcore:simModelType           							"Glass" ;
+	simcore:simModelSubtype        							"Default" ;
+	simcore:sourceModelObjectType  							"SimMaterial" ;
+	simcore:sourceModelSchema      							"InstanceCreator" ;
+	# Properties from the ECM catalogue
+	simres:simMaterial_OpticalDataType						"SpectralAverage" ;			# Temporary -> has to be included in the EXCEL (ECM catalogue)
+	simres:simMaterial_Thick								"0.006"^^xsd:double ;		# thickness
+	simres:simMaterial_Cond 								"1.00"^^xsd:double ;		# thermal conductivity
+	simres:simMaterial_SolarTransAtNrmlIncent				"0.89"^^xsd:double ;		# solar transmittance
+	simres:simMaterial_FrontSideVisReflectAtNrmlIncent		"0.082"^^xsd:double ;		# exterior visible solar reflectance
+	simres:simMaterial_BackSideVisReflectAtNrmlIncent		"0.082"^^xsd:double ;		# interior visible solar reflectance
+	simres:simMaterial_VisTransAtNrmlIncent 				"0.91"^^xsd:double ;		# visual transmittance
+	simres:simMaterial_FrontSideSolarReflectAtNrmlIncent	"0.79"^^xsd:double ;		# exterior solar reflectance
+	simres:simMaterial_BackSideSolarReflectAtNrmlIncent		"0.79"^^xsd:double ;		# interior solar reflectance
+	simres:simMaterial_FrontSideInfraredHemisphEmis			"0.84"^^xsd:double ;		# exterior emissivity / interior emissivity
+	simres:simMaterial_BackSideInfraredHemisphEmis			"0.84"^^xsd:double ;		# exterior emissivity / interior emissivity	
+	simcore:refId                 							"XXX"^^xsd:ID ;
+	xpath:property	
+		"{simres:simMaterial_Thick='//ECM/component_catalogue/level[@id=\"7 (glazing - layer 1)\"]/thickness/text()'}" ,
+		"{simres:simMaterial_Cond='//ECM/component_catalogue/level[@id=\"7 (glazing - layer 1)\"]/thermal_conductivity/text()'}" ,
+		"{simres:simMaterial_SolarTransAtNrmlIncent='//ECM/component_catalogue/level[@id=\"7 (glazing - layer 1)\"]/solar_transmittance/text()'}" ,		
+		"{simres:simMaterial_FrontSideVisReflectAtNrmlIncent='//ECM/component_catalogue/level[@id=\"7 (glazing - layer 1)\"]/exterior_visible_solar_reflectance/text()'}" ,
+		"{simres:simMaterial_BackSideVisReflectAtNrmlIncent='//ECM/component_catalogue/level[@id=\"7 (glazing - layer 1)\"]/interior_visible_solar_reflectance/text()'}" ,		
+		"{simres:simMaterial_VisTransAtNrmlIncent='//ECM/component_catalogue/level[@id=\"7 (glazing - layer 1)\"]/visible_transmittance /text()'}" ,		
+		"{simres:simMaterial_FrontSideSolarReflectAtNrmlIncent='//ECM/component_catalogue/level[@id=\"7 (glazing - layer 1)\"]/exterior_solar_reflectance/text()'}" ,
+		"{simres:simMaterial_BackSideSolarReflectAtNrmlIncent='//ECM/component_catalogue/level[@id=\"7 (glazing - layer 1)\"]/interior_solar_reflectance/text()'}" ,	
+		"{simres:simMaterial_FrontSideInfraredHemisphEmis='//ECM/component_catalogue/level[@id=\"7 (glazing - layer 1)\"]/exterior_emissivity/text()'}" ,
+		"{simres:simMaterial_BackSideInfraredHemisphEmis='//ECM/component_catalogue/level[@id=\"7 (glazing - layer 1)\"]/interior_emissivity/text()'}" ;
+	.
+	
+# ------------------------------------------------------------------------------------------------
+# LAYER 2 - L2 Gas
+# ------------------------------------------------------------------------------------------------
+		
+inst:SimMaterial_GlazingMaterial_Gas_MOD_PA_OP_DG_DE_2
+	a                            			simres:SimMaterial_GlazingMaterial_Gas ;		
+	simres:name				       			"MATERIAL-XXX" ;
+	simres:category                			"Gas" ;
+	simres:simMaterial_GasType				"Air" ;
+	simcore:simModelType           			"Default" ;
+	simcore:simModelSubtype        			"Default" ;
+	simcore:sourceModelObjectType  			"SimMaterial" ;
+	simcore:sourceModelSchema      			"InstanceCreator" ;	
+	# Properties from the ECM catalogue
+	simres:simMaterial_Thick				"0.016"^^xsd:double ;		# thickness
+	simres:simMaterial_CondCoefA			"0.0257"^^xsd:double ;		# thermal conductivity
+	simcore:refId                 			"XXX"^^xsd:ID ;
+	xpath:property	
+		"{simres:simMaterial_Thick='//ECM/component_catalogue/level[@id=\"7 (glazing - layer 2)\"]/thickness/text()'}" ,
+		"{simres:simMaterial_CondCoefA='//ECM/component_catalogue/level[@id=\"7 (glazing - layer 2)\"]/thermal_conductivity/text()'}" ;
+	.
+	
+# ------------------------------------------------------------------------------------------------
+# LAYER 3 - L3 Glass
+# ------------------------------------------------------------------------------------------------
+
+inst:SimMaterial_GlazingMaterial_Glazing_MOD_PA_OP_DG_DE_3
+	a														simres:SimMaterial_GlazingMaterial_Glazing ;
+	simres:name				       							"MATERIAL-XXX" ;
+	simres:category											"Glass" ;
+	simcore:simModelType           							"Glass" ;
+	simcore:simModelSubtype        							"Default" ;
+	simcore:sourceModelObjectType  							"SimMaterial" ;
+	simcore:sourceModelSchema      							"InstanceCreator" ;
+	# Properties from the ECM catalogue
+	simres:simMaterial_OpticalDataType						"SpectralAverage" ;			# Temporary -> has to be included in the EXCEL (ECM catalogue)
+	simres:simMaterial_Thick								"0.006"^^xsd:double ;		# thickness
+	simres:simMaterial_Cond 								"1.00"^^xsd:double ;		# thermal conductivity
+	simres:simMaterial_SolarTransAtNrmlIncent				"0.62"^^xsd:double ;		# solar transmittance
+	simres:simMaterial_FrontSideVisReflectAtNrmlIncent		"0.29"^^xsd:double ;		# exterior visible solar reflectance
+	simres:simMaterial_BackSideVisReflectAtNrmlIncent		"0.29"^^xsd:double ;		# interior visible solar reflectance
+	simres:simMaterial_VisTransAtNrmlIncent 				"0.9"^^xsd:double ;		# visual transmittance
+	simres:simMaterial_FrontSideSolarReflectAtNrmlIncent	"0.046"^^xsd:double ;		# exterior solar reflectance
+	simres:simMaterial_BackSideSolarReflectAtNrmlIncent		"0.046"^^xsd:double ;		# interior solar reflectance
+	simres:simMaterial_FrontSideInfraredHemisphEmis			"0.037"^^xsd:double ;		# exterior emissivity / interior emissivity
+	simres:simMaterial_BackSideInfraredHemisphEmis			"0.84"^^xsd:double ;		# exterior emissivity / interior emissivity	
+	simcore:refId                 							"XXX"^^xsd:ID ;
+	xpath:property	
+		"{simres:simMaterial_Thick='//ECM/component_catalogue/level[@id=\"7 (glazing - layer 3)\"]/thickness/text()'}" ,
+		"{simres:simMaterial_Cond='//ECM/component_catalogue/level[@id=\"7 (glazing - layer 3)\"]/thermal_conductivity/text()'}" ,
+		"{simres:simMaterial_SolarTransAtNrmlIncent='//ECM/component_catalogue/level[@id=\"7 (glazing - layer 3)\"]/solar_transmittance/text()'}" ,
+		"{simres:simMaterial_FrontSideVisReflectAtNrmlIncent='//ECM/component_catalogue/level[@id=\"7 (glazing - layer 3)\"]/exterior_visible_solar_reflectance/text()'}" ,
+		"{simres:simMaterial_BackSideVisReflectAtNrmlIncent='//ECM/component_catalogue/level[@id=\"7 (glazing - layer 3)\"]/interior_visible_solar_reflectance/text()'}" ,
+		"{simres:simMaterial_VisTransAtNrmlIncent='//ECM/component_catalogue/level[@id=\"7 (glazing - layer 3)\"]/visible_transmittance /text()'}" ,
+		"{simres:simMaterial_FrontSideSolarReflectAtNrmlIncent='//ECM/component_catalogue/level[@id=\"7 (glazing - layer 3)\"]/exterior_solar_reflectance/text()'}" ,
+		"{simres:simMaterial_BackSideSolarReflectAtNrmlIncent='//ECM/component_catalogue/level[@id=\"7 (glazing - layer 3)\"]/interior_solar_reflectance/text()'}" ,
+		"{simres:simMaterial_FrontSideInfraredHemisphEmis='//ECM/component_catalogue/level[@id=\"7 (glazing - layer 3)\"]/exterior_emissivity/text()'}" ,
+		"{simres:simMaterial_BackSideInfraredHemisphEmis='//ECM/component_catalogue/level[@id=\"7 (glazing - layer 3)\"]/interior_emissivity/text()'}" ;
+	.
+	
+# ------------------------------------------------------------------------------------------------
+# FRAMEWORK
+# ------------------------------------------------------------------------------------------------
+
+inst:SimFrameAndDividerProps_PA_OP_DG_DE_1
+	a														simres:SimFrameAndDividerProps ;
+	simres:simFrameAndDividerProps_Name						"XXX" ;						# Frame -> FRAME-1000, FRAME-1001, FRAME-1002...
+	simres:simFrameAndDividerProps_FrmWidth					"0.04"^^xsd:double ;		# Width
+	simres:simFrameAndDividerProps_FrmSolarAbsorp			"0.3"^^xsd:double ; 		# Solar absorptance
+	simres:simFrameAndDividerProps_FrmVisibleAbsorp			"0.3"^^xsd:double ; 		# Visible absorptance
+	simres:simFrameAndDividerProps_FrmThermHemisEmiss 		"0.3"^^xsd:double ; 		# Thermal absorptance (according to GG)
+	simres:simFrameAndDividerProps_FrmCond					"3.0"^^xsd:double ; 		# Thermal transmittance (according to GG)
+														#	"25.0"^^xsd:double ; 	    # Ratio of frame in the opening
+	simcore:simModelType           							"Frame" ;
+	simcore:simModelSubtype        							"Default" ;
+	simcore:sourceModelObjectType  							"None" ;
+	simcore:sourceModelSchema      							"InstanceCreator" ;
+	simcore:refId                 							"XXX"^^xsd:ID ;
+	xpath:property	
+		"{simres:simFrameAndDividerProps_FrmWidth='//ECM/component_catalogue/level[@id=\"7 (Frame)\"]/width/text()'}" ,
+		"{simres:simFrameAndDividerProps_FrmSolarAbsorp='//ECM/component_catalogue/level[@id=\"7 (Frame)\"]/solar_absorptance/text()'}" ,
+		"{simres:simFrameAndDividerProps_FrmVisibleAbsorp='//ECM/component_catalogue/level[@id=\"7 (Frame)\"]/visible_absorptance/text()'}" ,
+		"{simres:simFrameAndDividerProps_FrmThermHemisEmiss='//ECM/component_catalogue/level[@id=\"7 (Frame)\"]/thermal_absorptance/text()'}" ,
+		"{simres:simFrameAndDividerProps_FrmCond='//ECM/component_catalogue/level[@id=\"7 (Frame)\"]/thermal_transmittance/text()'}" ;
+	.

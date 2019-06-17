@@ -1,0 +1,279 @@
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix simcore: <http://www.opteemal.eu/schema/2017/01/SimModelCore#> .
+@prefix simres: <http://www.opteemal.eu/schema/2017/01/ResourcesGeneral#> .
+@prefix simgeom: <http://www.opteemal.eu/schema/2017/01/ResourcesGeometry#> .
+@prefix simbldg: <http://www.opteemal.eu/schema/2017/01/BuildingModel#> .
+@prefix simmep: <http://www.opteemal.eu/schema/2017/01/MepModel#> .
+@prefix simmodel: <http://www.opteemal.eu/schema/2017/01/Model#> .
+@prefix list: <https://w3id.org/list#> .
+@prefix inst: <http://to.replace#> .
+@prefix xpath: <http://www.opteemal.eu/xpath/prop#> .
+
+# last review: 2018.09.04
+
+# ================================================================================================
+# Chiller	Electric reciprocating (AC.DE.CH.ER)
+# ================================================================================================
+# ACTION: Replace the current HVAC system by this ECM
+#
+# DESCRIPTION: 
+# This snippet contains the information of X types of chillers. 
+# The only difference between them is the capacity (KW).
+# Values are:
+# -  38 kW
+# -  49 kW
+# -  63 kW
+# -  85 kW
+# - 113 kW
+# - 149 kW
+
+inst:SimHvacTemplatePlantChiller_38_KW
+	a                          														simmep:SimHvacTemplatePlantChiller ;
+	simmep:simHvacTemplatePlantChiller_Name											"CHILLER" ;								#	
+	simmep:simHvacTemplatePlantChiller_ChillerType    								"Other" ;								# Chiller Type	
+	simmep:simHvacTemplatePlantChiller_Capacity	    								"38" ;									# Total Capacity 	
+	simmep:simHvacTemplatePlantChiller_MinimumPartLoadRatio							"0.0"^^xsd:double ;						# Maximum Part Load Ratio
+	simmep:simHvacTemplatePlantChiller_MaximumPartLoadRatio							"1"^^xsd:double ;						# Minimum Part Load Ratio
+	simmep:simHvacTemplatePlantChiller_OptimumPartLoadRatio							"1"^^xsd:double ;						# Optimum Part Load Ratio
+	simmep:simHvacTemplatePlantChiller_MinimumUnloadingRatio						"0.25"^^xsd:double ;					# Minimum Unloading Ratio
+	simmep:simHvacTemplatePlantChiller_LeavingChilledWaterLowerTemperatureLimit		"5"^^xsd:double ;						# Leaving Chilled Water Lower Temperature Limit
+	simmep:simHvacTemplatePlantChiller_CondenserType								"WaterCooled" ;							# Condenser Type
+	simmep:simHvacTemplatePlantChiller_NominalCOP									"3.12"^^xsd:double ;					# Nominal COP
+	simcore:isTemplateObject   														false ;									# Standardized prop.
+	simcore:refId              														"XXX"^^xsd:ID ;  						# Standardized prop. <- this value will be Overwritten.
+	simcore:simUniqueID        														"none" ;								# Standardized prop.
+	simcore:sourceModelSchema  														"OptEEmAL BES Catalogue" ;				# Standardized prop.
+	simcore:tag																		"AC.DE.CH.ER.01" ;
+	xpath:property
+			"{simmep:simHvacTemplatePlantChiller_ChillerType='//ECM/component_catalogue/level[@id='7']/active_ecm[@id='1']/boiler_type/text()'}" ,
+			"{simmep:simHvacTemplatePlantChiller_Capacity='//ECM/component_catalogue/level[@id='7']/active_ecm[@id='1']/capacity/text()'}" ,			
+			"{simmep:simHvacTemplatePlantChiller_MinimumPartLoadRatio='//ECM/component_catalogue/level[@id='7']/active_ecm[@id='1']/minimum_part_load_ratio/text()'}" ,
+			"{simmep:simHvacTemplatePlantChiller_MaximumPartLoadRatio='//ECM/component_catalogue/level[@id='7']/active_ecm[@id='1']/maximum_part_load_ratio/text()'}" ,
+			"{simmep:simHvacTemplatePlantChiller_OptimumPartLoadRatio='//ECM/component_catalogue/level[@id='7']/active_ecm[@id='1']/optimum_part_load_ratio/text()'}" ,
+			"{simmep:simHvacTemplatePlantChiller_LeavingChilledWaterLowerTemperatureLimit='//ECM/component_catalogue/level[@id='7']/active_ecm[@id='1']/water_outlet_upper_temperature_limit/text()'}" ,
+			"{simmep:simHvacTemplatePlantChiller_CondenserType='//ECM/component_catalogue/level[@id='7']/active_ecm[@id='1']/template_plant_loop_type/text()'}" ;
+	.
+
+inst:SimHvacTemplatePlantChiller_49_KW
+	a                          														simmep:SimHvacTemplatePlantChiller ;
+	simmep:simHvacTemplatePlantChiller_Name											"CHILLER" ;								#	
+	simmep:simHvacTemplatePlantChiller_Capacity	    								"49" ;									# Total Capacity 	
+	simmep:simHvacTemplatePlantChiller_ChillerType    								"Other" ;								# Chiller Type	
+	simmep:simHvacTemplatePlantChiller_MinimumPartLoadRatio							"0.0"^^xsd:double ;						# Maximum Part Load Ratio
+	simmep:simHvacTemplatePlantChiller_MaximumPartLoadRatio							"1"^^xsd:double ;						# Minimum Part Load Ratio
+	simmep:simHvacTemplatePlantChiller_OptimumPartLoadRatio							"1"^^xsd:double ;						# Optimum Part Load Ratio
+	simmep:simHvacTemplatePlantChiller_MinimumUnloadingRatio						"0.25"^^xsd:double ;					# Minimum Unloading Ratio
+	simmep:simHvacTemplatePlantChiller_LeavingChilledWaterLowerTemperatureLimit		"5"^^xsd:double ;						# Leaving Chilled Water Lower Temperature Limit
+	simmep:simHvacTemplatePlantChiller_CondenserType								"WaterCooled" ;							# Condenser Type
+	simmep:simHvacTemplatePlantChiller_NominalCOP									"3.12"^^xsd:double ;					# Nominal COP
+	simcore:isTemplateObject   														false ;									# Standardized prop.
+	simcore:refId              														"XXX"^^xsd:ID ;  						# Standardized prop. <- this value will be Overwritten.
+	simcore:simUniqueID        														"none" ;								# Standardized prop.
+	simcore:sourceModelSchema  														"OptEEmAL BES Catalogue" ;				# Standardized prop.
+	simcore:tag																		"AC.DE.CH.ER.02" ;
+	xpath:property
+			"{simres:simHvacTemplatePlantChiller_ChillerType='//ECM/component_catalogue/level[@id='7']/layer[@id='1']/boiler_type/text()'}" ,
+			"{simres:simHvacTemplatePlantChiller_Capacity='//ECM/component_catalogue/level[@id='7']/layer[@id='1']/capacity/text()'}" ,			
+			"{simres:simHvacTemplatePlantChiller_MinimumPartLoadRatio='//ECM/component_catalogue/level[@id='7']/layer[@id='1']/minimum_part_load_ratio/text()'}" ,
+			"{simres:simHvacTemplatePlantChiller_MaximumPartLoadRatio='//ECM/component_catalogue/level[@id='7']/layer[@id='1']/maximum_part_load_ratio/text()'}" ,
+			"{simres:simHvacTemplatePlantChiller_OptimumPartLoadRatio='//ECM/component_catalogue/level[@id='7']/layer[@id='1']/optimum_part_load_ratio/text()'}" ,
+			"{simres:simHvacTemplatePlantChiller_LeavingChilledWaterLowerTemperatureLimit='//ECM/component_catalogue/level[@id='7']/layer[@id='1']/water_outlet_upper_temperature_limit/text()'}" ,
+			"{simres:simHvacTemplatePlantChiller_CondenserType='//ECM/component_catalogue/level[@id='7']/layer[@id='1']/template_plant_loop_type/text()'}" ;
+	.
+	
+inst:SimHvacTemplatePlantChiller_63_KW
+	a                          														simmep:SimHvacTemplatePlantChiller ;
+	simmep:simHvacTemplatePlantChiller_Name											"CHILLER" ;								#	
+	simmep:simHvacTemplatePlantChiller_Capacity	    								"63" ;									# Total Capacity 	
+	simmep:simHvacTemplatePlantChiller_ChillerType    								"Other" ;								# Chiller Type	
+	simmep:simHvacTemplatePlantChiller_MinimumPartLoadRatio							"0.0"^^xsd:double ;						# Maximum Part Load Ratio
+	simmep:simHvacTemplatePlantChiller_MaximumPartLoadRatio							"1"^^xsd:double ;						# Minimum Part Load Ratio
+	simmep:simHvacTemplatePlantChiller_OptimumPartLoadRatio							"1"^^xsd:double ;						# Optimum Part Load Ratio
+	simmep:simHvacTemplatePlantChiller_MinimumUnloadingRatio						"0.25"^^xsd:double ;					# Minimum Unloading Ratio
+	simmep:simHvacTemplatePlantChiller_LeavingChilledWaterLowerTemperatureLimit		"5"^^xsd:double ;						# Leaving Chilled Water Lower Temperature Limit
+	simmep:simHvacTemplatePlantChiller_CondenserType								"WaterCooled" ;							# Condenser Type
+	simmep:simHvacTemplatePlantChiller_NominalCOP									"3.12"^^xsd:double ;					# Nominal COP
+	simcore:isTemplateObject   														false ;									# Standardized prop.
+	simcore:refId              														"XXX"^^xsd:ID ;  						# Standardized prop. <- this value will be Overwritten.
+	simcore:simUniqueID        														"none" ;								# Standardized prop.
+	simcore:sourceModelSchema  														"OptEEmAL BES Catalogue" ;				# Standardized prop.
+	simcore:tag																		"AC.DE.CH.ER.03" ;
+	xpath:property
+			"{simres:simHvacTemplatePlantChiller_ChillerType='//ECM/component_catalogue/level[@id='7']/layer[@id='1']/boiler_type/text()'}" ,
+			"{simres:simHvacTemplatePlantChiller_Capacity='//ECM/component_catalogue/level[@id='7']/layer[@id='1']/capacity/text()'}" ,			
+			"{simres:simHvacTemplatePlantChiller_MinimumPartLoadRatio='//ECM/component_catalogue/level[@id='7']/layer[@id='1']/minimum_part_load_ratio/text()'}" ,
+			"{simres:simHvacTemplatePlantChiller_MaximumPartLoadRatio='//ECM/component_catalogue/level[@id='7']/layer[@id='1']/maximum_part_load_ratio/text()'}" ,
+			"{simres:simHvacTemplatePlantChiller_OptimumPartLoadRatio='//ECM/component_catalogue/level[@id='7']/layer[@id='1']/optimum_part_load_ratio/text()'}" ,
+			"{simres:simHvacTemplatePlantChiller_LeavingChilledWaterLowerTemperatureLimit='//ECM/component_catalogue/level[@id='7']/layer[@id='1']/water_outlet_upper_temperature_limit/text()'}" ,
+			"{simres:simHvacTemplatePlantChiller_CondenserType='//ECM/component_catalogue/level[@id='7']/layer[@id='1']/template_plant_loop_type/text()'}" ;
+	.
+
+inst:SimHvacTemplatePlantChiller_85_KW
+	a                          														simmep:SimHvacTemplatePlantChiller ;
+	simmep:simHvacTemplatePlantChiller_Name											"CHILLER" ;								#	
+	simmep:simHvacTemplatePlantChiller_Capacity	    								"85" ;									# Total Capacity 	
+	simmep:simHvacTemplatePlantChiller_ChillerType    								"Other" ;								# Chiller Type	
+	simmep:simHvacTemplatePlantChiller_MinimumPartLoadRatio							"0.0"^^xsd:double ;						# Maximum Part Load Ratio
+	simmep:simHvacTemplatePlantChiller_MaximumPartLoadRatio							"1"^^xsd:double ;						# Minimum Part Load Ratio
+	simmep:simHvacTemplatePlantChiller_OptimumPartLoadRatio							"1"^^xsd:double ;						# Optimum Part Load Ratio
+	simmep:simHvacTemplatePlantChiller_MinimumUnloadingRatio						"0.25"^^xsd:double ;					# Minimum Unloading Ratio
+	simmep:simHvacTemplatePlantChiller_LeavingChilledWaterLowerTemperatureLimit		"5"^^xsd:double ;						# Leaving Chilled Water Lower Temperature Limit
+	simmep:simHvacTemplatePlantChiller_CondenserType								"WaterCooled" ;							# Condenser Type
+	simmep:simHvacTemplatePlantChiller_NominalCOP									"3.12"^^xsd:double ;					# Nominal COP
+	simcore:isTemplateObject   														false ;									# Standardized prop.
+	simcore:refId              														"XXX"^^xsd:ID ;  						# Standardized prop. <- this value will be Overwritten.
+	simcore:simUniqueID        														"none" ;								# Standardized prop.
+	simcore:sourceModelSchema  														"OptEEmAL BES Catalogue" ;				# Standardized prop.
+	simcore:tag																		"AC.DE.CH.ER.04" ;
+	xpath:property
+			"{simres:simHvacTemplatePlantChiller_ChillerType='//ECM/component_catalogue/level[@id='7']/layer[@id='1']/boiler_type/text()'}" ,
+			"{simres:simHvacTemplatePlantChiller_Capacity='//ECM/component_catalogue/level[@id='7']/layer[@id='1']/capacity/text()'}" ,			
+			"{simres:simHvacTemplatePlantChiller_MinimumPartLoadRatio='//ECM/component_catalogue/level[@id='7']/layer[@id='1']/minimum_part_load_ratio/text()'}" ,
+			"{simres:simHvacTemplatePlantChiller_MaximumPartLoadRatio='//ECM/component_catalogue/level[@id='7']/layer[@id='1']/maximum_part_load_ratio/text()'}" ,
+			"{simres:simHvacTemplatePlantChiller_OptimumPartLoadRatio='//ECM/component_catalogue/level[@id='7']/layer[@id='1']/optimum_part_load_ratio/text()'}" ,
+			"{simres:simHvacTemplatePlantChiller_LeavingChilledWaterLowerTemperatureLimit='//ECM/component_catalogue/level[@id='7']/layer[@id='1']/water_outlet_upper_temperature_limit/text()'}" ,
+			"{simres:simHvacTemplatePlantChiller_CondenserType='//ECM/component_catalogue/level[@id='7']/layer[@id='1']/template_plant_loop_type/text()'}" ;
+	.
+
+inst:SimHvacTemplatePlantChiller_113_KW
+	a                          														simmep:SimHvacTemplatePlantChiller ;
+	simmep:simHvacTemplatePlantChiller_Name											"CHILLER" ;								#	
+	simmep:simHvacTemplatePlantChiller_Capacity	    								"113" ;									# Total Capacity 	
+	simmep:simHvacTemplatePlantChiller_ChillerType    								"Other" ;								# Chiller Type	
+	simmep:simHvacTemplatePlantChiller_MinimumPartLoadRatio							"0.0"^^xsd:double ;						# Maximum Part Load Ratio
+	simmep:simHvacTemplatePlantChiller_MaximumPartLoadRatio							"1"^^xsd:double ;						# Minimum Part Load Ratio
+	simmep:simHvacTemplatePlantChiller_OptimumPartLoadRatio							"1"^^xsd:double ;						# Optimum Part Load Ratio
+	simmep:simHvacTemplatePlantChiller_MinimumUnloadingRatio						"0.25"^^xsd:double ;					# Minimum Unloading Ratio
+	simmep:simHvacTemplatePlantChiller_LeavingChilledWaterLowerTemperatureLimit		"5"^^xsd:double ;						# Leaving Chilled Water Lower Temperature Limit
+	simmep:simHvacTemplatePlantChiller_CondenserType								"WaterCooled" ;							# Condenser Type
+	simmep:simHvacTemplatePlantChiller_NominalCOP									"3.12"^^xsd:double ;					# Nominal COP
+	simcore:isTemplateObject   														false ;									# Standardized prop.
+	simcore:refId              														"XXX"^^xsd:ID ;  						# Standardized prop. <- this value will be Overwritten.
+	simcore:simUniqueID        														"none" ;								# Standardized prop.
+	simcore:sourceModelSchema  														"OptEEmAL BES Catalogue" ;				# Standardized prop.
+	simcore:tag																		"AC.DE.CH.ER.05" ;
+	xpath:property
+			"{simres:simHvacTemplatePlantChiller_ChillerType='//ECM/component_catalogue/level[@id='7']/layer[@id='1']/boiler_type/text()'}" ,
+			"{simres:simHvacTemplatePlantChiller_Capacity='//ECM/component_catalogue/level[@id='7']/layer[@id='1']/capacity/text()'}" ,			
+			"{simres:simHvacTemplatePlantChiller_MinimumPartLoadRatio='//ECM/component_catalogue/level[@id='7']/layer[@id='1']/minimum_part_load_ratio/text()'}" ,
+			"{simres:simHvacTemplatePlantChiller_MaximumPartLoadRatio='//ECM/component_catalogue/level[@id='7']/layer[@id='1']/maximum_part_load_ratio/text()'}" ,
+			"{simres:simHvacTemplatePlantChiller_OptimumPartLoadRatio='//ECM/component_catalogue/level[@id='7']/layer[@id='1']/optimum_part_load_ratio/text()'}" ,
+			"{simres:simHvacTemplatePlantChiller_LeavingChilledWaterLowerTemperatureLimit='//ECM/component_catalogue/level[@id='7']/layer[@id='1']/water_outlet_upper_temperature_limit/text()'}" ,
+			"{simres:simHvacTemplatePlantChiller_CondenserType='//ECM/component_catalogue/level[@id='7']/layer[@id='1']/template_plant_loop_type/text()'}" ;
+	.
+
+inst:SimHvacTemplatePlantChiller_149_KW
+	a                          														simmep:SimHvacTemplatePlantChiller ;
+	simmep:simHvacTemplatePlantChiller_Name											"CHILLER" ;								#	
+	simmep:simHvacTemplatePlantChiller_Capacity	    								"149" ;									# Total Capacity 	
+	simmep:simHvacTemplatePlantChiller_ChillerType    								"Other" ;								# Chiller Type	
+	simmep:simHvacTemplatePlantChiller_MinimumPartLoadRatio							"0.0"^^xsd:double ;						# Maximum Part Load Ratio
+	simmep:simHvacTemplatePlantChiller_MaximumPartLoadRatio							"1"^^xsd:double ;						# Minimum Part Load Ratio
+	simmep:simHvacTemplatePlantChiller_OptimumPartLoadRatio							"1"^^xsd:double ;						# Optimum Part Load Ratio
+	simmep:simHvacTemplatePlantChiller_MinimumUnloadingRatio						"0.25"^^xsd:double ;					# Minimum Unloading Ratio
+	simmep:simHvacTemplatePlantChiller_LeavingChilledWaterLowerTemperatureLimit		"5"^^xsd:double ;						# Leaving Chilled Water Lower Temperature Limit
+	simmep:simHvacTemplatePlantChiller_CondenserType								"WaterCooled" ;							# Condenser Type
+	simmep:simHvacTemplatePlantChiller_NominalCOP									"3.12"^^xsd:double ;					# Nominal COP
+	simcore:isTemplateObject   														false ;									# Standardized prop.
+	simcore:refId              														"XXX"^^xsd:ID ;  						# Standardized prop. <- this value will be Overwritten.
+	simcore:simUniqueID        														"none" ;								# Standardized prop.
+	simcore:sourceModelSchema  														"OptEEmAL BES Catalogue" ;				# Standardized prop.
+	simcore:tag																		"AC.DE.CH.ER.06" ;
+	xpath:property
+			"{simres:simHvacTemplatePlantChiller_ChillerType='//ECM/component_catalogue/level[@id='7']/layer[@id='1']/boiler_type/text()'}" ,
+			"{simres:simHvacTemplatePlantChiller_Capacity='//ECM/component_catalogue/level[@id='7']/layer[@id='1']/capacity/text()'}" ,			
+			"{simres:simHvacTemplatePlantChiller_MinimumPartLoadRatio='//ECM/component_catalogue/level[@id='7']/layer[@id='1']/minimum_part_load_ratio/text()'}" ,
+			"{simres:simHvacTemplatePlantChiller_MaximumPartLoadRatio='//ECM/component_catalogue/level[@id='7']/layer[@id='1']/maximum_part_load_ratio/text()'}" ,
+			"{simres:simHvacTemplatePlantChiller_OptimumPartLoadRatio='//ECM/component_catalogue/level[@id='7']/layer[@id='1']/optimum_part_load_ratio/text()'}" ,
+			"{simres:simHvacTemplatePlantChiller_LeavingChilledWaterLowerTemperatureLimit='//ECM/component_catalogue/level[@id='7']/layer[@id='1']/water_outlet_upper_temperature_limit/text()'}" ,
+			"{simres:simHvacTemplatePlantChiller_CondenserType='//ECM/component_catalogue/level[@id='7']/layer[@id='1']/template_plant_loop_type/text()'}" ;
+	.	
+		
+		
+# inst:SimHvacTemplatePlantChiller_49_KW
+	# a                          											simmep:SimHvacTemplatePlantChiller ;
+	# simmep:SimHvacTemplatePlantChiller_Name								"CHILLER" ;								#	
+	# simmep:SimHvacTemplatePlantChiller_Capacity	    					"49" ;									# Total Capacity 	<- Value to be Overwritten (What is the total boiler capacity?)
+	# simmep:SimHvacTemplatePlantChiller_ChillerType    					"Other" ;								# Boiler Type		<- Non-condensing, Condensing, Other
+	# simmep:SimHvacTemplatePlantChiller_MinimumPartLoadRatio				"0.0"^^xsd:double ;						# Maximum Part Load Ratio
+	# simmep:SimHvacTemplatePlantChiller_MaximumPartLoadRatio				"0.1"^^xsd:double ;						# Minimum Part Load Ratio
+	# simmep:SimHvacTemplatePlantChiller_OptimumPartLoadRatio				"1"^^xsd:double ;						# Optimum Part Load Ratio
+	# simmep:SimHvacTemplatePlantChiller_WaterOutletUpperTemperatureLimit	"100"^^xsd:double ;						# Water Outlet Upper Temperature Limit
+	# simmep:SimHvacTemplatePlantChiller_TemplatePlantLoopType			"Electric Reciprocating Chiller" ;		# Template Plant Loop Type
+	# simcore:isTemplateObject   											false ;									# Standardized prop.
+	# simcore:refId              											"XXX"^^xsd:ID ;  						# Standardized prop. <- this value will be Overwritten.
+	# simcore:simUniqueID        											"none" ;								# Standardized prop.
+	# simcore:sourceModelSchema  											"OptEEmAL BES Catalogue" ;				# Standardized prop.
+	# simcore:tag															"AC.DE.CH.ER.02" ;
+	# .
+
+# inst:SimHvacTemplatePlantChiller_63_KW
+	# a                          											simmep:SimHvacTemplatePlantChiller ;
+	# simmep:SimHvacTemplatePlantChiller_Name								"CHILLER" ;								#	
+	# simmep:SimHvacTemplatePlantChiller_Capacity	    					"63" ;									# Total Capacity 	<- Value to be Overwritten (What is the total boiler capacity?)
+	# simmep:SimHvacTemplatePlantChiller_ChillerType    					"Other" ;								# Boiler Type		<- Non-condensing, Condensing, Other
+	# simmep:SimHvacTemplatePlantChiller_MinimumPartLoadRatio				"0.0"^^xsd:double ;						# Maximum Part Load Ratio
+	# simmep:SimHvacTemplatePlantChiller_MaximumPartLoadRatio				"0.1"^^xsd:double ;						# Minimum Part Load Ratio
+	# simmep:SimHvacTemplatePlantChiller_OptimumPartLoadRatio				"1"^^xsd:double ;						# Optimum Part Load Ratio
+	# simmep:SimHvacTemplatePlantChiller_WaterOutletUpperTemperatureLimit	"100"^^xsd:double ;						# Water Outlet Upper Temperature Limit
+	# simmep:SimHvacTemplatePlantChiller_TemplatePlantLoopType			"Electric Reciprocating Chiller" ;		# Template Plant Loop Type
+	# simcore:isTemplateObject   											false ;									# Standardized prop.
+	# simcore:refId              											"XXX"^^xsd:ID ;  						# Standardized prop. <- this value will be Overwritten.
+	# simcore:simUniqueID        											"none" ;								# Standardized prop.
+	# simcore:sourceModelSchema  											"OptEEmAL BES Catalogue" ;				# Standardized prop.
+	# simcore:tag															"AC.DE.CH.ER.03" ;
+	# .
+	
+# inst:SimHvacTemplatePlantChiller_85_KW
+	# a                          											simmep:SimHvacTemplatePlantChiller ;
+	# simmep:SimHvacTemplatePlantChiller_Name								"CHILLER" ;								#	
+	# simmep:SimHvacTemplatePlantChiller_Capacity	    					"85" ;									# Total Capacity 	<- Value to be Overwritten (What is the total boiler capacity?)
+	# simmep:SimHvacTemplatePlantChiller_ChillerType    					"Other" ;								# Boiler Type		<- Non-condensing, Condensing, Other
+	# simmep:SimHvacTemplatePlantChiller_MinimumPartLoadRatio				"0.0"^^xsd:double ;						# Maximum Part Load Ratio
+	# simmep:SimHvacTemplatePlantChiller_MaximumPartLoadRatio				"0.1"^^xsd:double ;						# Minimum Part Load Ratio
+	# simmep:SimHvacTemplatePlantChiller_OptimumPartLoadRatio				"1"^^xsd:double ;						# Optimum Part Load Ratio
+	# simmep:SimHvacTemplatePlantChiller_WaterOutletUpperTemperatureLimit	"100"^^xsd:double ;						# Water Outlet Upper Temperature Limit
+	# simmep:SimHvacTemplatePlantChiller_TemplatePlantLoopType			"Electric Reciprocating Chiller" ;		# Template Plant Loop Type
+	# simcore:isTemplateObject   											false ;									# Standardized prop.
+	# simcore:refId              											"XXX"^^xsd:ID ;  						# Standardized prop. <- this value will be Overwritten.
+	# simcore:simUniqueID        											"none" ;								# Standardized prop.
+	# simcore:sourceModelSchema  											"OptEEmAL BES Catalogue" ;				# Standardized prop.
+	# simcore:tag															"AC.DE.CH.ER.04" ;
+	# .	
+
+# inst:SimHvacTemplatePlantChiller_113_KW
+	# a                          											simmep:SimHvacTemplatePlantChiller ;
+	# simmep:SimHvacTemplatePlantChiller_Name								"CHILLER" ;								#	
+	# simmep:SimHvacTemplatePlantChiller_Capacity	    					"113" ;									# Total Capacity 	<- Value to be Overwritten (What is the total boiler capacity?)
+	# simmep:SimHvacTemplatePlantChiller_ChillerType    					"Other" ;								# Boiler Type		<- Non-condensing, Condensing, Other
+	# simmep:SimHvacTemplatePlantChiller_MinimumPartLoadRatio				"0.0"^^xsd:double ;						# Maximum Part Load Ratio
+	# simmep:SimHvacTemplatePlantChiller_MaximumPartLoadRatio				"0.1"^^xsd:double ;						# Minimum Part Load Ratio
+	# simmep:SimHvacTemplatePlantChiller_OptimumPartLoadRatio				"1"^^xsd:double ;						# Optimum Part Load Ratio
+	# simmep:SimHvacTemplatePlantChiller_WaterOutletUpperTemperatureLimit	"100"^^xsd:double ;						# Water Outlet Upper Temperature Limit
+	# simmep:SimHvacTemplatePlantChiller_TemplatePlantLoopType			"Electric Reciprocating Chiller" ;		# Template Plant Loop Type
+	# simcore:isTemplateObject   											false ;									# Standardized prop.
+	# simcore:refId              											"XXX"^^xsd:ID ;  						# Standardized prop. <- this value will be Overwritten.
+	# simcore:simUniqueID        											"none" ;								# Standardized prop.
+	# simcore:sourceModelSchema  											"OptEEmAL BES Catalogue" ;				# Standardized prop.
+	# simcore:tag															"AC.DE.CH.ER.05" ;
+	# .
+
+# inst:SimHvacTemplatePlantChiller_149_KW
+	# a                          											simmep:SimHvacTemplatePlantChiller ;
+	# simmep:SimHvacTemplatePlantChiller_Name								"CHILLER" ;								#	
+	# simmep:SimHvacTemplatePlantChiller_Capacity	    					"149" ;									# Total Capacity 	<- Value to be Overwritten (What is the total boiler capacity?)
+	# simmep:SimHvacTemplatePlantChiller_ChillerType    					"Other" ;								# Boiler Type		<- Non-condensing, Condensing, Other
+	# simmep:SimHvacTemplatePlantChiller_MinimumPartLoadRatio				"0.0"^^xsd:double ;						# Maximum Part Load Ratio
+	# simmep:SimHvacTemplatePlantChiller_MaximumPartLoadRatio				"0.1"^^xsd:double ;						# Minimum Part Load Ratio
+	# simmep:SimHvacTemplatePlantChiller_OptimumPartLoadRatio				"1"^^xsd:double ;						# Optimum Part Load Ratio
+	# simmep:SimHvacTemplatePlantChiller_WaterOutletUpperTemperatureLimit	"100"^^xsd:double ;						# Water Outlet Upper Temperature Limit
+	# simmep:SimHvacTemplatePlantChiller_TemplatePlantLoopType			"Electric Reciprocating Chiller" ;		# Template Plant Loop Type
+	# simcore:isTemplateObject   											false ;									# Standardized prop.
+	# simcore:refId              											"XXX"^^xsd:ID ;  						# Standardized prop. <- this value will be Overwritten.
+	# simcore:simUniqueID        											"none" ;								# Standardized prop.
+	# simcore:sourceModelSchema  											"OptEEmAL BES Catalogue" ;				# Standardized prop.
+	# simcore:tag															"AC.DE.CH.ER.05" ;
+	# .
+		

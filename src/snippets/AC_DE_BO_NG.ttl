@@ -1,0 +1,204 @@
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix simcore: <http://www.opteemal.eu/schema/2017/01/SimModelCore#> .
+@prefix simres: <http://www.opteemal.eu/schema/2017/01/ResourcesGeneral#> .
+@prefix simgeom: <http://www.opteemal.eu/schema/2017/01/ResourcesGeometry#> .
+@prefix simbldg: <http://www.opteemal.eu/schema/2017/01/BuildingModel#> .
+@prefix simmep: <http://www.opteemal.eu/schema/2017/01/MepModel#> .
+@prefix simmodel: <http://www.opteemal.eu/schema/2017/01/Model#> .
+@prefix list: <https://w3id.org/list#> .
+@prefix inst: <http://to.replace#> .
+@prefix xpath: <http://www.opteemal.eu/xpath/prop#> .
+
+# last review: 2018.04.10
+
+# ================================================================================================
+# Natural gas boiler (AC.DE.BO.NG)
+# ================================================================================================
+# ACTION: 
+# The existing boiler is replaced with a condensing Fuel type: Natural Gas Boiler (NG).
+# DESCRIPTION: 
+# This snippet contains the information of X types of boilers. 
+# The only difference between them is the power (KW).
+# Values are:
+# -  15 kW
+# -  38 kW
+# -  53 kW
+# - 143 kW
+# - 239 kW
+# - 384 kW
+
+inst:SimHvacTemplatePlantBoiler_15_KW
+	a                          											simmep:SimHvacTemplatePlantBoiler ;
+	simmep:simHvacTemplatePlantBoiler_Name								"BOILER" ;								#	
+	simmep:simHvacTemplatePlantBoiler_Capacity	    					"15" ;									# Total Capacity 	<- Value to be Overwritten (What is the total boiler capacity?)
+	simmep:simHvacTemplatePlantBoiler_BoilerType    					"non-condensing" ;						# Boiler Type		<- Non-condensing, Condensing, Other
+	simmep:simHvacTemplatePlantBoiler_FuelType							"NaturalGas" ;							# Fuel Type			<- Natural Gas, Diesel, Bio-mass
+	simmep:simHvacTemplatePlantBoiler_Efficiency						"0.8"^^xsd:double ;						# Efficiency
+	simmep:simHvacTemplatePlantBoiler_MinimumPartLoadRatio				"0.0"^^xsd:double ;						# Maximum Part Load Ratio
+	simmep:simHvacTemplatePlantBoiler_MaximumPartLoadRatio				"1.1"^^xsd:double ;						# Minimum Part Load Ratio
+	simmep:simHvacTemplatePlantBoiler_OptimumPartLoadRatio				"1.0"^^xsd:double ;						# Optimum Part Load Ratio
+	simmep:simHvacTemplatePlantBoiler_WaterOutletUpperTemperatureLimit	"100"^^xsd:double ;						# Water Outlet Upper Temperature Limit
+	simmep:simHvacTemplatePlantBoiler_TemplatePlantLoopType				"Hot_WaterBoiler" ;						# Template Plant Loop Type
+	simcore:isTemplateObject   											false ;									# Standardized prop.
+	simcore:refId              											"XXX"^^xsd:ID ;  						# Standardized prop. <- this value will be Overwritten.
+	simcore:simUniqueID        											"none" ;								# Standardized prop.
+	simcore:sourceModelSchema  											"OptEEmAL BES Catalogue" ;				# Standardized prop.
+	simcore:tag															"AC.DE.BO.NG.01" ;
+	xpath:property
+			"{simmep:simHvacTemplatePlantBoiler_Capacity='//ECM/component_catalogue/level[@id='7']/active_ecm[@id='1']/capacity/text()'}" ,			
+			"{simmep:simHvacTemplatePlantBoiler_BoilerType='//ECM/component_catalogue/level[@id='7']/active_ecm[@id='1']/boiler_type/text()'}" ,
+			"{simmep:simHvacTemplatePlantBoiler_FuelType='//ECM/component_catalogue/level[@id='7']/active_ecm[@id='1']/fuel_type/text()'}" ,
+			"{simmep:simHvacTemplatePlantBoiler_Efficiency='//ECM/component_catalogue/level[@id='7']/active_ecm[@id='1']/efficiency/text()'}" ,
+			"{simmep:simHvacTemplatePlantBoiler_MinimumPartLoadRatio='//ECM/component_catalogue/level[@id='7']/active_ecm[@id='1']/minimum_part_load_ratio/text()'}" ,
+			"{simmep:simHvacTemplatePlantBoiler_MaximumPartLoadRatio='//ECM/component_catalogue/level[@id='7']/active_ecm[@id='1']/maximum_part_load_ratio/text()'}" ,
+			"{simmep:simHvacTemplatePlantBoiler_OptimumPartLoadRatio='//ECM/component_catalogue/level[@id='7']/active_ecm[@id='1']/optimum_part_load_ratio/text()'}" ,
+			"{simmep:simHvacTemplatePlantBoiler_WaterOutletUpperTemperatureLimit='//ECM/component_catalogue/level[@id='7']/active_ecm[@id='1']/water_outlet_upper_temperature_limit/text()'}" ,
+			"{simmep:simHvacTemplatePlantBoiler_TemplatePlantLoopType='//ECM/component_catalogue/level[@id='7']/active_ecm[@id='1']/template_plant_loop_type/text()'}" ;	
+	.
+	
+inst:SimHvacTemplatePlantBoiler_38_KW
+	a                          											simmep:SimHvacTemplatePlantBoiler ;
+	simmep:simHvacTemplatePlantBoiler_Name								"BOILER" ;								#	
+	simmep:simHvacTemplatePlantBoiler_Capacity	    					"38" ;									# Total Capacity 	<- Value to be Overwritten (What is the total boiler capacity?)
+	simmep:simHvacTemplatePlantBoiler_BoilerType    					"non-condensing" ;						# Boiler Type		<- Non-condensing, Condensing, Other
+	simmep:simHvacTemplatePlantBoiler_FuelType							"NaturalGas" ;							# Fuel Type			<- Natural Gas, Diesel, Bio-mass
+	simmep:simHvacTemplatePlantBoiler_Efficiency						"0.8"^^xsd:double ;						# Efficiency
+	simmep:simHvacTemplatePlantBoiler_MinimumPartLoadRatio				"0.0"^^xsd:double ;						# Maximum Part Load Ratio
+	simmep:simHvacTemplatePlantBoiler_MaximumPartLoadRatio				"1.1"^^xsd:double ;						# Minimum Part Load Ratio
+	simmep:simHvacTemplatePlantBoiler_OptimumPartLoadRatio				"1.0"^^xsd:double ;						# Optimum Part Load Ratio
+	simmep:simHvacTemplatePlantBoiler_WaterOutletUpperTemperatureLimit	"100"^^xsd:double ;						# Water Outlet Upper Temperature Limit
+	simmep:simHvacTemplatePlantBoiler_TemplatePlantLoopType				"Hot_WaterBoiler" ;						# Template Plant Loop Type
+	simcore:isTemplateObject   											false ;									# Standardized prop.
+	simcore:refId              											"XXX"^^xsd:ID ;  						# Standardized prop. <- this value will be Overwritten.
+	simcore:simUniqueID        											"none" ;								# Standardized prop.
+	simcore:sourceModelSchema  											"OptEEmAL BES Catalogue" ;				# Standardized prop.
+	simcore:tag															"AC.DE.BO.NG.02" ;
+	xpath:property
+			"{simmep:simHvacTemplatePlantBoiler_Capacity='//ECM/component_catalogue/level[@id='7']/active_ecm[@id='1']/capacity/text()'}" ,			
+			"{simmep:simHvacTemplatePlantBoiler_BoilerType='//ECM/component_catalogue/level[@id='7']/active_ecm[@id='1']/boiler_type/text()'}" ,
+			"{simmep:simHvacTemplatePlantBoiler_FuelType='//ECM/component_catalogue/level[@id='7']/active_ecm[@id='1']/fuel_type/text()'}" ,
+			"{simmep:simHvacTemplatePlantBoiler_Efficiency='//ECM/component_catalogue/level[@id='7']/active_ecm[@id='1']/efficiency/text()'}" ,
+			"{simmep:simHvacTemplatePlantBoiler_MinimumPartLoadRatio='//ECM/component_catalogue/level[@id='7']/active_ecm[@id='1']/minimum_part_load_ratio/text()'}" ,
+			"{simmep:simHvacTemplatePlantBoiler_MaximumPartLoadRatio='//ECM/component_catalogue/level[@id='7']/active_ecm[@id='1']/maximum_part_load_ratio/text()'}" ,
+			"{simmep:simHvacTemplatePlantBoiler_OptimumPartLoadRatio='//ECM/component_catalogue/level[@id='7']/active_ecm[@id='1']/optimum_part_load_ratio/text()'}" ,
+			"{simmep:simHvacTemplatePlantBoiler_WaterOutletUpperTemperatureLimit='//ECM/component_catalogue/level[@id='7']/active_ecm[@id='1']/water_outlet_upper_temperature_limit/text()'}" ,
+			"{simmep:simHvacTemplatePlantBoiler_TemplatePlantLoopType='//ECM/component_catalogue/level[@id='7']/active_ecm[@id='1']/template_plant_loop_type/text()'}" ;	
+	.
+
+inst:SimHvacTemplatePlantBoiler_53_KW
+	a                          											simmep:SimHvacTemplatePlantBoiler ;
+	simmep:simHvacTemplatePlantBoiler_Name								"BOILER" ;								#	
+	simmep:simHvacTemplatePlantBoiler_Capacity	    					"53" ;									# Total Capacity 	<- Value to be Overwritten (What is the total boiler capacity?)
+	simmep:simHvacTemplatePlantBoiler_BoilerType    					"non-condensing" ;						# Boiler Type		<- Non-condensing, Condensing, Other
+	simmep:simHvacTemplatePlantBoiler_FuelType							"NaturalGas" ;							# Fuel Type			<- Natural Gas, Diesel, Bio-mass
+	simmep:simHvacTemplatePlantBoiler_Efficiency						"0.8"^^xsd:double ;						# Efficiency
+	simmep:simHvacTemplatePlantBoiler_MinimumPartLoadRatio				"0.0"^^xsd:double ;						# Maximum Part Load Ratio
+	simmep:simHvacTemplatePlantBoiler_MaximumPartLoadRatio				"1.1"^^xsd:double ;						# Minimum Part Load Ratio
+	simmep:simHvacTemplatePlantBoiler_OptimumPartLoadRatio				"1.0"^^xsd:double ;						# Optimum Part Load Ratio
+	simmep:simHvacTemplatePlantBoiler_WaterOutletUpperTemperatureLimit	"100"^^xsd:double ;						# Water Outlet Upper Temperature Limit
+	simmep:simHvacTemplatePlantBoiler_TemplatePlantLoopType				"Hot_WaterBoiler" ;						# Template Plant Loop Type
+	simcore:isTemplateObject   											false ;									# Standardized prop.
+	simcore:refId              											"XXX"^^xsd:ID ;  						# Standardized prop. <- this value will be Overwritten.
+	simcore:simUniqueID        											"none" ;								# Standardized prop.
+	simcore:sourceModelSchema  											"OptEEmAL BES Catalogue" ;				# Standardized prop.
+	simcore:tag															"AC.DE.BO.NG.03" ;
+	xpath:property
+			"{simmep:simHvacTemplatePlantBoiler_Capacity='//ECM/component_catalogue/level[@id='7']/active_ecm[@id='1']/capacity/text()'}" ,			
+			"{simmep:simHvacTemplatePlantBoiler_BoilerType='//ECM/component_catalogue/level[@id='7']/active_ecm[@id='1']/boiler_type/text()'}" ,
+			"{simmep:simHvacTemplatePlantBoiler_FuelType='//ECM/component_catalogue/level[@id='7']/active_ecm[@id='1']/fuel_type/text()'}" ,
+			"{simmep:simHvacTemplatePlantBoiler_Efficiency='//ECM/component_catalogue/level[@id='7']/active_ecm[@id='1']/efficiency/text()'}" ,
+			"{simmep:simHvacTemplatePlantBoiler_MinimumPartLoadRatio='//ECM/component_catalogue/level[@id='7']/active_ecm[@id='1']/minimum_part_load_ratio/text()'}" ,
+			"{simmep:simHvacTemplatePlantBoiler_MaximumPartLoadRatio='//ECM/component_catalogue/level[@id='7']/active_ecm[@id='1']/maximum_part_load_ratio/text()'}" ,
+			"{simmep:simHvacTemplatePlantBoiler_OptimumPartLoadRatio='//ECM/component_catalogue/level[@id='7']/active_ecm[@id='1']/optimum_part_load_ratio/text()'}" ,
+			"{simmep:simHvacTemplatePlantBoiler_WaterOutletUpperTemperatureLimit='//ECM/component_catalogue/level[@id='7']/active_ecm[@id='1']/water_outlet_upper_temperature_limit/text()'}" ,
+			"{simmep:simHvacTemplatePlantBoiler_TemplatePlantLoopType='//ECM/component_catalogue/level[@id='7']/active_ecm[@id='1']/template_plant_loop_type/text()'}" ;	
+	.
+	
+inst:SimHvacTemplatePlantBoiler_143_KW
+	a                          											simmep:SimHvacTemplatePlantBoiler ;
+	simmep:simHvacTemplatePlantBoiler_Name								"BOILER" ;								#	
+	simmep:simHvacTemplatePlantBoiler_Capacity	    					"143" ;									# Total Capacity 	<- Value to be Overwritten (What is the total boiler capacity?)
+	simmep:simHvacTemplatePlantBoiler_BoilerType    					"non-condensing" ;						# Boiler Type		<- Non-condensing, Condensing, Other
+	simmep:simHvacTemplatePlantBoiler_FuelType							"NaturalGas" ;							# Fuel Type			<- Natural Gas, Diesel, Bio-mass
+	simmep:simHvacTemplatePlantBoiler_Efficiency						"0.8"^^xsd:double ;						# Efficiency
+	simmep:simHvacTemplatePlantBoiler_MinimumPartLoadRatio				"0.0"^^xsd:double ;						# Maximum Part Load Ratio
+	simmep:simHvacTemplatePlantBoiler_MaximumPartLoadRatio				"1.1"^^xsd:double ;						# Minimum Part Load Ratio
+	simmep:simHvacTemplatePlantBoiler_OptimumPartLoadRatio				"1.0"^^xsd:double ;						# Optimum Part Load Ratio
+	simmep:simHvacTemplatePlantBoiler_WaterOutletUpperTemperatureLimit	"100"^^xsd:double ;						# Water Outlet Upper Temperature Limit
+	simmep:simHvacTemplatePlantBoiler_TemplatePlantLoopType				"Hot_WaterBoiler" ;						# Template Plant Loop Type
+	simcore:isTemplateObject   											false ;									# Standardized prop.
+	simcore:refId              											"XXX"^^xsd:ID ;  						# Standardized prop. <- this value will be Overwritten.
+	simcore:simUniqueID        											"none" ;								# Standardized prop.
+	simcore:sourceModelSchema  											"OptEEmAL BES Catalogue" ;				# Standardized prop.
+	simcore:tag															"AC.DE.BO.NG.04" ;
+	xpath:property
+			"{simmep:simHvacTemplatePlantBoiler_Capacity='//ECM/component_catalogue/level[@id='7']/active_ecm[@id='1']/capacity/text()'}" ,			
+			"{simmep:simHvacTemplatePlantBoiler_BoilerType='//ECM/component_catalogue/level[@id='7']/active_ecm[@id='1']/boiler_type/text()'}" ,
+			"{simmep:simHvacTemplatePlantBoiler_FuelType='//ECM/component_catalogue/level[@id='7']/active_ecm[@id='1']/fuel_type/text()'}" ,
+			"{simmep:simHvacTemplatePlantBoiler_Efficiency='//ECM/component_catalogue/level[@id='7']/active_ecm[@id='1']/efficiency/text()'}" ,
+			"{simmep:simHvacTemplatePlantBoiler_MinimumPartLoadRatio='//ECM/component_catalogue/level[@id='7']/active_ecm[@id='1']/minimum_part_load_ratio/text()'}" ,
+			"{simmep:simHvacTemplatePlantBoiler_MaximumPartLoadRatio='//ECM/component_catalogue/level[@id='7']/active_ecm[@id='1']/maximum_part_load_ratio/text()'}" ,
+			"{simmep:simHvacTemplatePlantBoiler_OptimumPartLoadRatio='//ECM/component_catalogue/level[@id='7']/active_ecm[@id='1']/optimum_part_load_ratio/text()'}" ,
+			"{simmep:simHvacTemplatePlantBoiler_WaterOutletUpperTemperatureLimit='//ECM/component_catalogue/level[@id='7']/active_ecm[@id='1']/water_outlet_upper_temperature_limit/text()'}" ,
+			"{simmep:simHvacTemplatePlantBoiler_TemplatePlantLoopType='//ECM/component_catalogue/level[@id='7']/active_ecm[@id='1']/template_plant_loop_type/text()'}" ;	
+	.	
+
+inst:SimHvacTemplatePlantBoiler_239_KW
+	a                          											simmep:SimHvacTemplatePlantBoiler ;
+	simmep:simHvacTemplatePlantBoiler_Name								"BOILER" ;								#	
+	simmep:simHvacTemplatePlantBoiler_Capacity	    					"239" ;									# Total Capacity 	<- Value to be Overwritten (What is the total boiler capacity?)
+	simmep:simHvacTemplatePlantBoiler_BoilerType    					"non-condensing" ;						# Boiler Type		<- Non-condensing, Condensing, Other
+	simmep:simHvacTemplatePlantBoiler_FuelType							"NaturalGas" ;							# Fuel Type			<- Natural Gas, Diesel, Bio-mass
+	simmep:simHvacTemplatePlantBoiler_Efficiency						"0.8"^^xsd:double ;						# Efficiency
+	simmep:simHvacTemplatePlantBoiler_MinimumPartLoadRatio				"0.0"^^xsd:double ;						# Maximum Part Load Ratio
+	simmep:simHvacTemplatePlantBoiler_MaximumPartLoadRatio				"1.1"^^xsd:double ;						# Minimum Part Load Ratio
+	simmep:simHvacTemplatePlantBoiler_OptimumPartLoadRatio				"1.0"^^xsd:double ;						# Optimum Part Load Ratio
+	simmep:simHvacTemplatePlantBoiler_WaterOutletUpperTemperatureLimit	"100"^^xsd:double ;						# Water Outlet Upper Temperature Limit
+	simmep:simHvacTemplatePlantBoiler_TemplatePlantLoopType				"Hot_WaterBoiler" ;						# Template Plant Loop Type
+	simcore:isTemplateObject   											false ;									# Standardized prop.
+	simcore:refId              											"XXX"^^xsd:ID ;  						# Standardized prop. <- this value will be Overwritten.
+	simcore:simUniqueID        											"none" ;								# Standardized prop.
+	simcore:sourceModelSchema  											"OptEEmAL BES Catalogue" ;				# Standardized prop.
+	simcore:tag															"AC.DE.BO.NG.05" ;
+	xpath:property
+			"{simmep:simHvacTemplatePlantBoiler_Capacity='//ECM/component_catalogue/level[@id='7']/active_ecm[@id='1']/capacity/text()'}" ,			
+			"{simmep:simHvacTemplatePlantBoiler_BoilerType='//ECM/component_catalogue/level[@id='7']/active_ecm[@id='1']/boiler_type/text()'}" ,
+			"{simmep:simHvacTemplatePlantBoiler_FuelType='//ECM/component_catalogue/level[@id='7']/active_ecm[@id='1']/fuel_type/text()'}" ,
+			"{simmep:simHvacTemplatePlantBoiler_Efficiency='//ECM/component_catalogue/level[@id='7']/active_ecm[@id='1']/efficiency/text()'}" ,
+			"{simmep:simHvacTemplatePlantBoiler_MinimumPartLoadRatio='//ECM/component_catalogue/level[@id='7']/active_ecm[@id='1']/minimum_part_load_ratio/text()'}" ,
+			"{simmep:simHvacTemplatePlantBoiler_MaximumPartLoadRatio='//ECM/component_catalogue/level[@id='7']/active_ecm[@id='1']/maximum_part_load_ratio/text()'}" ,
+			"{simmep:simHvacTemplatePlantBoiler_OptimumPartLoadRatio='//ECM/component_catalogue/level[@id='7']/active_ecm[@id='1']/optimum_part_load_ratio/text()'}" ,
+			"{simmep:simHvacTemplatePlantBoiler_WaterOutletUpperTemperatureLimit='//ECM/component_catalogue/level[@id='7']/active_ecm[@id='1']/water_outlet_upper_temperature_limit/text()'}" ,
+			"{simmep:simHvacTemplatePlantBoiler_TemplatePlantLoopType='//ECM/component_catalogue/level[@id='7']/active_ecm[@id='1']/template_plant_loop_type/text()'}" ;	
+	.
+	
+inst:SimHvacTemplatePlantBoiler_384_KW
+	a                          											simmep:SimHvacTemplatePlantBoiler ;
+	simmep:simHvacTemplatePlantBoiler_Name								"BOILER" ;								#	
+	simmep:simHvacTemplatePlantBoiler_Capacity	    					"384" ;									# Total Capacity 	<- Value to be Overwritten (What is the total boiler capacity?)
+	simmep:simHvacTemplatePlantBoiler_BoilerType    					"non-condensing" ;						# Boiler Type		<- Non-condensing, Condensing, Other
+	simmep:simHvacTemplatePlantBoiler_FuelType							"NaturalGas" ;							# Fuel Type			<- Natural Gas, Diesel, Bio-mass
+	simmep:simHvacTemplatePlantBoiler_Efficiency						"0.8"^^xsd:double ;						# Efficiency
+	simmep:simHvacTemplatePlantBoiler_MinimumPartLoadRatio				"0.0"^^xsd:double ;						# Maximum Part Load Ratio
+	simmep:simHvacTemplatePlantBoiler_MaximumPartLoadRatio				"1.1"^^xsd:double ;						# Minimum Part Load Ratio
+	simmep:simHvacTemplatePlantBoiler_OptimumPartLoadRatio				"1.0"^^xsd:double ;						# Optimum Part Load Ratio
+	simmep:simHvacTemplatePlantBoiler_WaterOutletUpperTemperatureLimit	"100"^^xsd:double ;						# Water Outlet Upper Temperature Limit
+	simmep:simHvacTemplatePlantBoiler_TemplatePlantLoopType				"Hot_WaterBoiler" ;						# Template Plant Loop Type
+	simcore:isTemplateObject   											false ;									# Standardized prop.
+	simcore:refId              											"XXX"^^xsd:ID ;  						# Standardized prop. <- this value will be Overwritten.
+	simcore:simUniqueID        											"none" ;								# Standardized prop.
+	simcore:sourceModelSchema  											"OptEEmAL BES Catalogue" ;				# Standardized prop.
+	simcore:tag															"AC.DE.BO.NG.06" ;
+	xpath:property
+			"{simmep:simHvacTemplatePlantBoiler_Capacity='//ECM/component_catalogue/level[@id='7']/active_ecm[@id='1']/capacity/text()'}" ,			
+			"{simmep:simHvacTemplatePlantBoiler_BoilerType='//ECM/component_catalogue/level[@id='7']/active_ecm[@id='1']/boiler_type/text()'}" ,
+			"{simmep:simHvacTemplatePlantBoiler_FuelType='//ECM/component_catalogue/level[@id='7']/active_ecm[@id='1']/fuel_type/text()'}" ,
+			"{simmep:simHvacTemplatePlantBoiler_Efficiency='//ECM/component_catalogue/level[@id='7']/active_ecm[@id='1']/efficiency/text()'}" ,
+			"{simmep:simHvacTemplatePlantBoiler_MinimumPartLoadRatio='//ECM/component_catalogue/level[@id='7']/active_ecm[@id='1']/minimum_part_load_ratio/text()'}" ,
+			"{simmep:simHvacTemplatePlantBoiler_MaximumPartLoadRatio='//ECM/component_catalogue/level[@id='7']/active_ecm[@id='1']/maximum_part_load_ratio/text()'}" ,
+			"{simmep:simHvacTemplatePlantBoiler_OptimumPartLoadRatio='//ECM/component_catalogue/level[@id='7']/active_ecm[@id='1']/optimum_part_load_ratio/text()'}" ,
+			"{simmep:simHvacTemplatePlantBoiler_WaterOutletUpperTemperatureLimit='//ECM/component_catalogue/level[@id='7']/active_ecm[@id='1']/water_outlet_upper_temperature_limit/text()'}" ,
+			"{simmep:simHvacTemplatePlantBoiler_TemplatePlantLoopType='//ECM/component_catalogue/level[@id='7']/active_ecm[@id='1']/template_plant_loop_type/text()'}" ;	
+	.	

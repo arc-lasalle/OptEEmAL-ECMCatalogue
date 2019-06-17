@@ -1,0 +1,284 @@
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix simcore: <http://www.opteemal.eu/schema/2017/01/SimModelCore#> .
+@prefix simres: <http://www.opteemal.eu/schema/2017/01/ResourcesGeneral#> .
+@prefix simgeom: <http://www.opteemal.eu/schema/2017/01/ResourcesGeometry#> .
+@prefix simbldg: <http://www.opteemal.eu/schema/2017/01/BuildingModel#> .
+@prefix simmep: <http://www.opteemal.eu/schema/2017/01/MepModel#> .
+@prefix simmodel: <http://www.opteemal.eu/schema/2017/01/Model#> .
+@prefix list: <https://w3id.org/list#> .
+@prefix inst: <http://to.replace#> .
+@prefix xpath: <http://www.opteemal.eu/xpath/prop#> .
+
+# last review: 2018.11.09
+
+# ================================================================================================
+# Roof Pitched - Internal insulation (PA.FL.NC.DE.01)
+# ================================================================================================
+# Concrete slab floors are perhaps the most common flooring application, with many domestic and 
+# non-domestic constructions featuring a concrete slab application installed directly on the 
+# building foundations or subsoil.
+#
+#  ||                 ||
+#  || +5 ------------ ||
+#  || +4 ------------ ||
+#  || +3 ------------ ||
+#  || +2 ------------ ||
+#  || +1 ------------ ||
+#  || --------------- ||
+#  || --------------- || ground (bottom of the building)
+
+# ------------------------------------------------------------------------------------------------
+# LIST PART
+# ------------------------------------------------------------------------------------------------
+
+inst:MaterialLayers_List_MOD_PA_FL_NC_DE_1
+        a                 simres:MaterialLayers_List ;
+        list:hasContents  inst:SimMaterialLayer_OpaqueMaterialLayer_Default_MOD_PA_FL_NC_DE_1 ;
+        list:hasNext      inst:MaterialLayers_List_MOD_PA_FL_NC_DE_2 ;
+		.
+inst:MaterialLayers_List_MOD_PA_FL_NC_DE_2
+		a                 simres:MaterialLayers_List ;
+        list:hasContents  inst:SimMaterialLayer_OpaqueMaterialLayer_Default_MOD_PA_FL_NC_DE_2 ;
+        list:hasNext      inst:MaterialLayers_List_MOD_PA_FL_NC_DE_3 ;
+		.
+inst:MaterialLayers_List_MOD_PA_FL_NC_DE_3
+		a                 simres:MaterialLayers_List ;
+        list:hasContents  inst:SimMaterialLayer_OpaqueMaterialLayer_Default_MOD_PA_FL_NC_DE_3 ;        
+		list:hasNext      inst:MaterialLayers_List_MOD_PA_FL_NC_DE_4 ;
+		.
+inst:MaterialLayers_List_MOD_PA_FL_NC_DE_4
+		a                 simres:MaterialLayers_List ;
+        list:hasContents  inst:SimMaterialLayer_OpaqueMaterialLayer_Default_MOD_PA_FL_NC_DE_3 ;        
+		list:hasNext      inst:MaterialLayers_List_MOD_PA_FL_NC_DE_5 ;
+		.
+inst:MaterialLayers_List_MOD_PA_FL_NC_DE_5
+		a                 simres:MaterialLayers_List ;
+        list:hasContents  inst:SimMaterialLayer_OpaqueMaterialLayer_Default_MOD_PA_FL_NC_DE_3 ;        
+		.
+		
+# ------------------------------------------------------------------------------------------------
+# LAYER 1 - C1_L1 Finishing layer - Miscellaneous - Sand
+# ------------------------------------------------------------------------------------------------
+
+inst:SimMaterialLayer_OpaqueMaterialLayer_Default_MOD_PA_FL_NC_DE_1
+	a                             			simres:SimMaterialLayer_OpaqueMaterialLayer_Default ;
+	simres:layerThickness   				"0.1"^^xsd:double ;		
+	simres:layerMaterial          			inst:SimMaterial_OpaqueMaterial_Default_MOD_PA_FL_NC_DE_1 ;
+	simres:materialLayerName				"PA.FL.NC.DE.01-C1_L1 Finishing layer" ;
+	simcore:simModelSubtype        			"Default" ;
+	simcore:simModelType           			"OpaqueMaterialLayer" ;
+	simcore:sourceModelObjectType  			"SimMaterialLayer" ;
+	simcore:sourceModelSchema      			"InstanceCreator" ;
+	simcore:refId                 			"XXX"^^xsd:ID ;
+	xpath:property
+		"{simres:layerThickness='//ECM/component_catalogue/level[@id='7']/layer[@id='1']/thickness/text()'}" ;	
+	.
+inst:SimMaterial_OpaqueMaterial_Default_MOD_PA_FL_NC_DE_1
+	a                            			simres:SimMaterial_OpaqueMaterial_Default ;		
+	simcore:simModelSubtype        			"Default" ;
+	simcore:simModelType           			"OpaqueMaterial" ;
+	simcore:sourceModelObjectType  			"SimMaterial" ;
+	simcore:sourceModelSchema      			"InstanceCreator" ;
+	simres:name				       			"PA.FL.NC.DE.01-Miscellaneous-Sand" ;
+	# Properties from the ECM catalogue
+	simres:simMaterial_Density    			"2240.0"^^xsd:double ; 
+	simres:simMaterial_SpecificHeat			"840.0"^^xsd:double ; 
+	simres:simMaterial_Cond       			"1.8"^^xsd:double ;  
+	simres:simMaterial_ThermalAbsorptance 	"0.9"^^xsd:double ;
+	simres:simMaterial_SolarAbsorptance 	"0.6"^^xsd:double ;
+	simres:simMaterial_Rough 				"MediumRough" ;
+	simres:simMaterial_VisAbsorptance 		"0.6"^^xsd:double ;
+	simres:simMaterial_ThermalResist 		"0.055"^^xsd:double ;
+	simcore:refId                 			"XXX"^^xsd:ID ;
+	xpath:property	
+		"{simres:simMaterial_Density='//ECM/component_catalogue/level[@id='7']/layer[@id='1']/density/text()'}",
+		"{simres:simMaterial_SpecificHeat='//ECM/component_catalogue/level[@id='7']/layer[@id='1']/specific_heat/text()'}",
+		"{simres:simMaterial_Cond='//ECM/component_catalogue/level[@id='7']/layer[@id='1']/thermal_conductivity/text()'}",
+		"{simres:simMaterial_ThermalAbsorptance='//ECM/component_catalogue/level[@id='7']/layer[@id='1']/thermal_absorptance/text()'}",
+		"{simres:simMaterial_SolarAbsorptance='//ECM/component_catalogue/level[@id='7']/layer[@id='1']/solar_absorptance/text()'}",
+		#"{simres:simMaterial_Rough='//ECM/component_catalogue/level[@id='7']/layer[@id='1']/roughness/text()'}",
+		"{simres:simMaterial_VisAbsorptance='//ECM/component_catalogue/level[@id='7']/layer[@id='1']/visible_absorptance/text()'}",
+		"{simres:simMaterial_ThermalResist='//ECM/component_catalogue/level[@id='7']/layer[@id='1']/thermal_resistance/text()'}";
+	.		
+	
+# ------------------------------------------------------------------------------------------------
+# LAYER 2 - C1_L2 Waterproof layer - WPL - Bitumen felt layer
+# ------------------------------------------------------------------------------------------------
+
+inst:SimMaterialLayer_OpaqueMaterialLayer_Default_MOD_PA_FL_NC_DE_2
+	a                             			simres:SimMaterialLayer_OpaqueMaterialLayer_Default ;
+	simres:layerThickness   				"0.002"^^xsd:double ;		
+	simres:layerMaterial          			inst:SimMaterial_OpaqueMaterial_Default_MOD_PA_FL_NC_DE_2 ;
+	simres:materialLayerName				"PA.FL.NC.DE.01-C1_L2 Waterproof layer" ;
+	simcore:simModelSubtype        			"Default" ;
+	simcore:simModelType           			"OpaqueMaterialLayer" ;
+	simcore:sourceModelObjectType  			"SimMaterialLayer" ;
+	simcore:sourceModelSchema      			"InstanceCreator" ;
+	simcore:refId                 			"XXX"^^xsd:ID ;
+	xpath:property
+		"{simres:layerThickness='//ECM/component_catalogue/level[@id='7']/layer[@id='2']/thickness/text()'}" ;	
+	.	
+inst:SimMaterial_OpaqueMaterial_Default_MOD_PA_FL_NC_DE_2
+	a                            			simres:SimMaterial_OpaqueMaterial_Default ;		
+	simcore:simModelSubtype        			"Default" ;
+	simcore:simModelType           			"OpaqueMaterial" ;
+	simcore:sourceModelObjectType  			"SimMaterial" ;
+	simcore:sourceModelSchema      			"InstanceCreator" ;
+	simres:name				       			"PA.FL.NC.DE.01-Bitumen-felt-layer" ;
+	# Properties from the ECM catalogue
+	simres:simMaterial_Density    			"1100.0"^^xsd:double ; 
+	simres:simMaterial_SpecificHeat			"1000.0"^^xsd:double ; 
+	simres:simMaterial_Cond       			"0.23"^^xsd:double ;  
+	simres:simMaterial_ThermalAbsorptance 	"0.9"^^xsd:double ;
+	simres:simMaterial_SolarAbsorptance 	"0.87"^^xsd:double ;
+	simres:simMaterial_Rough 				"Smooth" ;
+	simres:simMaterial_VisAbsorptance 		"0.87"^^xsd:double ;
+	simres:simMaterial_ThermalResist 		"0.087"^^xsd:double ;
+	simcore:refId                 			"XXX"^^xsd:ID ;
+	xpath:property	
+		"{simres:simMaterial_Density='//ECM/component_catalogue/level[@id='7']/layer[@id='2']/density/text()'}",
+		"{simres:simMaterial_SpecificHeat='//ECM/component_catalogue/level[@id='7']/layer[@id='2']/specific_heat/text()'}",
+		"{simres:simMaterial_Cond='//ECM/component_catalogue/level[@id='7']/layer[@id='2']/thermal_conductivity/text()'}",
+		"{simres:simMaterial_ThermalAbsorptance='//ECM/component_catalogue/level[@id='7']/layer[@id='2']/thermal_absorptance/text()'}",
+		"{simres:simMaterial_SolarAbsorptance='//ECM/component_catalogue/level[@id='7']/layer[@id='2']/solar_absorptance/text()'}",
+		#"{simres:simMaterial_Rough='//ECM/component_catalogue/level[@id='7']/layer[@id='2']/roughness/text()'}",
+		"{simres:simMaterial_VisAbsorptance='//ECM/component_catalogue/level[@id='7']/layer[@id='2']/visible_absorptance/text()'}",
+		"{simres:simMaterial_ThermalResist='//ECM/component_catalogue/level[@id='7']/layer[@id='2']/thermal_resistance/text()'}";
+	.		
+	
+# ------------------------------------------------------------------------------------------------
+# LAYER 3 - B2.1_L3 Insulation - XPS Extruded Polystyrene
+# ------------------------------------------------------------------------------------------------
+
+inst:SimMaterialLayer_OpaqueMaterialLayer_Default_MOD_PA_FL_NC_DE_3
+	a                             			simres:SimMaterialLayer_OpaqueMaterialLayer_Default ;
+	simres:layerThickness   				"0.1"^^xsd:double ;		
+	simres:layerMaterial          			inst:SimMaterial_OpaqueMaterial_Default_MOD_PA_FL_NC_DE_3 ;
+	simres:materialLayerName				"PA.FL.NC.DE.01-B2.1_L3 Insulation" ;
+	simcore:simModelSubtype        			"Default" ;
+	simcore:simModelType           			"OpaqueMaterialLayer" ;
+	simcore:sourceModelObjectType  			"SimMaterialLayer" ;
+	simcore:sourceModelSchema      			"InstanceCreator" ;
+	simcore:refId                 			"XXX"^^xsd:ID ;
+	xpath:property
+		"{simres:layerThickness='//ECM/component_catalogue/level[@id='7']/layer[@id='3']/thickness/text()'}" ;	
+	.
+inst:SimMaterial_OpaqueMaterial_Default_MOD_PA_FL_NC_DE_3
+	a                            			simres:SimMaterial_OpaqueMaterial_Default ;		
+	simcore:simModelSubtype        			"Default" ;
+	simcore:simModelType           			"OpaqueMaterial" ;
+	simcore:sourceModelObjectType  			"SimMaterial" ;
+	simcore:sourceModelSchema      			"InstanceCreator" ;
+	simres:name				       			"PA.FL.NC.DE.01-XPS-Extruded-Polystyrene" ;
+	# Properties from the ECM catalogue
+	simres:simMaterial_Density    			"35.0"^^xsd:double ; 
+	simres:simMaterial_SpecificHeat			"1400.0"^^xsd:double ; 
+	simres:simMaterial_Cond       			"0.034"^^xsd:double ;  
+	simres:simMaterial_ThermalAbsorptance 	"0.9"^^xsd:double ;
+	simres:simMaterial_SolarAbsorptance 	"0.6"^^xsd:double ;
+	simres:simMaterial_Rough 				"MediumRough" ;
+	simres:simMaterial_VisAbsorptance 		"0.6"^^xsd:double ;
+	simres:simMaterial_ThermalResist 		"2.94"^^xsd:double ;
+	simcore:refId                 			"XXX"^^xsd:ID ;
+	xpath:property	
+		"{simres:simMaterial_Density='//ECM/component_catalogue/level[@id='7']/layer[@id='3']/density/text()'}",
+		"{simres:simMaterial_SpecificHeat='//ECM/component_catalogue/level[@id='7']/layer[@id='3']/specific_heat/text()'}",
+		"{simres:simMaterial_Cond='//ECM/component_catalogue/level[@id='7']/layer[@id='3']/thermal_conductivity/text()'}",
+		"{simres:simMaterial_ThermalAbsorptance='//ECM/component_catalogue/level[@id='7']/layer[@id='3']/thermal_absorptance/text()'}",
+		"{simres:simMaterial_SolarAbsorptance='//ECM/component_catalogue/level[@id='7']/layer[@id='3']/solar_absorptance/text()'}",
+		#"{simres:simMaterial_Rough='//ECM/component_catalogue/level[@id='7']/layer[@id='3']/roughness/text()'}",
+		"{simres:simMaterial_VisAbsorptance='//ECM/component_catalogue/level[@id='7']/layer[@id='3']/visible_absorptance/text()'}",
+		"{simres:simMaterial_ThermalResist='//ECM/component_catalogue/level[@id='7']/layer[@id='3']/thermal_resistance/text()'}";
+	.	
+	
+# ------------------------------------------------------------------------------------------------
+# LAYER 4 - C1_L4 Floor structural base - Cement
+# ------------------------------------------------------------------------------------------------
+
+inst:SimMaterialLayer_OpaqueMaterialLayer_Default_MOD_PA_FL_NC_DE_4
+	a                             			simres:SimMaterialLayer_OpaqueMaterialLayer_Default ;
+	simres:layerThickness   				"0.04"^^xsd:double ;		
+	simres:layerMaterial          			inst:SimMaterial_OpaqueMaterial_Default_MOD_PA_FL_NC_DE_4 ;
+	simres:materialLayerName				"PA.FL.NC.DE.01-C1_L4 Floor structural base" ;
+	simcore:simModelSubtype        			"Default" ;
+	simcore:simModelType           			"OpaqueMaterialLayer" ;
+	simcore:sourceModelObjectType  			"SimMaterialLayer" ;
+	simcore:sourceModelSchema      			"InstanceCreator" ;
+	simcore:refId                 			"XXX"^^xsd:ID ;
+	xpath:property
+		"{simres:layerThickness='//ECM/component_catalogue/level[@id='7']/layer[@id='4']/thickness/text()'}" ;	
+	.	
+inst:SimMaterial_OpaqueMaterial_Default_MOD_PA_FL_NC_DE_4
+	a                            			simres:SimMaterial_OpaqueMaterial_Default ;		
+	simcore:simModelSubtype        			"Default" ;
+	simcore:simModelType           			"OpaqueMaterial" ;
+	simcore:sourceModelObjectType  			"SimMaterial" ;
+	simcore:sourceModelSchema      			"InstanceCreator" ;
+	simres:name				       			"PA.FL.NC.DE.01-Cement" ;
+	# Properties from the ECM catalogue
+	simres:simMaterial_Density    			"1350.0"^^xsd:double ; 
+	simres:simMaterial_SpecificHeat			"1000.0"^^xsd:double ; 
+	simres:simMaterial_Cond       			"0.7"^^xsd:double ;  
+	simres:simMaterial_ThermalAbsorptance 	"0.9"^^xsd:double ;
+	simres:simMaterial_SolarAbsorptance 	"0.6"^^xsd:double ;
+	simres:simMaterial_Rough 				"MediumRough" ;
+	simres:simMaterial_VisAbsorptance 		"0.6"^^xsd:double ;
+	simres:simMaterial_ThermalResist 		"0.06"^^xsd:double ;
+	simcore:refId                 			"XXX"^^xsd:ID ;
+	xpath:property	
+		"{simres:simMaterial_Density='//ECM/component_catalogue/level[@id='7']/layer[@id='4']/density/text()'}",
+		"{simres:simMaterial_SpecificHeat='//ECM/component_catalogue/level[@id='7']/layer[@id='4']/specific_heat/text()'}",
+		"{simres:simMaterial_Cond='//ECM/component_catalogue/level[@id='7']/layer[@id='4']/thermal_conductivity/text()'}",
+		"{simres:simMaterial_ThermalAbsorptance='//ECM/component_catalogue/level[@id='7']/layer[@id='4']/thermal_absorptance/text()'}",
+		"{simres:simMaterial_SolarAbsorptance='//ECM/component_catalogue/level[@id='7']/layer[@id='4']/solar_absorptance/text()'}",
+		#"{simres:simMaterial_Rough='//ECM/component_catalogue/level[@id='7']/layer[@id='4']/roughness/text()'}",
+		"{simres:simMaterial_VisAbsorptance='//ECM/component_catalogue/level[@id='7']/layer[@id='4']/visible_absorptance/text()'}",
+		"{simres:simMaterial_ThermalResist='//ECM/component_catalogue/level[@id='7']/layer[@id='4']/thermal_resistance/text()'}";
+	.		
+	
+# ------------------------------------------------------------------------------------------------
+# LAYER 5 - C1_L5 Floor finishing - Gres, ceramic floor
+# ------------------------------------------------------------------------------------------------
+
+inst:SimMaterialLayer_OpaqueMaterialLayer_Default_MOD_PA_FL_NC_DE_5
+	a                             			simres:SimMaterialLayer_OpaqueMaterialLayer_Default ;
+	simres:layerThickness   				"0.02"^^xsd:double ;		
+	simres:layerMaterial          			inst:SimMaterial_OpaqueMaterial_Default_MOD_PA_FL_NC_DE_5 ;
+	simres:materialLayerName				"PA.FL.NC.DE.01-C1_L5 Floor finishing" ;
+	simcore:simModelSubtype        			"Default" ;
+	simcore:simModelType           			"OpaqueMaterialLayer" ;
+	simcore:sourceModelObjectType  			"SimMaterialLayer" ;
+	simcore:sourceModelSchema      			"InstanceCreator" ;
+	simcore:refId                 			"XXX"^^xsd:ID ;
+	xpath:property
+		"{simres:layerThickness='//ECM/component_catalogue/level[@id='7']/layer[@id='5']/thickness/text()'}" ;	
+	.
+inst:SimMaterial_OpaqueMaterial_Default_MOD_PA_FL_NC_DE_5
+	a                            			simres:SimMaterial_OpaqueMaterial_Default ;		
+	simcore:simModelSubtype        			"Default" ;
+	simcore:simModelType           			"OpaqueMaterial" ;
+	simcore:sourceModelObjectType  			"SimMaterial" ;
+	simcore:sourceModelSchema      			"InstanceCreator" ;
+	simres:name				       			"PA.FL.NC.DE.01-Gres-ceramic-floor" ;
+	# Properties from the ECM catalogue
+	simres:simMaterial_Density    			"1100.0"^^xsd:double ; 
+	simres:simMaterial_SpecificHeat			"840.0"^^xsd:double ; 
+	simres:simMaterial_Cond       			"1.3"^^xsd:double ;  
+	simres:simMaterial_ThermalAbsorptance 	"0.9"^^xsd:double ;
+	simres:simMaterial_SolarAbsorptance 	"0.6"^^xsd:double ;
+	simres:simMaterial_Rough 				"MediumSmooth" ;
+	simres:simMaterial_VisAbsorptance 		"0.6"^^xsd:double ;
+	simres:simMaterial_ThermalResist 		"0.015"^^xsd:double ;
+	simcore:refId                 			"XXX"^^xsd:ID ;
+	xpath:property	
+		"{simres:simMaterial_Density='//ECM/component_catalogue/level[@id='7']/layer[@id='5']/density/text()'}",
+		"{simres:simMaterial_SpecificHeat='//ECM/component_catalogue/level[@id='7']/layer[@id='5']/specific_heat/text()'}",
+		"{simres:simMaterial_Cond='//ECM/component_catalogue/level[@id='7']/layer[@id='5']/thermal_conductivity/text()'}",
+		"{simres:simMaterial_ThermalAbsorptance='//ECM/component_catalogue/level[@id='7']/layer[@id='5']/thermal_absorptance/text()'}",
+		"{simres:simMaterial_SolarAbsorptance='//ECM/component_catalogue/level[@id='7']/layer[@id='5']/solar_absorptance/text()'}",
+		#"{simres:simMaterial_Rough='//ECM/component_catalogue/level[@id='7']/layer[@id='5']/roughness/text()'}",
+		"{simres:simMaterial_VisAbsorptance='//ECM/component_catalogue/level[@id='7']/layer[@id='5']/visible_absorptance/text()'}",
+		"{simres:simMaterial_ThermalResist='//ECM/component_catalogue/level[@id='7']/layer[@id='5']/thermal_resistance/text()'}";
+	.		

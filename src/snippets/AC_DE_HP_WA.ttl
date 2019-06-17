@@ -1,0 +1,151 @@
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix simcore: <http://www.opteemal.eu/schema/2017/01/SimModelCore#> .
+@prefix simres: <http://www.opteemal.eu/schema/2017/01/ResourcesGeneral#> .
+@prefix simgeom: <http://www.opteemal.eu/schema/2017/01/ResourcesGeometry#> .
+@prefix simbldg: <http://www.opteemal.eu/schema/2017/01/BuildingModel#> .
+@prefix simmep: <http://www.opteemal.eu/schema/2017/01/MepModel#> .
+@prefix simmodel: <http://www.opteemal.eu/schema/2017/01/Model#> .
+@prefix list: <https://w3id.org/list#> .
+@prefix inst: <http://to.replace#> .
+@prefix xpath: <http://www.opteemal.eu/xpath/prop#> .
+
+# last review: 2018.12.05
+
+# ================================================================================================
+# Biomass boiler (AC.DE.HP.WA)
+# ================================================================================================
+# ACTION: 
+# The existing active system is replaced with a HeatPump:
+# DESCRIPTION: 
+# This snippet contains the information of X types of HeatPumps. 
+# The only difference between them is the power (KW).
+# Values are:
+# -  42 kW
+# -  53 kW
+# -  69 kW
+# -  92 kW
+# - 137 kW
+
+inst:SimHvacTemplatePlantHeatPump_42_KW	
+	a																		simmep:SimHvacTemplatePlantHeatPump ;
+	simmep:simHvacTemplatePlantHeatPump_Name								"BuildingHeatPumpPlant" ;
+	simmep:simHvacTemplatePlantHeatPump_CoolingCapacity						"42" ;
+	simmep:simHvacTemplatePlantHeatPump_CoolingCOP							"3.27"^^xsd:double ;
+	simmep:simHvacTemplatePlantHeatPump_HeatingCapacity						"42" ;
+	simmep:simHvacTemplatePlantHeatPump_HeatingCOP							"3.1"^^xsd:double ;
+	simmep:simHvacTemplatePlantHeatPump_HeatPumpType						"WaterToAirHeatPump" ;
+	simmep:simHvacTemplatePlantHeatPump_MaximumPartLoadRatio				"1.0"^^xsd:double ;
+	simmep:simHvacTemplatePlantHeatPump_MinimumPartLoadRatio				"0.0"^^xsd:double ;
+	simmep:simHvacTemplatePlantHeatPump_OptimumPartLoadRatio				"0.9"^^xsd:double ;
+	simmep:simHvacTemplatePlantHeatPump_SizingFactor						"0.0"^^xsd:double ;
+	simmep:simHvacTemplatePlantHeatPump_UpperTempLimit						"90.0"^^xsd:double ;	
+	simcore:isTemplateObject   												false ;									# Standardized prop.
+	simcore:refId              												"XXX"^^xsd:ID ;  						# to be overwritten.
+	simcore:simUniqueID        												"none" ;								# Standardized prop.
+	simcore:sourceModelSchema  												"OptEEmAL ECM Catalogue" ;				# Standardized prop.	
+	simcore:tag																"AC.DE.HP.WA.01" ;
+	xpath:property
+		"{simmep:simHvacTemplatePlantHeatPump_CoolingCapacity='//ECM/component_catalogue/level[@id='7']/active_ecm[@id='1']/cooling_coil_gross_rated_total_capacity/text()'}" ,
+		"{simmep:simHvacTemplatePlantHeatPump_CoolingCOP='//ECM/component_catalogue/level[@id='7']/active_ecm[@id='1']/cooling_coil_gross_rated_cooling_cop/text()'}" ,
+		"{simmep:simHvacTemplatePlantHeatPump_HeatingCapacity='//ECM/component_catalogue/level[@id='7']/active_ecm[@id='1']/heat_pump_heating_coil_gross_rated_capacity/text()'}",
+		"{simmep:simHvacTemplatePlantHeatPump_HeatingCOP='//ECM/component_catalogue/level[@id='7']/active_ecm[@id='1']/heat_pump_heating_coil_gross_rated_cop/text()'}" ;
+	.
+inst:SimHvacTemplatePlantHeatPump_53_KW	
+	a																		simmep:SimHvacTemplatePlantHeatPump ;
+	simmep:simHvacTemplatePlantHeatPump_Name								"BuildingHeatPumpPlant" ;
+	simmep:simHvacTemplatePlantHeatPump_CoolingCapacity						"42" ;
+	simmep:simHvacTemplatePlantHeatPump_CoolingCOP							"3.27"^^xsd:double ;
+	simmep:simHvacTemplatePlantHeatPump_HeatingCapacity						"42" ;
+	simmep:simHvacTemplatePlantHeatPump_HeatingCOP							"3.1"^^xsd:double ;
+	simmep:simHvacTemplatePlantHeatPump_HeatPumpType						"WaterToAirHeatPump" ;
+	simmep:simHvacTemplatePlantHeatPump_MaximumPartLoadRatio				"1.0"^^xsd:double ;
+	simmep:simHvacTemplatePlantHeatPump_MinimumPartLoadRatio				"0.0"^^xsd:double ;
+	simmep:simHvacTemplatePlantHeatPump_OptimumPartLoadRatio				"0.9"^^xsd:double ;
+	simmep:simHvacTemplatePlantHeatPump_SizingFactor						"0.0"^^xsd:double ;
+	simmep:simHvacTemplatePlantHeatPump_UpperTempLimit						"90.0"^^xsd:double ;	
+	simcore:isTemplateObject   												false ;									# Standardized prop.
+	simcore:refId              												"XXX"^^xsd:ID ;  						# to be overwritten.
+	simcore:simUniqueID        												"none" ;								# Standardized prop.
+	simcore:sourceModelSchema  												"OptEEmAL ECM Catalogue" ;				# Standardized prop.	
+	simcore:tag																"AC.DE.HP.WA.02" ;
+	xpath:property
+		"{simmep:simHvacTemplatePlantHeatPump_CoolingCapacity='//ECM/component_catalogue/level[@id='7']/active_ecm[@id='1']/cooling_coil_gross_rated_total_capacity/text()'}" ,
+		"{simmep:simHvacTemplatePlantHeatPump_CoolingCOP='//ECM/component_catalogue/level[@id='7']/active_ecm[@id='1']/cooling_coil_gross_rated_cooling_cop/text()'}" ,
+		"{simmep:simHvacTemplatePlantHeatPump_HeatingCapacity='//ECM/component_catalogue/level[@id='7']/active_ecm[@id='1']/heat_pump_heating_coil_gross_rated_capacity/text()'}",
+		"{simmep:simHvacTemplatePlantHeatPump_HeatingCOP='//ECM/component_catalogue/level[@id='7']/active_ecm[@id='1']/heat_pump_heating_coil_gross_rated_cop/text()'}" ;
+	.	
+inst:SimHvacTemplatePlantHeatPump_69_KW	
+	a																		simmep:SimHvacTemplatePlantHeatPump ;
+	simmep:simHvacTemplatePlantHeatPump_Name								"BuildingHeatPumpPlant" ;
+	simmep:simHvacTemplatePlantHeatPump_CoolingCapacity						"42" ;
+	simmep:simHvacTemplatePlantHeatPump_CoolingCOP							"3.27"^^xsd:double ;
+	simmep:simHvacTemplatePlantHeatPump_HeatingCapacity						"42" ;
+	simmep:simHvacTemplatePlantHeatPump_HeatingCOP							"3.1"^^xsd:double ;
+	simmep:simHvacTemplatePlantHeatPump_HeatPumpType						"WaterToAirHeatPump" ;
+	simmep:simHvacTemplatePlantHeatPump_MaximumPartLoadRatio				"1.0"^^xsd:double ;
+	simmep:simHvacTemplatePlantHeatPump_MinimumPartLoadRatio				"0.0"^^xsd:double ;
+	simmep:simHvacTemplatePlantHeatPump_OptimumPartLoadRatio				"0.9"^^xsd:double ;
+	simmep:simHvacTemplatePlantHeatPump_SizingFactor						"0.0"^^xsd:double ;
+	simmep:simHvacTemplatePlantHeatPump_UpperTempLimit						"90.0"^^xsd:double ;	
+	simcore:isTemplateObject   												false ;									# Standardized prop.
+	simcore:refId              												"XXX"^^xsd:ID ;  						# to be overwritten.
+	simcore:simUniqueID        												"none" ;								# Standardized prop.
+	simcore:sourceModelSchema  												"OptEEmAL ECM Catalogue" ;				# Standardized prop.	
+	simcore:tag																"AC.DE.HP.WA.03" ;
+	xpath:property
+		"{simmep:simHvacTemplatePlantHeatPump_CoolingCapacity='//ECM/component_catalogue/level[@id='7']/active_ecm[@id='1']/cooling_coil_gross_rated_total_capacity/text()'}" ,
+		"{simmep:simHvacTemplatePlantHeatPump_CoolingCOP='//ECM/component_catalogue/level[@id='7']/active_ecm[@id='1']/cooling_coil_gross_rated_cooling_cop/text()'}" ,
+		"{simmep:simHvacTemplatePlantHeatPump_HeatingCapacity='//ECM/component_catalogue/level[@id='7']/active_ecm[@id='1']/heat_pump_heating_coil_gross_rated_capacity/text()'}",
+		"{simmep:simHvacTemplatePlantHeatPump_HeatingCOP='//ECM/component_catalogue/level[@id='7']/active_ecm[@id='1']/heat_pump_heating_coil_gross_rated_cop/text()'}" ;
+	.
+	
+inst:SimHvacTemplatePlantHeatPump_92_KW	
+	a																		simmep:SimHvacTemplatePlantHeatPump ;
+	simmep:simHvacTemplatePlantHeatPump_Name								"BuildingHeatPumpPlant" ;
+	simmep:simHvacTemplatePlantHeatPump_CoolingCapacity						"42" ;
+	simmep:simHvacTemplatePlantHeatPump_CoolingCOP							"3.27"^^xsd:double ;
+	simmep:simHvacTemplatePlantHeatPump_HeatingCapacity						"42" ;
+	simmep:simHvacTemplatePlantHeatPump_HeatingCOP							"3.1"^^xsd:double ;
+	simmep:simHvacTemplatePlantHeatPump_HeatPumpType						"WaterToAirHeatPump" ;
+	simmep:simHvacTemplatePlantHeatPump_MaximumPartLoadRatio				"1.0"^^xsd:double ;
+	simmep:simHvacTemplatePlantHeatPump_MinimumPartLoadRatio				"0.0"^^xsd:double ;
+	simmep:simHvacTemplatePlantHeatPump_OptimumPartLoadRatio				"0.9"^^xsd:double ;
+	simmep:simHvacTemplatePlantHeatPump_SizingFactor						"0.0"^^xsd:double ;
+	simmep:simHvacTemplatePlantHeatPump_UpperTempLimit						"90.0"^^xsd:double ;	
+	simcore:isTemplateObject   												false ;									# Standardized prop.
+	simcore:refId              												"XXX"^^xsd:ID ;  						# to be overwritten.
+	simcore:simUniqueID        												"none" ;								# Standardized prop.
+	simcore:sourceModelSchema  												"OptEEmAL ECM Catalogue" ;				# Standardized prop.	
+	simcore:tag																"AC.DE.HP.WA.04" ;
+	xpath:property
+		"{simmep:simHvacTemplatePlantHeatPump_CoolingCapacity='//ECM/component_catalogue/level[@id='7']/active_ecm[@id='1']/cooling_coil_gross_rated_total_capacity/text()'}" ,
+		"{simmep:simHvacTemplatePlantHeatPump_CoolingCOP='//ECM/component_catalogue/level[@id='7']/active_ecm[@id='1']/cooling_coil_gross_rated_cooling_cop/text()'}" ,
+		"{simmep:simHvacTemplatePlantHeatPump_HeatingCapacity='//ECM/component_catalogue/level[@id='7']/active_ecm[@id='1']/heat_pump_heating_coil_gross_rated_capacity/text()'}",
+		"{simmep:simHvacTemplatePlantHeatPump_HeatingCOP='//ECM/component_catalogue/level[@id='7']/active_ecm[@id='1']/heat_pump_heating_coil_gross_rated_cop/text()'}" ;
+	.	
+inst:SimHvacTemplatePlantHeatPump_137_KW	
+	a																		simmep:SimHvacTemplatePlantHeatPump ;
+	simmep:simHvacTemplatePlantHeatPump_Name								"BuildingHeatPumpPlant" ;
+	simmep:simHvacTemplatePlantHeatPump_CoolingCapacity						"42" ;
+	simmep:simHvacTemplatePlantHeatPump_CoolingCOP							"3.27"^^xsd:double ;
+	simmep:simHvacTemplatePlantHeatPump_HeatingCapacity						"42" ;
+	simmep:simHvacTemplatePlantHeatPump_HeatingCOP							"3.1"^^xsd:double ;
+	simmep:simHvacTemplatePlantHeatPump_HeatPumpType						"WaterToAirHeatPump" ;
+	simmep:simHvacTemplatePlantHeatPump_MaximumPartLoadRatio				"1.0"^^xsd:double ;
+	simmep:simHvacTemplatePlantHeatPump_MinimumPartLoadRatio				"0.0"^^xsd:double ;
+	simmep:simHvacTemplatePlantHeatPump_OptimumPartLoadRatio				"0.9"^^xsd:double ;
+	simmep:simHvacTemplatePlantHeatPump_SizingFactor						"0.0"^^xsd:double ;
+	simmep:simHvacTemplatePlantHeatPump_UpperTempLimit						"90.0"^^xsd:double ;	
+	simcore:isTemplateObject   												false ;									# Standardized prop.
+	simcore:refId              												"XXX"^^xsd:ID ;  						# to be overwritten.
+	simcore:simUniqueID        												"none" ;								# Standardized prop.
+	simcore:sourceModelSchema  												"OptEEmAL ECM Catalogue" ;				# Standardized prop.	
+	simcore:tag																"AC.DE.HP.WA.05" ;
+	xpath:property
+		"{simmep:simHvacTemplatePlantHeatPump_CoolingCapacity='//ECM/component_catalogue/level[@id='7']/active_ecm[@id='1']/cooling_coil_gross_rated_total_capacity/text()'}" ,
+		"{simmep:simHvacTemplatePlantHeatPump_CoolingCOP='//ECM/component_catalogue/level[@id='7']/active_ecm[@id='1']/cooling_coil_gross_rated_cooling_cop/text()'}" ,
+		"{simmep:simHvacTemplatePlantHeatPump_HeatingCapacity='//ECM/component_catalogue/level[@id='7']/active_ecm[@id='1']/heat_pump_heating_coil_gross_rated_capacity/text()'}",
+		"{simmep:simHvacTemplatePlantHeatPump_HeatingCOP='//ECM/component_catalogue/level[@id='7']/active_ecm[@id='1']/heat_pump_heating_coil_gross_rated_cop/text()'}" ;
+	.
