@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ECM id="RE.RO.SC.TC.01">
+  <ecm_catalogue>
+    <level id="1">
+      <group><![CDATA[Renewable]]></group>
+    </level>
+    <level id="2">
+      <location><![CDATA[Roof]]></location>
+    </level>
+    <level id="3">
+      <category><![CDATA[Solar Collector]]></category>
+    </level>
+    <level id="4">
+      <measure_type><![CDATA[Thermal collector]]></measure_type>
+    </level>
+    <level id="5">
+      <ecm_id><![CDATA[RE.RO.SC.TC.01]]></ecm_id>
+      <ecm_name><![CDATA[Flat plate solar collector]]></ecm_name>
+      <description><![CDATA[The solar thermal technology has been used traditionally to produce heat from solar radiation with the aim of covering the buildings energy requirements for water heating. Today the technology has improved and a wide range of applications are possible including technologies for electricity generation and for solar cooling. Therefore, it can be considered a technology with a high potential of contribution in meeting climate change objectives considering that the proportion of thermal energy in the final energy demand is very important]]></description>
+    </level>
+  </ecm_catalogue>
+  <component_catalogue>
+    <level id="7">
+      <application><![CDATA[_Systems with natural (thermosiphon) and forced (pump) circulation.
+_Solar domestic hot water heating in buildings.
+_Solar combi-systems for domestic hot water and space heating.
+_Swimming pool heating.]]></application>
+      <functional_unit><![CDATA[2,8 m2]]></functional_unit>
+      <advantages><![CDATA[_Solar heating systems are compatible with almost all the heat support systems.
+_The main costs of the technology are incurred in the initial investment due to the minimal operational costs. Therefore the price volatility of oil, gas or electricity has little influence.
+_Solar thermal technology creates regional and local jobs because the different phases of the value chain cannot be delocalized.
+_The solar resource is virtually unlimited.
+_There embodied energy of the installation is lower than in the case of other renewable technologies. ]]></advantages>
+      <disadvantages><![CDATA[_Despite being abundant, the solar resource is dispersed in time and space. The demand of heat does not always correspond to the availability of the resource.
+_The existing difficulties in the store of large amounts of heat from one season to another
+_Limitations with the availability of land and roof/façade space.
+_High variability of costs depending on the location, due to the different climate conditions.]]></disadvantages>
+      <links_to_barriers><![CDATA[_Legal classification of plot doesn't allow to intervene
+_Generation systems type
+_Maximum value roofs can grow externally]]></links_to_barriers>
+      <links_to_targets><![CDATA[_Change roofs externally
+_Change energy generation system
+_Implement renewable generation systems
+_Implement renewable generation systems]]></links_to_targets>
+      <boundaries><![CDATA[_Roof Surface
+_Useful roof surface]]></boundaries>
+      <application_scale><![CDATA[BL]]></application_scale>
+      <installation_data><![CDATA[Colocation of ST panels in an aluminium substructure located on different surfaces: roof or facade of a building (building scale) or large surfaces (district electricity generation scale)]]></installation_data>
+      <maintenance_data><![CDATA[Almost every part of the solar thermal installation is critical to performance and durability:
+_Panel Connection. The connetion between panels is a must for pressurized systems. If the connection is not 100% perfect fluid will leak from the system and it will begin to perform poorly in a short amonut of time.
+_Lineset Penetration. The linset penetration is the point where most leaks will occur so its critical that the penetrations through the roof and the membrane used will keep water out. ]]></maintenance_data>
+      <estimated_service_life unit="year"><![CDATA[25]]></estimated_service_life>
+      <other_information_1><![CDATA[[null]]]></other_information_1>
+      <other_information_2><![CDATA[[null]]]></other_information_2>
+      <gwp_-_production_impact_a1-3 unit="kG eq CO2/unit"><![CDATA[408,833266699519]]></gwp_-_production_impact_a1-3>
+      <gwp_-_end_of_life_impact_c1-4 unit="kG eq CO2/unit"><![CDATA[-133,250658501893]]></gwp_-_end_of_life_impact_c1-4>
+      <pec_-_production_impact_a1-3 unit="MJ/unit"><![CDATA[5486,90359070543]]></pec_-_production_impact_a1-3>
+      <pec_-_end_of_life_impact_c1-4 unit="MJ/unit"><![CDATA[-346,468688015882]]></pec_-_end_of_life_impact_c1-4>
+      <sale_price unit="€/functional unit"><![CDATA[1050]]></sale_price>
+      <installation_cost unit="€/functional unit"><![CDATA[183]]></installation_cost>
+      <maintenance_cost unit="€/functional unit·year"><![CDATA[109,7]]></maintenance_cost>
+      <end_of_life_cost unit="€/functional unit"><![CDATA[4,8]]></end_of_life_cost>
+      <renewable_ecm id="1">
+        <zero_loss_efficiency_η0><![CDATA[0,755]]></zero_loss_efficiency_η0>
+        <heat_loss_coefficient_k1 unit="[W/m2k]"><![CDATA[3,738]]></heat_loss_coefficient_k1>
+        <heat_loss_coefficientk2 unit="[W/m2k2]"><![CDATA[0,007]]></heat_loss_coefficientk2>
+      </renewable_ecm>
+    </level>
+  </component_catalogue>
+</ECM>

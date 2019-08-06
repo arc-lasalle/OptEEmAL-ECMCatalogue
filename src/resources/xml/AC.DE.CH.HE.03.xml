@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ECM id="AC.DE.CH.HE.03">
+  <ecm_catalogue>
+    <level id="1">
+      <group><![CDATA[Active]]></group>
+    </level>
+    <level id="2">
+      <location><![CDATA[Default]]></location>
+    </level>
+    <level id="3">
+      <category><![CDATA[CombinedHeatPower Unit]]></category>
+    </level>
+    <level id="4">
+      <measure_type><![CDATA[Combined Heat Power with natural gas fuel type]]></measure_type>
+    </level>
+    <level id="5">
+      <ecm_id><![CDATA[AC.DE.CH.HE.03]]></ecm_id>
+      <ecm_name><![CDATA[CHP Unit with 205 kW of nomimal capacity]]></ecm_name>
+      <description><![CDATA[High-efficiency Combined Heat Power Cogeneration Unit. The ECM enables to generate electric power and heat from natural gas.]]></description>
+    </level>
+  </ecm_catalogue>
+  <component_catalogue>
+    <level id="7">
+      <application><![CDATA[Generation of heat to the heating and domestic hot water systems and electric power to builidng.]]></application>
+      <functional_unit><![CDATA[205 kW]]></functional_unit>
+      <advantages><![CDATA[Related to other heating generation system, the CHP increases the efficiency and reduce the operational Energy cost]]></advantages>
+      <disadvantages><![CDATA[High initial investment]]></disadvantages>
+      <links_to_barriers><![CDATA[Access to natural gas
+Functional space to implement CHP units]]></links_to_barriers>
+      <links_to_targets><![CDATA[[null]]]></links_to_targets>
+      <boundaries><![CDATA[Applicable only in buildings with baseboard heating units connected with a hot water boiler ]]></boundaries>
+      <application_scale><![CDATA[BL+DL]]></application_scale>
+      <installation_data><![CDATA[Installation must be performed according to the CHP installation guidelines]]></installation_data>
+      <maintenance_data><![CDATA[Maintenance must be performed according to the CHP maintenance guidelines]]></maintenance_data>
+      <estimated_service_life unit="year"><![CDATA[25]]></estimated_service_life>
+      <other_information_1 unit="Non"><![CDATA[[null]]]></other_information_1>
+      <other_information_2 unit="Non"><![CDATA[[null]]]></other_information_2>
+      <gwp_-_production_impact_a1-3 unit="kG eq CO2/unit"><![CDATA[2051,32211276785]]></gwp_-_production_impact_a1-3>
+      <gwp_-_end_of_life_impact_c1-4 unit="kG eq CO2/unit"><![CDATA[1560,74228735125]]></gwp_-_end_of_life_impact_c1-4>
+      <pec_-_production_impact_a1-3 unit="MJ/unit"><![CDATA[30267,303203815]]></pec_-_production_impact_a1-3>
+      <pec_-_end_of_life_impact_c1-4 unit="MJ/unit"><![CDATA[28799,3914623588]]></pec_-_end_of_life_impact_c1-4>
+      <sale_price unit="€/functional unit"><![CDATA[112525]]></sale_price>
+      <installation_cost unit="€/functional unit"><![CDATA[4920]]></installation_cost>
+      <maintenance_cost unit="€/functional unit·year"><![CDATA[3485]]></maintenance_cost>
+      <end_of_life_cost unit="€/functional unit"><![CDATA[328]]></end_of_life_cost>
+      <active_ecm id="1">
+        <hvac_type><![CDATA[Combined HeatPower]]></hvac_type>
+        <capacity unit="kW"><![CDATA[205]]></capacity>
+        <electrical_efficiency unit="[0,1]"><![CDATA[0,346]]></electrical_efficiency>
+        <thermal_efficiency unit="[0,1]"><![CDATA[0,559]]></thermal_efficiency>
+        <fuel_type><![CDATA[Natural Gas]]></fuel_type>
+        <minimum_part_load_ratio unit="[0,1]"><![CDATA[0,5]]></minimum_part_load_ratio>
+        <maximum_part_load_ratio unit="[0,1]"><![CDATA[1]]></maximum_part_load_ratio>
+        <optimum_part_load_ratio unit="[0,1]"><![CDATA[0,9]]></optimum_part_load_ratio>
+        <water_outlet_upper_temperature_limit unit="ºC"><![CDATA[90]]></water_outlet_upper_temperature_limit>
+        <template_plant_loop_type><![CDATA[HotWaterLoop]]></template_plant_loop_type>
+      </active_ecm>
+    </level>
+  </component_catalogue>
+</ECM>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ECM id="RE.DE.GT.HP.01">
+  <ecm_catalogue>
+    <level id="1">
+      <group><![CDATA[Renewable]]></group>
+    </level>
+    <level id="2">
+      <location><![CDATA[Default]]></location>
+    </level>
+    <level id="3">
+      <category><![CDATA[Geothermal]]></category>
+    </level>
+    <level id="4">
+      <measure_type><![CDATA[Geothermal Heat Pump]]></measure_type>
+    </level>
+    <level id="5">
+      <ecm_id><![CDATA[RE.DE.GT.HP.01]]></ecm_id>
+      <ecm_name><![CDATA[Geothermal Heat Pump Generator  with 8 kW nominal capacity]]></ecm_name>
+      <description><![CDATA[This technology uses the constant temperature of the earth as the exchange medium instead of the outside air temperature. Geothermal heat pump systems consist of three parts: the ground heat exchanger, the heat pump unit, and the air delivery system (ductwork). The heat exchanger is a system of pipes called a loop, which is buried in the shallow ground near the building. A fluid (usually water or a mixture of water and antifreeze) circulates through the pipes to absorb or relinquish heat within the ground. Geothermal heat pumps use much less energy than conventional heating systems, since they draw heat from the ground. ]]></description>
+    </level>
+  </ecm_catalogue>
+  <component_catalogue>
+    <level id="7">
+      <application><![CDATA[_Forced Air Heating and Cooling utilizing a water-to-air heat pump and conventional ductwork for conditioned air distribution.
+_Hydronic radiant floor heating utilizing a water-to-water heat pump.  
+_Domestic hot water – Partial water heating through the desuperheater/hot water generator option, which can be installed on any of the various types of geothermal heat pumps, or full domestic water heating utilizing a water-to-water heat pump. 
+_ Pool/spa water heating utilizing a water-to-water heat pump.]]></application>
+      <functional_unit><![CDATA[1 unit + 100 meter of pipe]]></functional_unit>
+      <advantages><![CDATA[_No seasonal variation
+_Compatibility with both centralized and distributed energy generation
+_Resource availability in all world regions, particularly for direct use.]]></advantages>
+      <disadvantages><![CDATA[_High capital cost
+_Use of electricity for heat generation]]></disadvantages>
+      <links_to_barriers><![CDATA[_Legal classification of plot doesn't allow to intervene
+_Generation systems type]]></links_to_barriers>
+      <links_to_targets><![CDATA[_Implement renewable heat generation systems
+_Change energy generation system
+_Implement renewable generation systems]]></links_to_targets>
+      <boundaries><![CDATA[Useful land surface]]></boundaries>
+      <application_scale><![CDATA[DL]]></application_scale>
+      <installation_data><![CDATA[The most critical issue in a geothermal system is the integration of the pipes in the ground. According to the ground properties, this installation process could be easy or very difficult. In fact, when the hardness of the terrain is very high, in many cases it will be impossible to install this type of technology.]]></installation_data>
+      <maintenance_data><![CDATA[The main maintenance activities are directly related to the regulation of the heat pump and to the optimization of the distribution system. ]]></maintenance_data>
+      <estimated_service_life unit="year"><![CDATA[50]]></estimated_service_life>
+      <other_information_1><![CDATA[[null]]]></other_information_1>
+      <other_information_2><![CDATA[[null]]]></other_information_2>
+      <gwp_-_production_impact_a1-3 unit="kG eq CO2/unit"><![CDATA[3468,29738044232]]></gwp_-_production_impact_a1-3>
+      <gwp_-_end_of_life_impact_c1-4 unit="kG eq CO2/unit"><![CDATA[270,241830134197]]></gwp_-_end_of_life_impact_c1-4>
+      <pec_-_production_impact_a1-3 unit="MJ/unit"><![CDATA[45490,570564137]]></pec_-_production_impact_a1-3>
+      <pec_-_end_of_life_impact_c1-4 unit="MJ/unit"><![CDATA[-3279,79313212544]]></pec_-_end_of_life_impact_c1-4>
+      <sale_price unit="€/functional unit"><![CDATA[8000]]></sale_price>
+      <installation_cost unit="€/functional unit"><![CDATA[700]]></installation_cost>
+      <maintenance_cost unit="€/functional unit·year"><![CDATA[800]]></maintenance_cost>
+      <end_of_life_cost unit="€/functional unit"><![CDATA[54]]></end_of_life_cost>
+      <renewable_ecm id="1">
+        <coefficient_of_performance_heating><![CDATA[3,5]]></coefficient_of_performance_heating>
+        <coefficient_of_performance_cooling><![CDATA[3,1]]></coefficient_of_performance_cooling>
+        <heating_capacity unit="[W]"><![CDATA[8000]]></heating_capacity>
+        <cooling_capacity unit="[W]"><![CDATA[7356]]></cooling_capacity>
+        <borehole_length unit="[m]"><![CDATA[100]]></borehole_length>
+        <soil_temperature unit="[ºC]"><![CDATA[15]]></soil_temperature>
+        <soil_resistance_of_a_single_vertical_heat_exchanger unit="[mk/W]"><![CDATA[0,1]]></soil_resistance_of_a_single_vertical_heat_exchanger>
+        <thermal_resistance_of_u-tube unit="[m2k/W]"><![CDATA[0,17]]></thermal_resistance_of_u-tube>
+        <heating_run_fraction><![CDATA[0,7]]></heating_run_fraction>
+        <cooling_run_fraction><![CDATA[0,7]]></cooling_run_fraction>
+        <design_heat_pump_minimum_entering_fluid_temperature unit="[ºC]"><![CDATA[8]]></design_heat_pump_minimum_entering_fluid_temperature>
+        <design_heat_pump_maximum_entering_fluid_temperature unit="[ºC]"><![CDATA[30]]></design_heat_pump_maximum_entering_fluid_temperature>
+      </renewable_ecm>
+    </level>
+  </component_catalogue>
+</ECM>

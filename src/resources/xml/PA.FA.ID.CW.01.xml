@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ECM id="PA.FA.ID.CW.01">
+  <ecm_catalogue>
+    <level id="1">
+      <group><![CDATA[passive]]></group>
+    </level>
+    <level id="2">
+      <location><![CDATA[Facade]]></location>
+    </level>
+    <level id="3">
+      <category><![CDATA[Intermediate insulation]]></category>
+    </level>
+    <level id="4">
+      <measure_type><![CDATA[Intermediate insulation]]></measure_type>
+    </level>
+    <level id="5">
+      <ecm_id><![CDATA[PA.FA.ID.CW.01]]></ecm_id>
+      <ecm_name><![CDATA[Passive Façade Intermediate insulation Cavity wall + Air chamber insulation - Cellulose flakes]]></ecm_name>
+      <description><![CDATA[Cavity wall in retrofitting is referred to the space between two wall layers of the wall. It is normally ventilated in order to avoid moisture. The space considerate air chamber is projected with different materials of insulation, depending in each case, creating a better thermal behaviour.]]></description>
+    </level>
+  </ecm_catalogue>
+  <component_catalogue>
+    <level id="6">
+      <layer id="1">
+        <name><![CDATA[Air chamber]]></name>
+        <type><![CDATA[Air gap]]></type>
+        <description><![CDATA[Non-Ventilated air chamber]]></description>
+      </layer>
+      <layer id="2">
+        <name><![CDATA[Insulation]]></name>
+        <type><![CDATA[Mass]]></type>
+        <description><![CDATA[Mineral wool (High performance)]]></description>
+      </layer>
+      <layer id="3">
+        <name><![CDATA[VCL ]]></name>
+        <type><![CDATA[Mass]]></type>
+        <description><![CDATA[Aluminium composite with polyester]]></description>
+      </layer>
+      <layer id="4">
+        <name><![CDATA[Finishing layer]]></name>
+        <type><![CDATA[Mass]]></type>
+        <description><![CDATA[Laminated gypsum board + fixing elements]]></description>
+      </layer>
+    </level>
+    <level id="7">
+      <application><![CDATA[- Where external walls are poorly insulated.
+- Where external walls are deteriorated or are insufficiently weather-tight, causing damp, draughts and heat loss.
+- Installing external insulation would adversely effect the appearance of the building.
+- Where the building is in a conservation area.]]></application>
+      <functional_unit><![CDATA[1 square meter ]]></functional_unit>
+      <advantages><![CDATA[- Energy saving: Low heat losses in cold periods and low heat gains in hot months.
+- Healthier environment, Comfort: No thermal bridges, only if the air chamber is in first place continuous.
+- Easy and quickly application.
+- Cheap comparing to other typical passive strategies
+- Reduction of condensation inside the house
+- It does not add any thickness to the wall]]></advantages>
+      <disadvantages><![CDATA[Thermal bridges may appear if the layer is not continuous
+Difficult to ensure entire watertightness and zero moisture
+Inaccuracy in the full fit of the insulation material in the air chamber]]></disadvantages>
+      <links_to_barriers><![CDATA[Maximum value façades can grow internally]]></links_to_barriers>
+      <links_to_targets><![CDATA[Change façades internally]]></links_to_targets>
+      <boundaries><![CDATA[Opaque surface]]></boundaries>
+      <application_scale><![CDATA[BL]]></application_scale>
+      <installation_data><![CDATA[For the installation it is needed a professional team certificate for this type of rehabilitation. At least one person and a machine for the projection of insulation is needed. The installer drills small holes around 22mm in size at intervals of around 1m in the outside wall of your home. The installer then blows insulation into the cavity using special equipment.]]></installation_data>
+      <maintenance_data><![CDATA[No special maintenance needed, only the periodical house revisions centred in walls]]></maintenance_data>
+      <estimated_service_life unit="year"><![CDATA[25]]></estimated_service_life>
+      <other_information_1 unit="Non"><![CDATA[Payback [€] 5 years]]></other_information_1>
+      <other_information_2 unit="Non"><![CDATA[https://en.wikipedia.org/wiki/Cavity_wall_insulation]]></other_information_2>
+      <gwp_-_production_impact_a1-3 unit="kG eq CO2/m2"><![CDATA[5,76]]></gwp_-_production_impact_a1-3>
+      <gwp_-_end_of_life_impact_c1-4 unit="kG eq CO2/m2"><![CDATA[-0,86]]></gwp_-_end_of_life_impact_c1-4>
+      <pec_-_production_impact_a1-3 unit="MJ/m2"><![CDATA[70,72]]></pec_-_production_impact_a1-3>
+      <pec_-_end_of_life_impact_c1-4 unit="MJ/m2"><![CDATA[-19,1]]></pec_-_end_of_life_impact_c1-4>
+      <sale_price unit="€/m2"><![CDATA[8,25]]></sale_price>
+      <installation_cost unit="€/m2"><![CDATA[23]]></installation_cost>
+      <maintenance_cost unit="€/m2 · year"><![CDATA[0]]></maintenance_cost>
+      <end_of_life_cost unit="€/m2"><![CDATA[0,33]]></end_of_life_cost>
+      <total_thicness unit="m"><![CDATA[0,3]]></total_thicness>
+      <thermal_resistance unit="(m2·K)/W"><![CDATA[0,025]]></thermal_resistance>
+      <layer id="1">
+        <thickness unit="m"><![CDATA[0,025]]></thickness>
+        <density unit="kg/m3"><![CDATA[43]]></density>
+        <vapour_resistance unit="N·s/kg"><![CDATA[20]]></vapour_resistance>
+        <specific_heat unit="J/(Kg.K)"><![CDATA[1380]]></specific_heat>
+        <thermal_conductivity unit="W/(m·k)"><![CDATA[0,042]]></thermal_conductivity>
+        <thermal_absorptance><![CDATA[0,9]]></thermal_absorptance>
+        <solar_absorptance><![CDATA[0,6]]></solar_absorptance>
+        <roughness><![CDATA[Rough]]></roughness>
+        <visible_absorptance><![CDATA[0,6]]></visible_absorptance>
+        <thermal_resistance unit="(m2·K)/W"><![CDATA[0,6]]></thermal_resistance>
+      </layer>
+    </level>
+  </component_catalogue>
+</ECM>

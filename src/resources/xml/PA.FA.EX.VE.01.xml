@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ECM id="PA.FA.EX.VE.01">
+  <ecm_catalogue>
+    <level id="1">
+      <group><![CDATA[passive]]></group>
+    </level>
+    <level id="2">
+      <location><![CDATA[Facade]]></location>
+    </level>
+    <level id="3">
+      <category><![CDATA[External insulation]]></category>
+    </level>
+    <level id="4">
+      <measure_type><![CDATA[Ventilated facade]]></measure_type>
+    </level>
+    <level id="5">
+      <ecm_id><![CDATA[PA.FA.EX.VE.01]]></ecm_id>
+      <ecm_name><![CDATA[Ventilated facade with 50 mm of insulation]]></ecm_name>
+      <description><![CDATA[Ventilated façade is fastened to an auxiliary metal structure fixed to the external walls of the building. The insulation layer is fixed in between to improve the thermal conditions. A chamber of air removes the humidity of the internal wall and reduces the heat losses. The principal objective is to create a continuous insulation layer to avoid thermal bridges. ]]></description>
+    </level>
+  </ecm_catalogue>
+  <component_catalogue>
+    <level id="6">
+      <layer id="1">
+        <name><![CDATA[Cladding material]]></name>
+        <type><![CDATA[Mass]]></type>
+        <description><![CDATA[Structure + Concrete bonded polymer particle board]]></description>
+      </layer>
+      <layer id="2">
+        <name><![CDATA[Air chamber]]></name>
+        <type><![CDATA[Air gap]]></type>
+        <description><![CDATA[Ventilated air chamber]]></description>
+      </layer>
+      <layer id="3">
+        <name><![CDATA[Insulation]]></name>
+        <type><![CDATA[Mass]]></type>
+        <description><![CDATA[Mineral wool (High performance)]]></description>
+      </layer>
+    </level>
+    <level id="7">
+      <application><![CDATA[_Where external walls are poorly insulated.
+ _Where external walls are deteriorating or are insufficiently weather-tight, causing damp, draughts and heat loss.
+_Where external walls are in good structural conditions.
+_Where it is intended to change the image of the building
+_Where the building is not in a conservation area.]]></application>
+      <functional_unit><![CDATA[1 square meter ]]></functional_unit>
+      <advantages><![CDATA[_Energy saving: Low heat losses in cold periods and low heat gains in hot months.
+_Healthier environment, Comfort: No thermal bridges, and avoid the humidity.
+_Aesthetic performances: It maintains all the characteristics from its installation.
+_Protection from water: 
+_Maintenance: Durability: A copper structure has the lifetime of up to 100.]]></advantages>
+      <disadvantages><![CDATA[_Time: Application is larger than in other façades systems.
+_Costs: Costs are high.
+_Complication: Two types of structure and various materials. Colocation
+_Not applied in protected areas]]></disadvantages>
+      <links_to_barriers><![CDATA[Maximum value façades can grow externally]]></links_to_barriers>
+      <links_to_targets><![CDATA[Change façades externally]]></links_to_targets>
+      <boundaries><![CDATA[Opaque surface]]></boundaries>
+      <application_scale><![CDATA[BL]]></application_scale>
+      <installation_data><![CDATA[It has some complication in installation because the secondary structure. But its modulation makes it affordable in a medium period of time.
+_Installation of the auxiliary structure on the support constructive element.  If the wall is weak, the support should be the slabs or columns. 
+_The module anchorage is adapted to the constraints of the support.
+_There should be place enough for the air chamber.
+_The insulation layer is fixed over the external layer of the wall. It is necessary to have some distance between the vertical structure.]]></installation_data>
+      <maintenance_data><![CDATA[This type of façade does not need any huge process of cleaning or maintenance in the first 10 years, only revisions]]></maintenance_data>
+      <estimated_service_life unit="year"><![CDATA[25]]></estimated_service_life>
+      <other_information_1 unit="Non"><![CDATA[25]]></other_information_1>
+      <other_information_2 unit="Non"><![CDATA[25]]></other_information_2>
+      <gwp_-_production_impact_a1-3 unit="kG eq CO2/m2"><![CDATA[14,15]]></gwp_-_production_impact_a1-3>
+      <gwp_-_end_of_life_impact_c1-4 unit="kG eq CO2/m2"><![CDATA[0,25]]></gwp_-_end_of_life_impact_c1-4>
+      <pec_-_production_impact_a1-3 unit="MJ/m2"><![CDATA[104,03]]></pec_-_production_impact_a1-3>
+      <pec_-_end_of_life_impact_c1-4 unit="MJ/m2"><![CDATA[5,64]]></pec_-_end_of_life_impact_c1-4>
+      <sale_price unit="€/m2"><![CDATA[106,5]]></sale_price>
+      <installation_cost unit="€/m2"><![CDATA[54,5]]></installation_cost>
+      <maintenance_cost unit="€/m2 · year"><![CDATA[30,35]]></maintenance_cost>
+      <end_of_life_cost unit="€/m2"><![CDATA[1,91]]></end_of_life_cost>
+      <total_thicness unit="m"><![CDATA[0,12]]></total_thicness>
+      <thermal_resistance unit="(m2·K)/W"><![CDATA[1,47]]></thermal_resistance>
+      <layer id="1">
+        <thickness unit="m"><![CDATA[0,02]]></thickness>
+        <density unit="kg/m3"><![CDATA[1100]]></density>
+        <vapour_resistance unit="N·s/kg"><![CDATA[500]]></vapour_resistance>
+        <specific_heat unit="J/(Kg.K)"><![CDATA[1000]]></specific_heat>
+        <thermal_conductivity unit="W/(m·k)"><![CDATA[0,23]]></thermal_conductivity>
+        <thermal_absorptance><![CDATA[0,9]]></thermal_absorptance>
+        <solar_absorptance><![CDATA[0,7]]></solar_absorptance>
+        <roughness><![CDATA[Medium smooth]]></roughness>
+        <visible_absorptance><![CDATA[0,7]]></visible_absorptance>
+        <thermal_resistance unit="(m2·K)/W"><![CDATA[0,087]]></thermal_resistance>
+      </layer>
+      <layer id="2">
+        <thickness unit="m"><![CDATA[0,05]]></thickness>
+        <density unit="kg/m3"><![CDATA[1,225]]></density>
+        <vapour_resistance unit="N·s/kg"><![CDATA[1]]></vapour_resistance>
+        <specific_heat unit="J/(Kg.K)"><![CDATA[1006]]></specific_heat>
+        <thermal_conductivity unit="W/(m·k)"><![CDATA[0.0257]]></thermal_conductivity>
+        <thermal_absorptance><![CDATA[1,22]]></thermal_absorptance>
+        <solar_absorptance><![CDATA[0,2]]></solar_absorptance>
+        <roughness><![CDATA[0]]></roughness>
+        <visible_absorptance><![CDATA[0]]></visible_absorptance>
+        <thermal_resistance unit="(m2·K)/W"><![CDATA[0,17]]></thermal_resistance>
+      </layer>
+      <layer id="3">
+        <thickness unit="m"><![CDATA[0,05]]></thickness>
+        <density unit="kg/m3"><![CDATA[30]]></density>
+        <vapour_resistance unit="N·s/kg"><![CDATA[20]]></vapour_resistance>
+        <specific_heat unit="J/(Kg.K)"><![CDATA[840]]></specific_heat>
+        <thermal_conductivity unit="W/(m·k)"><![CDATA[0,034]]></thermal_conductivity>
+        <thermal_absorptance><![CDATA[0,9]]></thermal_absorptance>
+        <solar_absorptance><![CDATA[0,6]]></solar_absorptance>
+        <roughness><![CDATA[Rough]]></roughness>
+        <visible_absorptance><![CDATA[0,6]]></visible_absorptance>
+        <thermal_resistance unit="(m2·K)/W"><![CDATA[1,47]]></thermal_resistance>
+      </layer>
+    </level>
+  </component_catalogue>
+</ECM>

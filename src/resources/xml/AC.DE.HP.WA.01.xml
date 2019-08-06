@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ECM id="AC.DE.HP.WA.01">
+  <ecm_catalogue>
+    <level id="1">
+      <group><![CDATA[Active]]></group>
+    </level>
+    <level id="2">
+      <location><![CDATA[Default]]></location>
+    </level>
+    <level id="3">
+      <category><![CDATA[WaterToAirHeatPump]]></category>
+    </level>
+    <level id="4">
+      <measure_type><![CDATA[Default]]></measure_type>
+    </level>
+    <level id="5">
+      <ecm_id><![CDATA[AC.DE.HP.WA.01]]></ecm_id>
+      <ecm_name><![CDATA[Water to Air Heat Pump with 42 kW of nomimal capacity]]></ecm_name>
+      <description><![CDATA[Water to Air Heat Pump Unit.]]></description>
+    </level>
+  </ecm_catalogue>
+  <component_catalogue>
+    <level id="7">
+      <application><![CDATA[Generation of heat to the heating and domestic hot water systems.]]></application>
+      <functional_unit><![CDATA[42 kW]]></functional_unit>
+      <advantages><![CDATA[Related to other heating generation system, the Heat-Pump may increase the efficiency and reduce the operational Energy cost.]]></advantages>
+      <disadvantages><![CDATA[High initial investment]]></disadvantages>
+      <links_to_barriers><![CDATA[Functional space to implement heat pump unit.]]></links_to_barriers>
+      <links_to_targets><![CDATA[[null]]]></links_to_targets>
+      <boundaries><![CDATA[Applicable only in buildings with baseboard heating units connected with a hot water boiler ]]></boundaries>
+      <application_scale><![CDATA[BL]]></application_scale>
+      <installation_data><![CDATA[Installation must be performed according to the HP installation guidelines]]></installation_data>
+      <maintenance_data><![CDATA[Maintenance must be performed according to the HP maintenance guidelines]]></maintenance_data>
+      <estimated_service_life unit="year"><![CDATA[25]]></estimated_service_life>
+      <other_information_1 unit="Non"><![CDATA[[null]]]></other_information_1>
+      <other_information_2 unit="Non"><![CDATA[[null]]]></other_information_2>
+      <gwp_-_production_impact_a1-3 unit="kG eq CO2/unit"><![CDATA[2183,8547820324]]></gwp_-_production_impact_a1-3>
+      <gwp_-_end_of_life_impact_c1-4 unit="kG eq CO2/unit"><![CDATA[460,48350941092]]></gwp_-_end_of_life_impact_c1-4>
+      <pec_-_production_impact_a1-3 unit="MJ/unit"><![CDATA[12861,5385724401]]></pec_-_production_impact_a1-3>
+      <pec_-_end_of_life_impact_c1-4 unit="MJ/unit"><![CDATA[10675,2560544594]]></pec_-_end_of_life_impact_c1-4>
+      <sale_price unit="€/functional unit"><![CDATA[24864]]></sale_price>
+      <installation_cost unit="€/functional unit"><![CDATA[7000]]></installation_cost>
+      <maintenance_cost unit="€/functional unit·year"><![CDATA[714]]></maintenance_cost>
+      <end_of_life_cost unit="€/functional unit"><![CDATA[84]]></end_of_life_cost>
+      <active_ecm id="1">
+        <cooling_supply_air_flow_rate unit="m3/sec"><![CDATA[autosize]]></cooling_supply_air_flow_rate>
+        <heating_supply_air_flow_rate unit="m3/sec"><![CDATA[autosize]]></heating_supply_air_flow_rate>
+        <supply_fan_total_efficiency unit="[0,1]"><![CDATA[0,8]]></supply_fan_total_efficiency>
+        <supply_fan_delta_pressure unit="[Pa]"><![CDATA[75]]></supply_fan_delta_pressure>
+        <cooling_coil_gross_rated_total_capacity unit="[kW]"><![CDATA[42]]></cooling_coil_gross_rated_total_capacity>
+        <cooling_coil_gross_rated_sensible_heat_ratio unit="[0,1]"><![CDATA[autosize]]></cooling_coil_gross_rated_sensible_heat_ratio>
+        <cooling_coil_gross_rated_cooling_cop><![CDATA[3,27]]></cooling_coil_gross_rated_cooling_cop>
+        <heat_pump_heating_coil_gross_rated_capacity unit="[kW]"><![CDATA[42]]></heat_pump_heating_coil_gross_rated_capacity>
+        <heat_pump_heating_coil_gross_rated_cop><![CDATA[3,1]]></heat_pump_heating_coil_gross_rated_cop>
+        <zone_cooling_design_supply_air_temperature unit="[C]"><![CDATA[14]]></zone_cooling_design_supply_air_temperature>
+        <zone_heating_design_supply_air_temperature unit="[C]"><![CDATA[50]]></zone_heating_design_supply_air_temperature>
+      </active_ecm>
+    </level>
+  </component_catalogue>
+</ECM>

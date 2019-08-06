@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ECM id="CO.DE.PL.WC.01">
+  <ecm_catalogue>
+    <level id="1">
+      <group><![CDATA[Control]]></group>
+    </level>
+    <level id="2">
+      <location><![CDATA[Default]]></location>
+    </level>
+    <level id="3">
+      <category><![CDATA[Plan Control]]></category>
+    </level>
+    <level id="4">
+      <measure_type><![CDATA[Weather Compensation]]></measure_type>
+    </level>
+    <level id="5">
+      <ecm_id><![CDATA[CO.DE.PL.WC.01]]></ecm_id>
+      <ecm_name><![CDATA[Weather Compensation for heating]]></ecm_name>
+      <description><![CDATA[This control ECM enables to implement optimized control laws to determine the flow temperature of hot water loops accounting for variations of the outdoor temperature. ]]></description>
+    </level>
+  </ecm_catalogue>
+  <component_catalogue>
+    <level id="7">
+      <application><![CDATA[The ECM can be applied to any hot water loop and requires to define a linear relationship between measured outdoor temperature and water flow temperature set-point.]]></application>
+      <functional_unit><![CDATA[[null]]]></functional_unit>
+      <advantages><![CDATA[The weather compensated control enables to tune the level of energy delivered to the building depending on environmental conditions such that relevant comfort DPIs can be better optimized along with energy and economic DPIs.]]></advantages>
+      <disadvantages><![CDATA[The ECM may need tuning during commissioning  such that the best performances are achieved.]]></disadvantages>
+      <links_to_barriers><![CDATA[This control ECM implementation requires hardware (such as timer, smart thermostat or BMS) and measurement system (temperature sensers) ]]></links_to_barriers>
+      <links_to_targets><![CDATA[[null]]]></links_to_targets>
+      <boundaries><![CDATA[Applicable only in buildings with hot water loops]]></boundaries>
+      <application_scale><![CDATA[BL+DL]]></application_scale>
+      <installation_data><![CDATA[Installation must be performed according to the BEMS installation guidelines]]></installation_data>
+      <maintenance_data><![CDATA[Maintenance must be performed according to the BEMS maintenance guidelines]]></maintenance_data>
+      <estimated_service_life unit="year"><![CDATA[25]]></estimated_service_life>
+      <other_information_1><![CDATA[[null]]]></other_information_1>
+      <other_information_2><![CDATA[[null]]]></other_information_2>
+      <gwp_-_production_impact_a1-3 unit="kG eq CO2/unit"><![CDATA[5,71683384342553]]></gwp_-_production_impact_a1-3>
+      <gwp_-_end_of_life_impact_c1-4 unit="kG eq CO2/unit"><![CDATA[1,68525261199597]]></gwp_-_end_of_life_impact_c1-4>
+      <pec_-_production_impact_a1-3 unit="MJ/unit"><![CDATA[82,0347336649416]]></pec_-_production_impact_a1-3>
+      <pec_-_end_of_life_impact_c1-4 unit="MJ/unit"><![CDATA[25,4583651834257]]></pec_-_end_of_life_impact_c1-4>
+      <sale_price unit="€/functional unit"><![CDATA[500]]></sale_price>
+      <installation_cost unit="€/functional unit"><![CDATA[100]]></installation_cost>
+      <maintenance_cost unit="€/functional unit·year"><![CDATA[100]]></maintenance_cost>
+      <end_of_life_cost unit="€/functional unit"><![CDATA[0]]></end_of_life_cost>
+      <control_ecm id="1">
+        <weather_compensation_type><![CDATA[Heating]]></weather_compensation_type>
+        <hot_water_set-point_at_outdoor_dry_bulb_low><![CDATA[70]]></hot_water_set-point_at_outdoor_dry_bulb_low>
+        <hot_water_set-point_at_outdoor_dry_bulb_low><![CDATA[60]]></hot_water_set-point_at_outdoor_dry_bulb_low>
+        <maximum_outdoor_dry_bulb_temperature><![CDATA[10]]></maximum_outdoor_dry_bulb_temperature>
+        <minimum_outdoor_dry_bulb_temperature><![CDATA[5]]></minimum_outdoor_dry_bulb_temperature>
+        <thermostat_id><![CDATA[Therm_2]]></thermostat_id>
+        <hot_water_loop_id><![CDATA[HWL_0]]></hot_water_loop_id>
+        <mixed_water_loop_id><![CDATA[[null]]]></mixed_water_loop_id>
+      </control_ecm>
+    </level>
+  </component_catalogue>
+</ECM>

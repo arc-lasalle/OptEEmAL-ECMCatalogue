@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ECM id="PA.RO.TS.FC.03">
+  <ecm_catalogue>
+    <level id="1">
+      <group><![CDATA[passive]]></group>
+    </level>
+    <level id="2">
+      <location><![CDATA[Roof]]></location>
+    </level>
+    <level id="3">
+      <category><![CDATA[Top slab insulation]]></category>
+    </level>
+    <level id="4">
+      <measure_type><![CDATA[False ceiling]]></measure_type>
+    </level>
+    <level id="5">
+      <ecm_id><![CDATA[PA.RO.TS.FC.03]]></ecm_id>
+      <ecm_name><![CDATA[Passive Roof Top slab insulation False ceiling - XPS 150mm]]></ecm_name>
+      <description><![CDATA[When there is a pitched roof that can not be retrofitted by the interior or by the exterior the approach is to retrofit the slab from below, creating a false ceiling in order to achieve the needed thermal performance]]></description>
+    </level>
+  </ecm_catalogue>
+  <component_catalogue>
+    <level id="6">
+      <layer id="1">
+        <name><![CDATA[Insulation]]></name>
+        <type><![CDATA[Mass]]></type>
+        <description><![CDATA[Mineral wool (High performance)]]></description>
+      </layer>
+      <layer id="2">
+        <name><![CDATA[Finishing layer]]></name>
+        <type><![CDATA[Mass]]></type>
+        <description><![CDATA[False ceiling - Laminated gypsum plasterboard]]></description>
+      </layer>
+    </level>
+    <level id="7">
+      <application><![CDATA[- Where there is a pitched roof or flat roof
+- Where there is no possibility of retrofitting form outside or form the interior of the pitched roof.
+- Where there is also insulation inside the facade, internal wall insulation (optional)]]></application>
+      <functional_unit><![CDATA[1 square meter ]]></functional_unit>
+      <advantages><![CDATA[- Energy saving: Low heat losses in cold periods and low heat gains in hot months.
+- Healthier environment, Comfort: No thermal bridges, and avoid the humidity.
+- Aesthetic internal performance]]></advantages>
+      <disadvantages><![CDATA[- Thermal bridges: It can appear in the edges of the room or slab, must consider complementary measures to avoid this problem
+- Cost: Due to the false ceiling it is a expensive measure]]></disadvantages>
+      <links_to_barriers><![CDATA[Maximum value roofs can grow internally]]></links_to_barriers>
+      <links_to_targets><![CDATA[Change roof internally]]></links_to_targets>
+      <boundaries><![CDATA[Roof surface]]></boundaries>
+      <application_scale><![CDATA[BL]]></application_scale>
+      <installation_data><![CDATA[1.Prepare the slab to the installation
+2.Place the structure of the false ceiling with screws and the chosen system.
+3.Place the false ceiling system with the insulation already integrated or go point by point after the installation of the ceiling.]]></installation_data>
+      <maintenance_data><![CDATA[No mayor maintenance apart from revision. Revision is needed if there is any problem with the false ceiling or with the installation if there is any.]]></maintenance_data>
+      <estimated_service_life unit="year"><![CDATA[20]]></estimated_service_life>
+      <other_information_1 unit="Non"><![CDATA[20]]></other_information_1>
+      <other_information_2 unit="Non"><![CDATA[20]]></other_information_2>
+      <gwp_-_production_impact_a1-3 unit="kG eq CO2/m2"><![CDATA[22,91]]></gwp_-_production_impact_a1-3>
+      <gwp_-_end_of_life_impact_c1-4 unit="kG eq CO2/m2"><![CDATA[0,27]]></gwp_-_end_of_life_impact_c1-4>
+      <pec_-_production_impact_a1-3 unit="MJ/m2"><![CDATA[325,76]]></pec_-_production_impact_a1-3>
+      <pec_-_end_of_life_impact_c1-4 unit="MJ/m2"><![CDATA[7,31]]></pec_-_end_of_life_impact_c1-4>
+      <sale_price unit="€/m2"><![CDATA[37,6]]></sale_price>
+      <installation_cost unit="€/m2"><![CDATA[9,6]]></installation_cost>
+      <maintenance_cost unit="€/m2 · year"><![CDATA[4,24]]></maintenance_cost>
+      <end_of_life_cost unit="€/m2"><![CDATA[0,42]]></end_of_life_cost>
+      <total_thicness unit="m"><![CDATA[0,17]]></total_thicness>
+      <thermal_resistance unit="(m2·K)/W"><![CDATA[4,49176470588235]]></thermal_resistance>
+      <layer id="1">
+        <thickness unit="m"><![CDATA[0,15]]></thickness>
+        <density unit="kg/m3"><![CDATA[30]]></density>
+        <vapour_resistance unit="N·s/kg"><![CDATA[6,67]]></vapour_resistance>
+        <specific_heat unit="J/(Kg.K)"><![CDATA[840]]></specific_heat>
+        <thermal_conductivity unit="W/(m·k)"><![CDATA[0,034]]></thermal_conductivity>
+        <thermal_absorptance><![CDATA[0,9]]></thermal_absorptance>
+        <solar_absorptance><![CDATA[0,6]]></solar_absorptance>
+        <roughness><![CDATA[Medium Rough]]></roughness>
+        <visible_absorptance><![CDATA[0,6]]></visible_absorptance>
+        <thermal_resistance unit="(m2·K)/W"><![CDATA[4,41]]></thermal_resistance>
+      </layer>
+      <layer id="2">
+        <thickness unit="m"><![CDATA[0,02]]></thickness>
+        <density unit="kg/m3"><![CDATA[30]]></density>
+        <vapour_resistance unit="N·s/kg"><![CDATA[100]]></vapour_resistance>
+        <specific_heat unit="J/(Kg.K)"><![CDATA[1000]]></specific_heat>
+        <thermal_conductivity unit="W/(m·k)"><![CDATA[0,25]]></thermal_conductivity>
+        <thermal_absorptance><![CDATA[0,9]]></thermal_absorptance>
+        <solar_absorptance><![CDATA[0,5]]></solar_absorptance>
+        <roughness><![CDATA[Medium Smooth]]></roughness>
+        <visible_absorptance><![CDATA[0,5]]></visible_absorptance>
+        <thermal_resistance unit="(m2·K)/W"><![CDATA[0,08]]></thermal_resistance>
+      </layer>
+    </level>
+  </component_catalogue>
+</ECM>

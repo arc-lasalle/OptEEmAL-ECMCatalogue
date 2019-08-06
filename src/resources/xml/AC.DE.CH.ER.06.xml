@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ECM id="AC.DE.CH.ER.06">
+  <ecm_catalogue>
+    <level id="1">
+      <group><![CDATA[Active]]></group>
+    </level>
+    <level id="2">
+      <location><![CDATA[Default]]></location>
+    </level>
+    <level id="3">
+      <category><![CDATA[Chiller]]></category>
+    </level>
+    <level id="4">
+      <measure_type><![CDATA[Electric reciprocating chiller]]></measure_type>
+    </level>
+    <level id="5">
+      <ecm_id><![CDATA[AC.DE.CH.ER.06]]></ecm_id>
+      <ecm_name><![CDATA[Chiller with 149 kW of nomimal capacity]]></ecm_name>
+      <description><![CDATA[The existing chiller is replaced with a high efficient Chiller Unit.]]></description>
+    </level>
+  </ecm_catalogue>
+  <component_catalogue>
+    <level id="7">
+      <application><![CDATA[Generation of chilled water for air conditioning system.]]></application>
+      <functional_unit><![CDATA[149 kW]]></functional_unit>
+      <advantages><![CDATA[The high efficiency chiller increase the efficiency of the cooling system and reduce the operational Energy cost.]]></advantages>
+      <disadvantages><![CDATA[High initial investment]]></disadvantages>
+      <links_to_barriers><![CDATA[Functional space to implement chiller unit.]]></links_to_barriers>
+      <links_to_targets><![CDATA[[null]]]></links_to_targets>
+      <boundaries><![CDATA[Applicable only in buildings with air conditioning systems. ]]></boundaries>
+      <application_scale><![CDATA[BL+DL]]></application_scale>
+      <installation_data><![CDATA[Installation must be performed according to the Chiller installation guidelines]]></installation_data>
+      <maintenance_data><![CDATA[Maintenance must be performed according to the Chiller maintenance guidelines]]></maintenance_data>
+      <estimated_service_life unit="year"><![CDATA[25]]></estimated_service_life>
+      <other_information_1 unit="Non"><![CDATA[[null]]]></other_information_1>
+      <other_information_2 unit="Non"><![CDATA[[null]]]></other_information_2>
+      <gwp_-_production_impact_a1-3 unit="kG eq CO2/unit"><![CDATA[42239,5939387346]]></gwp_-_production_impact_a1-3>
+      <gwp_-_end_of_life_impact_c1-4 unit="kG eq CO2/unit"><![CDATA[5166,58220639848]]></gwp_-_end_of_life_impact_c1-4>
+      <pec_-_production_impact_a1-3 unit="MJ/unit"><![CDATA[584683,558133143]]></pec_-_production_impact_a1-3>
+      <pec_-_end_of_life_impact_c1-4 unit="MJ/unit"><![CDATA[184069,475642273]]></pec_-_end_of_life_impact_c1-4>
+      <sale_price unit="€/functional unit"><![CDATA[25449]]></sale_price>
+      <installation_cost unit="€/functional unit"><![CDATA[1497]]></installation_cost>
+      <maintenance_cost unit="€/functional unit·year"><![CDATA[2545]]></maintenance_cost>
+      <end_of_life_cost unit="€/functional unit"><![CDATA[298]]></end_of_life_cost>
+      <active_ecm id="1">
+        <chiller_type><![CDATA[Electric Reciprocating Chiller]]></chiller_type>
+        <capacity unit="kW"><![CDATA[149]]></capacity>
+        <nomical_cop><![CDATA[3,01]]></nomical_cop>
+        <condenser_type><![CDATA[WaterCooled]]></condenser_type>
+        <minimum_part_load_ratio unit="[0,1]"><![CDATA[0]]></minimum_part_load_ratio>
+        <maximum_part_load_ratio unit="[0,1]"><![CDATA[1]]></maximum_part_load_ratio>
+        <optimum_part_load_ratio unit="[0,1]"><![CDATA[1]]></optimum_part_load_ratio>
+        <minimum_unloading_ratio unit="[0,1]"><![CDATA[0,25]]></minimum_unloading_ratio>
+        <leaving_chilled_water_lower_temperature_limit unit="[C]"><![CDATA[5]]></leaving_chilled_water_lower_temperature_limit>
+      </active_ecm>
+    </level>
+  </component_catalogue>
+</ECM>

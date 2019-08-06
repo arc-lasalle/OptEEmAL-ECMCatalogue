@@ -12,11 +12,11 @@ Usage:
 `java -jar InsCreatorLite.jar [-hret] <scenario_vector.json> [-b <baseline_model.ttl>]`  
   
 `optional arguments:`  
-` -h: help.`  
-` -r: generate a report file.`  
-` -e: show extra info.`  
-` -t: shows execution times.`  
-` -b: specifies a specific baseline file (if not, check the nomenclature below).`   
+ `-h: help.`  
+ `-r: generate a report file.`  
+ `-e: show extra info.`  
+ `-t: shows execution times.`  
+ `-b: specifies a specific baseline file (if not, check the nomenclature below).`   
  
 Example:
 
@@ -34,11 +34,11 @@ Most of the work presented in this article is included in the research carried o
 
 You can report any errors that you found to the authors: 
 
-ECM Catalogue:  
-Xabat Oregi (Tecnalia) - xabat.oregi@tecnalia.com | xabat.oregi@ehu.eus  
-Lara Mabe (Tecnalia) - lara.mabe@tecnalia.com  
-Juan Pedrero (Tecnalia) - juan.pedrero@tecnalia.com  
+### ECM Catalogue:  
+ Xabat Oregi (Tecnalia) - xabat.oregi@tecnalia.com | xabat.oregi@ehu.eus  
+ Lara Mabe (Tecnalia) - lara.mabe@tecnalia.com  
+ Juan Pedrero (Tecnalia) - juan.pedrero@tecnalia.com  
   
-InstanceCreator:  
-Gonçal Costa (LaSalle BCN) - goncal.costa@salle.url.edu  
-Alvaro Sicilia (LaSalle BCN) - alvaro.sicilia@salle.url.edu  
+### InstanceCreator:  
+ Gonçal Costa (LaSalle BCN) - goncal.costa@salle.url.edu  
+ Alvaro Sicilia (LaSalle BCN) - alvaro.sicilia@salle.url.edu  

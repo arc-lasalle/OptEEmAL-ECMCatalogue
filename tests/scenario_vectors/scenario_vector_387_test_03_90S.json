@@ -1,0 +1,3425 @@
+{
+	"IterationId": 1,
+	"Projectid": "387",
+	"scenarios": [
+	{	
+		"district": [{
+			"buildings": [{
+				"building_id": 6313,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6315,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6317,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6319,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6321,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6323,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6325,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6327,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			}],
+			"ecms": [["AC.DE.BO.BM"]]
+		}],
+		"scenario_id": 1	
+	},
+	{
+		"district": [{
+			"buildings": [{
+				"building_id": 6313,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6315,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6317,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6319,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6321,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6323,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6325,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6327,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			}],
+			"ecms": [["AC.DE.BO.BM"]]
+		}],
+		"scenario_id": 2
+	},	
+	{
+		"district": [{
+			"buildings": [{
+				"building_id": 6313,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6315,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6317,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6319,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6321,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6323,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6325,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6327,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			}],
+			"ecms": [["AC.DE.BO.BM"]]
+		}],
+		"scenario_id": 3
+	},
+	{	
+		"district": [{
+			"buildings": [{
+				"building_id": 6313,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6315,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6317,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6319,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6321,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6323,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6325,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6327,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			}],
+			"ecms": [["AC.DE.BO.BM"]]
+		}],
+		"scenario_id": 4	
+	},
+	{
+		"district": [{
+			"buildings": [{
+				"building_id": 6313,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6315,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6317,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6319,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6321,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6323,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6325,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6327,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			}],
+			"ecms": [["AC.DE.BO.BM"]]
+		}],
+		"scenario_id": 5
+	},	
+	{
+		"district": [{
+			"buildings": [{
+				"building_id": 6313,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6315,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6317,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6319,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6321,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6323,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6325,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6327,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			}],
+			"ecms": [["AC.DE.BO.BM"]]
+		}],
+		"scenario_id": 6
+	},
+	{	
+		"district": [{
+			"buildings": [{
+				"building_id": 6313,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6315,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6317,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6319,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6321,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6323,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6325,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6327,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			}],
+			"ecms": [["AC.DE.BO.BM"]]
+		}],
+		"scenario_id": 7	
+	},
+	{
+		"district": [{
+			"buildings": [{
+				"building_id": 6313,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6315,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6317,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6319,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6321,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6323,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6325,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6327,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			}],
+			"ecms": [["AC.DE.BO.BM"]]
+		}],
+		"scenario_id": 8
+	},	
+	{
+		"district": [{
+			"buildings": [{
+				"building_id": 6313,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6315,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6317,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6319,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6321,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6323,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6325,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6327,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			}],
+			"ecms": [["AC.DE.BO.BM"]]
+		}],
+		"scenario_id": 9
+	},
+	{	
+		"district": [{
+			"buildings": [{
+				"building_id": 6313,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6315,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6317,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6319,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6321,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6323,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6325,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6327,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			}],
+			"ecms": [["AC.DE.BO.BM"]]
+		}],
+		"scenario_id": 10	
+	},
+	{
+		"district": [{
+			"buildings": [{
+				"building_id": 6313,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6315,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6317,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6319,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6321,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6323,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6325,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6327,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			}],
+			"ecms": [["AC.DE.BO.BM"]]
+		}],
+		"scenario_id": 11
+	},	
+	{
+		"district": [{
+			"buildings": [{
+				"building_id": 6313,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6315,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6317,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6319,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6321,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6323,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6325,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6327,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			}],
+			"ecms": [["AC.DE.BO.BM"]]
+		}],
+		"scenario_id": 12
+	},
+	{	
+		"district": [{
+			"buildings": [{
+				"building_id": 6313,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6315,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6317,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6319,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6321,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6323,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6325,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6327,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			}],
+			"ecms": [["AC.DE.BO.BM"]]
+		}],
+		"scenario_id": 13	
+	},
+	{
+		"district": [{
+			"buildings": [{
+				"building_id": 6313,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6315,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6317,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6319,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6321,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6323,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6325,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6327,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			}],
+			"ecms": [["AC.DE.BO.BM"]]
+		}],
+		"scenario_id": 14
+	},	
+	{
+		"district": [{
+			"buildings": [{
+				"building_id": 6313,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6315,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6317,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6319,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6321,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6323,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6325,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6327,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			}],
+			"ecms": [["AC.DE.BO.BM"]]
+		}],
+		"scenario_id": 15
+	},
+	{	
+		"district": [{
+			"buildings": [{
+				"building_id": 6313,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6315,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6317,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6319,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6321,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6323,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6325,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6327,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			}],
+			"ecms": [["AC.DE.BO.BM"]]
+		}],
+		"scenario_id": 16
+	},
+	{
+		"district": [{
+			"buildings": [{
+				"building_id": 6313,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6315,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6317,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6319,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6321,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6323,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6325,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6327,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			}],
+			"ecms": [["AC.DE.BO.BM"]]
+		}],
+		"scenario_id": 17
+	},	
+	{
+		"district": [{
+			"buildings": [{
+				"building_id": 6313,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6315,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6317,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6319,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6321,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6323,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6325,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6327,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			}],
+			"ecms": [["AC.DE.BO.BM"]]
+		}],
+		"scenario_id": 18
+	},
+	{	
+		"district": [{
+			"buildings": [{
+				"building_id": 6313,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6315,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6317,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6319,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6321,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6323,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6325,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6327,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			}],
+			"ecms": [["AC.DE.BO.BM"]]
+		}],
+		"scenario_id": 19
+	},
+	{
+		"district": [{
+			"buildings": [{
+				"building_id": 6313,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6315,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6317,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6319,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6321,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6323,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6325,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6327,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			}],
+			"ecms": [["AC.DE.BO.BM"]]
+		}],
+		"scenario_id": 20
+	},	
+	{
+		"district": [{
+			"buildings": [{
+				"building_id": 6313,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6315,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6317,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6319,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6321,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6323,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6325,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6327,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			}],
+			"ecms": [["AC.DE.BO.BM"]]
+		}],
+		"scenario_id": 21
+	},
+	{	
+		"district": [{
+			"buildings": [{
+				"building_id": 6313,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6315,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6317,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6319,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6321,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6323,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6325,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6327,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			}],
+			"ecms": [["AC.DE.BO.BM"]]
+		}],
+		"scenario_id": 22
+	},
+	{
+		"district": [{
+			"buildings": [{
+				"building_id": 6313,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6315,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6317,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6319,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6321,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6323,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6325,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6327,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			}],
+			"ecms": [["AC.DE.BO.BM"]]
+		}],
+		"scenario_id": 23
+	},	
+	{
+		"district": [{
+			"buildings": [{
+				"building_id": 6313,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6315,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6317,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6319,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6321,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6323,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6325,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6327,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			}],
+			"ecms": [["AC.DE.BO.BM"]]
+		}],
+		"scenario_id": 24
+	},
+	{	
+		"district": [{
+			"buildings": [{
+				"building_id": 6313,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6315,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6317,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6319,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6321,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6323,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6325,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6327,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			}],
+			"ecms": [["AC.DE.BO.BM"]]
+		}],
+		"scenario_id": 25
+	},
+	{
+		"district": [{
+			"buildings": [{
+				"building_id": 6313,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6315,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6317,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6319,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6321,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6323,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6325,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6327,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			}],
+			"ecms": [["AC.DE.BO.BM"]]
+		}],
+		"scenario_id": 26
+	},	
+	{
+		"district": [{
+			"buildings": [{
+				"building_id": 6313,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6315,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6317,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6319,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6321,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6323,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6325,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6327,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			}],
+			"ecms": [["AC.DE.BO.BM"]]
+		}],
+		"scenario_id": 27
+	},
+	{	
+		"district": [{
+			"buildings": [{
+				"building_id": 6313,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6315,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6317,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6319,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6321,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6323,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6325,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6327,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			}],
+			"ecms": [["AC.DE.BO.BM"]]
+		}],
+		"scenario_id": 28
+	},
+	{
+		"district": [{
+			"buildings": [{
+				"building_id": 6313,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6315,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6317,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6319,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6321,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6323,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6325,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6327,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			}],
+			"ecms": [["AC.DE.BO.BM"]]
+		}],
+		"scenario_id": 29
+	},	
+	{
+		"district": [{
+			"buildings": [{
+				"building_id": 6313,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6315,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6317,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6319,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6321,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6323,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6325,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6327,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			}],
+			"ecms": [["AC.DE.BO.BM"]]
+		}],
+		"scenario_id": 30
+	},
+	{	
+		"district": [{
+			"buildings": [{
+				"building_id": 6313,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6315,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6317,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6319,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6321,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6323,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6325,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6327,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			}],
+			"ecms": [["AC.DE.BO.BM"]]
+		}],
+		"scenario_id": 31	
+	},
+	{
+		"district": [{
+			"buildings": [{
+				"building_id": 6313,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6315,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6317,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6319,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6321,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6323,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6325,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6327,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			}],
+			"ecms": [["AC.DE.BO.BM"]]
+		}],
+		"scenario_id": 32
+	},	
+	{
+		"district": [{
+			"buildings": [{
+				"building_id": 6313,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6315,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6317,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6319,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6321,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6323,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6325,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6327,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			}],
+			"ecms": [["AC.DE.BO.BM"]]
+		}],
+		"scenario_id": 33
+	},
+	{	
+		"district": [{
+			"buildings": [{
+				"building_id": 6313,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6315,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6317,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6319,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6321,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6323,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6325,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6327,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			}],
+			"ecms": [["AC.DE.BO.BM"]]
+		}],
+		"scenario_id": 34	
+	},
+	{
+		"district": [{
+			"buildings": [{
+				"building_id": 6313,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6315,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6317,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6319,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6321,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6323,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6325,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6327,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			}],
+			"ecms": [["AC.DE.BO.BM"]]
+		}],
+		"scenario_id": 35
+	},	
+	{
+		"district": [{
+			"buildings": [{
+				"building_id": 6313,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6315,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6317,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6319,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6321,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6323,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6325,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6327,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			}],
+			"ecms": [["AC.DE.BO.BM"]]
+		}],
+		"scenario_id": 36
+	},
+	{	
+		"district": [{
+			"buildings": [{
+				"building_id": 6313,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6315,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6317,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6319,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6321,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6323,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6325,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6327,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			}],
+			"ecms": [["AC.DE.BO.BM"]]
+		}],
+		"scenario_id": 37	
+	},
+	{
+		"district": [{
+			"buildings": [{
+				"building_id": 6313,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6315,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6317,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6319,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6321,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6323,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6325,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6327,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			}],
+			"ecms": [["AC.DE.BO.BM"]]
+		}],
+		"scenario_id": 38
+	},	
+	{
+		"district": [{
+			"buildings": [{
+				"building_id": 6313,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6315,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6317,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6319,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6321,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6323,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6325,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6327,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			}],
+			"ecms": [["AC.DE.BO.BM"]]
+		}],
+		"scenario_id": 39
+	},
+	{	
+		"district": [{
+			"buildings": [{
+				"building_id": 6313,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6315,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6317,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6319,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6321,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6323,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6325,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6327,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			}],
+			"ecms": [["AC.DE.BO.BM"]]
+		}],
+		"scenario_id": 40
+	},
+	{
+		"district": [{
+			"buildings": [{
+				"building_id": 6313,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6315,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6317,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6319,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6321,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6323,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6325,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6327,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			}],
+			"ecms": [["AC.DE.BO.BM"]]
+		}],
+		"scenario_id": 41
+	},	
+	{
+		"district": [{
+			"buildings": [{
+				"building_id": 6313,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6315,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6317,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6319,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6321,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6323,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6325,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6327,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			}],
+			"ecms": [["AC.DE.BO.BM"]]
+		}],
+		"scenario_id": 42
+	},
+	{	
+		"district": [{
+			"buildings": [{
+				"building_id": 6313,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6315,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6317,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6319,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6321,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6323,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6325,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6327,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			}],
+			"ecms": [["AC.DE.BO.BM"]]
+		}],
+		"scenario_id": 43
+	},
+	{
+		"district": [{
+			"buildings": [{
+				"building_id": 6313,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6315,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6317,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6319,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6321,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6323,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6325,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6327,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			}],
+			"ecms": [["AC.DE.BO.BM"]]
+		}],
+		"scenario_id": 44
+	},	
+	{
+		"district": [{
+			"buildings": [{
+				"building_id": 6313,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6315,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6317,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6319,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6321,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6323,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6325,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6327,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			}],
+			"ecms": [["AC.DE.BO.BM"]]
+		}],
+		"scenario_id": 45
+	},
+	{	
+		"district": [{
+			"buildings": [{
+				"building_id": 6313,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6315,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6317,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6319,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6321,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6323,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6325,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6327,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			}],
+			"ecms": [["AC.DE.BO.BM"]]
+		}],
+		"scenario_id": 46	
+	},
+	{
+		"district": [{
+			"buildings": [{
+				"building_id": 6313,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6315,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6317,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6319,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6321,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6323,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6325,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6327,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			}],
+			"ecms": [["AC.DE.BO.BM"]]
+		}],
+		"scenario_id": 47
+	},	
+	{
+		"district": [{
+			"buildings": [{
+				"building_id": 6313,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6315,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6317,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6319,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6321,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6323,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6325,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6327,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			}],
+			"ecms": [["AC.DE.BO.BM"]]
+		}],
+		"scenario_id": 48
+	},
+	{	
+		"district": [{
+			"buildings": [{
+				"building_id": 6313,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6315,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6317,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6319,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6321,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6323,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6325,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6327,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			}],
+			"ecms": [["AC.DE.BO.BM"]]
+		}],
+		"scenario_id": 49
+	},
+	{
+		"district": [{
+			"buildings": [{
+				"building_id": 6313,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6315,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6317,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6319,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6321,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6323,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6325,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6327,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			}],
+			"ecms": [["AC.DE.BO.BM"]]
+		}],
+		"scenario_id": 50
+	},	
+	{
+		"district": [{
+			"buildings": [{
+				"building_id": 6313,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6315,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6317,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6319,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6321,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6323,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6325,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6327,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			}],
+			"ecms": [["AC.DE.BO.BM"]]
+		}],
+		"scenario_id": 51
+	},
+	{	
+		"district": [{
+			"buildings": [{
+				"building_id": 6313,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6315,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6317,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6319,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6321,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6323,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6325,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6327,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			}],
+			"ecms": [["AC.DE.BO.BM"]]
+		}],
+		"scenario_id": 52
+	},
+	{
+		"district": [{
+			"buildings": [{
+				"building_id": 6313,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6315,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6317,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6319,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6321,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6323,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6325,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6327,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			}],
+			"ecms": [["AC.DE.BO.BM"]]
+		}],
+		"scenario_id": 53
+	},	
+	{
+		"district": [{
+			"buildings": [{
+				"building_id": 6313,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6315,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6317,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6319,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6321,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6323,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6325,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6327,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			}],
+			"ecms": [["AC.DE.BO.BM"]]
+		}],
+		"scenario_id": 54
+	},
+	{	
+		"district": [{
+			"buildings": [{
+				"building_id": 6313,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6315,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6317,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6319,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6321,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6323,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6325,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6327,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			}],
+			"ecms": [["AC.DE.BO.BM"]]
+		}],
+		"scenario_id": 55
+	},
+	{
+		"district": [{
+			"buildings": [{
+				"building_id": 6313,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6315,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6317,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6319,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6321,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6323,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6325,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6327,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			}],
+			"ecms": [["AC.DE.BO.BM"]]
+		}],
+		"scenario_id": 56
+	},	
+	{
+		"district": [{
+			"buildings": [{
+				"building_id": 6313,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6315,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6317,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6319,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6321,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6323,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6325,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6327,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			}],
+			"ecms": [["AC.DE.BO.BM"]]
+		}],
+		"scenario_id": 57
+	},
+	{	
+		"district": [{
+			"buildings": [{
+				"building_id": 6313,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6315,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6317,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6319,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6321,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6323,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6325,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6327,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			}],
+			"ecms": [["AC.DE.BO.BM"]]
+		}],
+		"scenario_id": 58
+	},
+	{
+		"district": [{
+			"buildings": [{
+				"building_id": 6313,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6315,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6317,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6319,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6321,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6323,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6325,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6327,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			}],
+			"ecms": [["AC.DE.BO.BM"]]
+		}],
+		"scenario_id": 59
+	},	
+	{
+		"district": [{
+			"buildings": [{
+				"building_id": 6313,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6315,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6317,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6319,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6321,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6323,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6325,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6327,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			}],
+			"ecms": [["AC.DE.BO.BM"]]
+		}],
+		"scenario_id": 60
+	},
+	{	
+		"district": [{
+			"buildings": [{
+				"building_id": 6313,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6315,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6317,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6319,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6321,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6323,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6325,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6327,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			}],
+			"ecms": [["AC.DE.BO.BM"]]
+		}],
+		"scenario_id": 61	
+	},
+	{
+		"district": [{
+			"buildings": [{
+				"building_id": 6313,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6315,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6317,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6319,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6321,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6323,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6325,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6327,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			}],
+			"ecms": [["AC.DE.BO.BM"]]
+		}],
+		"scenario_id": 62
+	},	
+	{
+		"district": [{
+			"buildings": [{
+				"building_id": 6313,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6315,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6317,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6319,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6321,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6323,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6325,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6327,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			}],
+			"ecms": [["AC.DE.BO.BM"]]
+		}],
+		"scenario_id": 63
+	},
+	{	
+		"district": [{
+			"buildings": [{
+				"building_id": 6313,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6315,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6317,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6319,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6321,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6323,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6325,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6327,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			}],
+			"ecms": [["AC.DE.BO.BM"]]
+		}],
+		"scenario_id": 64	
+	},
+	{
+		"district": [{
+			"buildings": [{
+				"building_id": 6313,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6315,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6317,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6319,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6321,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6323,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6325,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6327,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			}],
+			"ecms": [["AC.DE.BO.BM"]]
+		}],
+		"scenario_id": 65
+	},	
+	{
+		"district": [{
+			"buildings": [{
+				"building_id": 6313,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6315,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6317,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6319,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6321,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6323,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6325,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6327,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			}],
+			"ecms": [["AC.DE.BO.BM"]]
+		}],
+		"scenario_id": 66
+	},
+	{	
+		"district": [{
+			"buildings": [{
+				"building_id": 6313,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6315,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6317,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6319,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6321,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6323,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6325,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6327,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			}],
+			"ecms": [["AC.DE.BO.BM"]]
+		}],
+		"scenario_id": 67
+	},
+	{
+		"district": [{
+			"buildings": [{
+				"building_id": 6313,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6315,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6317,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6319,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6321,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6323,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6325,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6327,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			}],
+			"ecms": [["AC.DE.BO.BM"]]
+		}],
+		"scenario_id": 68
+	},	
+	{
+		"district": [{
+			"buildings": [{
+				"building_id": 6313,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6315,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6317,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6319,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6321,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6323,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6325,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6327,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			}],
+			"ecms": [["AC.DE.BO.BM"]]
+		}],
+		"scenario_id": 69
+	},
+	{	
+		"district": [{
+			"buildings": [{
+				"building_id": 6313,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6315,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6317,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6319,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6321,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6323,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6325,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6327,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			}],
+			"ecms": [["AC.DE.BO.BM"]]
+		}],
+		"scenario_id": 70	
+	},
+	{
+		"district": [{
+			"buildings": [{
+				"building_id": 6313,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6315,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6317,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6319,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6321,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6323,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6325,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6327,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			}],
+			"ecms": [["AC.DE.BO.BM"]]
+		}],
+		"scenario_id": 71
+	},	
+	{
+		"district": [{
+			"buildings": [{
+				"building_id": 6313,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6315,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6317,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6319,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6321,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6323,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6325,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6327,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			}],
+			"ecms": [["AC.DE.BO.BM"]]
+		}],
+		"scenario_id": 72
+	},
+	{	
+		"district": [{
+			"buildings": [{
+				"building_id": 6313,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6315,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6317,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6319,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6321,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6323,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6325,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6327,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			}],
+			"ecms": [["AC.DE.BO.BM"]]
+		}],
+		"scenario_id": 73
+	},
+	{
+		"district": [{
+			"buildings": [{
+				"building_id": 6313,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6315,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6317,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6319,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6321,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6323,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6325,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6327,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			}],
+			"ecms": [["AC.DE.BO.BM"]]
+		}],
+		"scenario_id": 74
+	},	
+	{
+		"district": [{
+			"buildings": [{
+				"building_id": 6313,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6315,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6317,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6319,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6321,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6323,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6325,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6327,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			}],
+			"ecms": [["AC.DE.BO.BM"]]
+		}],
+		"scenario_id": 75
+	},
+	{	
+		"district": [{
+			"buildings": [{
+				"building_id": 6313,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6315,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6317,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6319,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6321,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6323,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6325,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6327,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			}],
+			"ecms": [["AC.DE.BO.BM"]]
+		}],
+		"scenario_id": 76
+	},
+	{
+		"district": [{
+			"buildings": [{
+				"building_id": 6313,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6315,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6317,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6319,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6321,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6323,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6325,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6327,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			}],
+			"ecms": [["AC.DE.BO.BM"]]
+		}],
+		"scenario_id": 77
+	},	
+	{
+		"district": [{
+			"buildings": [{
+				"building_id": 6313,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6315,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6317,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6319,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6321,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6323,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6325,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6327,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			}],
+			"ecms": [["AC.DE.BO.BM"]]
+		}],
+		"scenario_id": 78
+	},
+	{	
+		"district": [{
+			"buildings": [{
+				"building_id": 6313,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6315,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6317,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6319,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6321,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6323,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6325,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6327,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			}],
+			"ecms": [["AC.DE.BO.BM"]]
+		}],
+		"scenario_id": 79	
+	},
+	{
+		"district": [{
+			"buildings": [{
+				"building_id": 6313,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6315,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6317,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6319,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6321,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6323,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6325,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6327,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			}],
+			"ecms": [["AC.DE.BO.BM"]]
+		}],
+		"scenario_id": 80
+	},	
+	{
+		"district": [{
+			"buildings": [{
+				"building_id": 6313,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6315,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6317,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6319,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6321,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6323,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6325,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6327,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			}],
+			"ecms": [["AC.DE.BO.BM"]]
+		}],
+		"scenario_id": 81
+	},
+	{	
+		"district": [{
+			"buildings": [{
+				"building_id": 6313,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6315,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6317,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6319,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6321,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6323,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6325,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6327,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			}],
+			"ecms": [["AC.DE.BO.BM"]]
+		}],
+		"scenario_id": 82
+	},
+	{
+		"district": [{
+			"buildings": [{
+				"building_id": 6313,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6315,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6317,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6319,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6321,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6323,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6325,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6327,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			}],
+			"ecms": [["AC.DE.BO.BM"]]
+		}],
+		"scenario_id": 83
+	},	
+	{
+		"district": [{
+			"buildings": [{
+				"building_id": 6313,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6315,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6317,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6319,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6321,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6323,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6325,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6327,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			}],
+			"ecms": [["AC.DE.BO.BM"]]
+		}],
+		"scenario_id": 84
+	},
+	{	
+		"district": [{
+			"buildings": [{
+				"building_id": 6313,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6315,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6317,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6319,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6321,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6323,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6325,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6327,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			}],
+			"ecms": [["AC.DE.BO.BM"]]
+		}],
+		"scenario_id": 85
+	},
+	{
+		"district": [{
+			"buildings": [{
+				"building_id": 6313,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6315,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6317,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6319,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6321,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6323,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6325,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6327,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			}],
+			"ecms": [["AC.DE.BO.BM"]]
+		}],
+		"scenario_id": 86
+	},	
+	{
+		"district": [{
+			"buildings": [{
+				"building_id": 6313,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6315,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6317,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6319,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6321,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6323,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6325,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6327,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			}],
+			"ecms": [["AC.DE.BO.BM"]]
+		}],
+		"scenario_id": 87
+	},
+	{	
+		"district": [{
+			"buildings": [{
+				"building_id": 6313,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6315,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6317,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6319,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6321,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6323,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6325,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6327,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			}],
+			"ecms": [["AC.DE.BO.BM"]]
+		}],
+		"scenario_id": 88
+	},
+	{
+		"district": [{
+			"buildings": [{
+				"building_id": 6313,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6315,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6317,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6319,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6321,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6323,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6325,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6327,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			}],
+			"ecms": [["AC.DE.BO.BM"]]
+		}],
+		"scenario_id": 89
+	},	
+	{
+		"district": [{
+			"buildings": [{
+				"building_id": 6313,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6315,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6317,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6319,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6321,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6323,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6325,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			},
+			{
+				"building_id": 6327,
+				"ecms": ["PA.FA.EX.CS.03", "PA.OP.DG.DE.03", "AC.DE.BO.BM", "PA.RO.PI.EX.01", "PA.RO.PI.IN.01", "CO.DE.TH.SS", "PA.FA.ID.CW.01", "PA.FL.NC.DE.01"]
+			}],
+			"ecms": [["AC.DE.BO.BM"]]
+		}],
+		"scenario_id": 90
+	}]
+}

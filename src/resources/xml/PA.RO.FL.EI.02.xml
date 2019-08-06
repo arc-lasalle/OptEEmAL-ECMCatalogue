@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ECM id="PA.RO.FL.EI.02">
+  <ecm_catalogue>
+    <level id="1">
+      <group><![CDATA[passive]]></group>
+    </level>
+    <level id="2">
+      <location><![CDATA[Roof]]></location>
+    </level>
+    <level id="3">
+      <category><![CDATA[Flat Roof]]></category>
+    </level>
+    <level id="4">
+      <measure_type><![CDATA[External Insulation - Inverted]]></measure_type>
+    </level>
+    <level id="5">
+      <ecm_id><![CDATA[PA.RO.FL.EI.02]]></ecm_id>
+      <ecm_name><![CDATA[Passive Roof Flat External Insulation inverted - XPS 150mm]]></ecm_name>
+      <description><![CDATA[An inverted roof construction places thermal insulation above the waterproof layer. This maintains the waterproof membrane at an even temperature and protects it from the damaging effects of UV radiation or the effects of the weather. The specified thermal performance of the inverted roof is achieved through the roof design and the thickness of the insulation used.]]></description>
+    </level>
+  </ecm_catalogue>
+  <component_catalogue>
+    <level id="6">
+      <layer id="1">
+        <name><![CDATA[Finishing layer]]></name>
+        <type><![CDATA[Mass]]></type>
+        <description><![CDATA[Miscellaneous - Ballast, Gravel - Undried]]></description>
+      </layer>
+      <layer id="2">
+        <name><![CDATA[ Protection layer]]></name>
+        <type><![CDATA[Mass]]></type>
+        <description><![CDATA[Geotextile filter layer]]></description>
+      </layer>
+      <layer id="3">
+        <name><![CDATA[Insulation]]></name>
+        <type><![CDATA[Mass]]></type>
+        <description><![CDATA[XPS Extruded Polystyrene]]></description>
+      </layer>
+      <layer id="4">
+        <name><![CDATA[Waterproof layer - WPL ]]></name>
+        <type><![CDATA[Mass]]></type>
+        <description><![CDATA[Bitumen felt layer]]></description>
+      </layer>
+    </level>
+    <level id="7">
+      <application><![CDATA[- Where there is a flat roof
+- Where there is access to the roof
+- Where there is hot climate and applications with neoprene does not work.
+- Where there is also external insulation in the facade (optional)
+- Where the roof is renovated for making it habitable (optional)]]></application>
+      <functional_unit><![CDATA[1 square meter ]]></functional_unit>
+      <advantages><![CDATA[- Energy saving: Low heat losses in cold periods and low heat gains in hot months.
+- Healthier environment, Comfort: No thermal bridges, and avoid the humidity.
+- Aesthetic roof performance
+- If you install plots or ceramic (costly) the roof can be practicable]]></advantages>
+      <disadvantages><![CDATA[- Sun: In hot weather this solutions is not so used any more due to the degradation of the bituminous layer .
+- Snow weight
+- No practicable]]></disadvantages>
+      <links_to_barriers><![CDATA[Maximum value roofs can grow externally]]></links_to_barriers>
+      <links_to_targets><![CDATA[Change roof externally]]></links_to_targets>
+      <boundaries><![CDATA[Roof surface]]></boundaries>
+      <application_scale><![CDATA[BL]]></application_scale>
+      <installation_data><![CDATA[For the installation the major issue to take in to account is the correct installation of the bituminous layer to avoid infiltrations of water into the building. Also the colocation of the insulation layer should be verified in order to avoid possible thermal bridges. And finally the correct protection of the insulation layer with the protection layer (in this case ballast)]]></installation_data>
+      <maintenance_data><![CDATA[Revisions should be done in order to check no accumulation of water in any drainage of the roof]]></maintenance_data>
+      <estimated_service_life unit="year"><![CDATA[25]]></estimated_service_life>
+      <other_information_1 unit="Non"><![CDATA[25]]></other_information_1>
+      <other_information_2 unit="Non"><![CDATA[25]]></other_information_2>
+      <gwp_-_production_impact_a1-3 unit="kG eq CO2/m2"><![CDATA[81,81]]></gwp_-_production_impact_a1-3>
+      <gwp_-_end_of_life_impact_c1-4 unit="kG eq CO2/m2"><![CDATA[46,29]]></gwp_-_end_of_life_impact_c1-4>
+      <pec_-_production_impact_a1-3 unit="MJ/m2"><![CDATA[1612,56]]></pec_-_production_impact_a1-3>
+      <pec_-_end_of_life_impact_c1-4 unit="MJ/m2"><![CDATA[-406,66]]></pec_-_end_of_life_impact_c1-4>
+      <sale_price unit="€/m2"><![CDATA[39,05]]></sale_price>
+      <installation_cost unit="€/m2"><![CDATA[9,61]]></installation_cost>
+      <maintenance_cost unit="€/m2 · year"><![CDATA[9,75]]></maintenance_cost>
+      <end_of_life_cost unit="€/m2"><![CDATA[20,83]]></end_of_life_cost>
+      <total_thicness unit="m"><![CDATA[5,00983233873259]]></total_thicness>
+      <thermal_resistance unit="(m2·K)/W"><![CDATA[5,00983233873259]]></thermal_resistance>
+      <layer id="1">
+        <thickness unit="m"><![CDATA[0,2]]></thickness>
+        <density unit="kg/m3"><![CDATA[2240]]></density>
+        <vapour_resistance unit="N·s/kg"><![CDATA[10]]></vapour_resistance>
+        <specific_heat unit="J/(Kg.K)"><![CDATA[840]]></specific_heat>
+        <thermal_conductivity unit="W/(m·k)"><![CDATA[1,8]]></thermal_conductivity>
+        <thermal_absorptance><![CDATA[0,9]]></thermal_absorptance>
+        <solar_absorptance><![CDATA[0,6]]></solar_absorptance>
+        <roughness><![CDATA[Rough]]></roughness>
+        <visible_absorptance><![CDATA[0,6]]></visible_absorptance>
+        <thermal_resistance unit="(m2·K)/W"><![CDATA[0,11]]></thermal_resistance>
+      </layer>
+      <layer id="2">
+        <thickness unit="m"><![CDATA[0,02]]></thickness>
+        <density unit="kg/m3"><![CDATA[120]]></density>
+        <vapour_resistance unit="N·s/kg"><![CDATA[15]]></vapour_resistance>
+        <specific_heat unit="J/(Kg.K)"><![CDATA[1300]]></specific_heat>
+        <thermal_conductivity unit="W/(m·k)"><![CDATA[0,05]]></thermal_conductivity>
+        <thermal_absorptance><![CDATA[0,9]]></thermal_absorptance>
+        <solar_absorptance><![CDATA[0,6]]></solar_absorptance>
+        <roughness><![CDATA[Rough]]></roughness>
+        <visible_absorptance><![CDATA[0,6]]></visible_absorptance>
+        <thermal_resistance unit="(m2·K)/W"><![CDATA[0,4]]></thermal_resistance>
+      </layer>
+      <layer id="3">
+        <thickness unit="m"><![CDATA[0,15]]></thickness>
+        <density unit="kg/m3"><![CDATA[35]]></density>
+        <vapour_resistance unit="N·s/kg"><![CDATA[800]]></vapour_resistance>
+        <specific_heat unit="J/(Kg.K)"><![CDATA[1400]]></specific_heat>
+        <thermal_conductivity unit="W/(m·k)"><![CDATA[0,034]]></thermal_conductivity>
+        <thermal_absorptance><![CDATA[0,9]]></thermal_absorptance>
+        <solar_absorptance><![CDATA[0,6]]></solar_absorptance>
+        <roughness><![CDATA[Medium Rough]]></roughness>
+        <visible_absorptance><![CDATA[0,6]]></visible_absorptance>
+        <thermal_resistance unit="(m2·K)/W"><![CDATA[4,41]]></thermal_resistance>
+      </layer>
+      <layer id="4">
+        <thickness unit="m"><![CDATA[0,02]]></thickness>
+        <density unit="kg/m3"><![CDATA[1100]]></density>
+        <vapour_resistance unit="N·s/kg"><![CDATA[100000]]></vapour_resistance>
+        <specific_heat unit="J/(Kg.K)"><![CDATA[1000]]></specific_heat>
+        <thermal_conductivity unit="W/(m·k)"><![CDATA[0,23]]></thermal_conductivity>
+        <thermal_absorptance><![CDATA[0,9]]></thermal_absorptance>
+        <solar_absorptance><![CDATA[0,87]]></solar_absorptance>
+        <roughness><![CDATA[Smooth]]></roughness>
+        <visible_absorptance><![CDATA[0,87]]></visible_absorptance>
+        <thermal_resistance unit="(m2·K)/W"><![CDATA[0,087]]></thermal_resistance>
+      </layer>
+    </level>
+  </component_catalogue>
+</ECM>

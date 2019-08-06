@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ECM id="PA.RO.TS.CI.01">
+  <ecm_catalogue>
+    <level id="1">
+      <group><![CDATA[passive]]></group>
+    </level>
+    <level id="2">
+      <location><![CDATA[Roof]]></location>
+    </level>
+    <level id="3">
+      <category><![CDATA[Top slab insulation]]></category>
+    </level>
+    <level id="4">
+      <measure_type><![CDATA[False ceiling]]></measure_type>
+    </level>
+    <level id="5">
+      <ecm_id><![CDATA[PA.RO.TS.CI.01]]></ecm_id>
+      <ecm_name><![CDATA[Passive Roof Top slab insulation Chamber Insulation - XPS 100mm]]></ecm_name>
+      <description><![CDATA[When there is a pitched roof that can be retrofitted by the interior it is used mineral wool to insulate all the floor from the top side in order to increase thermal performance.]]></description>
+    </level>
+  </ecm_catalogue>
+  <compoent_catalogue>
+    <level id="6">
+      <layer id="1">
+        <name><![CDATA[Insulation]]></name>
+        <type><![CDATA[Mass]]></type>
+        <description><![CDATA[Mineral wool (High performance)]]></description>
+      </layer>
+    </level>
+    <level id="7">
+      <application><![CDATA[- Where there is a pitched roof with access
+- Where there is also insulation inside the facade, internal wall insulation (optional)
+- Where there is any use in the pitched roof]]></application>
+      <functional_unit><![CDATA[1 square meter ]]></functional_unit>
+      <advantages><![CDATA[- Energy saving: Low heat losses in cold periods and low heat gains in hot months.
+- Healthier environment, Comfort: No thermal bridges, and avoid the humidity.
+- Aesthetic internal performance
+- Cost: Cheap material and installation]]></advantages>
+      <disadvantages><![CDATA[- Thermal bridges: It can appear in the edges of the room or slab, must consider complementary measures to avoid this problem
+- Use: Pitched roof can not be use and must be ventilated]]></disadvantages>
+      <links_to_barriers><![CDATA[Maximum value roofs can grow internally]]></links_to_barriers>
+      <links_to_targets><![CDATA[Change roof internally]]></links_to_targets>
+      <boundaries><![CDATA[Roof surface]]></boundaries>
+      <application_scale><![CDATA[BL]]></application_scale>
+      <installation_data><![CDATA[1.Remove possible objects that are interfering with the insulation.
+2.Place with precision all insulation in all the area
+3.Take special attention to edges with extra insulation]]></installation_data>
+      <maintenance_data><![CDATA[No mayor maintenance apart from revision. Revision is important to find possible water infiltration in every roof.]]></maintenance_data>
+      <estimated_service_life unit="year"><![CDATA[20]]></estimated_service_life>
+      <other_information_1 unit="Non"><![CDATA[20]]></other_information_1>
+      <other_information_2 unit="Non"><![CDATA[20]]></other_information_2>
+      <gwp_-_production_impact_a1-3 unit="kG eq CO2/m2"><![CDATA[6,25]]></gwp_-_production_impact_a1-3>
+      <gwp_-_end_of_life_impact_c1-4 unit="kG eq CO2/m2"><![CDATA[0,027]]></gwp_-_end_of_life_impact_c1-4>
+      <pec_-_production_impact_a1-3 unit="MJ/m2"><![CDATA[82,19]]></pec_-_production_impact_a1-3>
+      <pec_-_end_of_life_impact_c1-4 unit="MJ/m2"><![CDATA[0,83]]></pec_-_end_of_life_impact_c1-4>
+      <sale_price unit="€/m2"><![CDATA[13]]></sale_price>
+      <installation_cost unit="€/m2"><![CDATA[4,5]]></installation_cost>
+      <maintenance_cost unit="€/m2 · year"><![CDATA[0,35]]></maintenance_cost>
+      <end_of_life_cost unit="€/m2"><![CDATA[0,24]]></end_of_life_cost>
+      <total_thicness unit="m"><![CDATA[0,1]]></total_thicness>
+      <thermal_resistance unit="(m2·K)/W"><![CDATA[2,94117647058824]]></thermal_resistance>
+      <layer id="1">
+        <thickness unit="m"><![CDATA[0,1]]></thickness>
+        <density unit="kg/m3"><![CDATA[30]]></density>
+        <vapour_resistance unit="N·s/kg"><![CDATA[10]]></vapour_resistance>
+        <specific_heat unit="J/(Kg.K)"><![CDATA[840]]></specific_heat>
+        <thermal_conductivity unit="W/(m·k)"><![CDATA[0,034]]></thermal_conductivity>
+        <thermal_absorptance><![CDATA[0,9]]></thermal_absorptance>
+        <solar_absorptance><![CDATA[0,6]]></solar_absorptance>
+        <roughness><![CDATA[Medium Rough]]></roughness>
+        <visible_absorptance><![CDATA[0,6]]></visible_absorptance>
+        <thermal_resistance unit="(m2·K)/W"><![CDATA[2,94]]></thermal_resistance>
+      </layer>
+    </level>
+  </compoent_catalogue>
+</ECM>

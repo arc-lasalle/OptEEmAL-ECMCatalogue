@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ECM id="RE.DE.WT.HZ.01">
+  <ecm_catalogue>
+    <level id="1">
+      <group><![CDATA[Renewable]]></group>
+    </level>
+    <level id="2">
+      <location><![CDATA[Default]]></location>
+    </level>
+    <level id="3">
+      <category><![CDATA[Wind turbines]]></category>
+    </level>
+    <level id="4">
+      <measure_type><![CDATA[Horizontal]]></measure_type>
+    </level>
+    <level id="5">
+      <ecm_id><![CDATA[RE.DE.WT.HZ.01]]></ecm_id>
+      <ecm_name><![CDATA[Onshore 1 kW horizontal small wind turbine]]></ecm_name>
+      <description><![CDATA[The terms wind energy or wind power describes the process by which the wind is used to generate mechanical power or electricity. Wind turbines convert the kinetic energy in the wind into mechanical power. This mechanical power can be used for specific tasks or a generator can convert this mechanical power into electricity]]></description>
+    </level>
+  </ecm_catalogue>
+  <component_catalogue>
+    <level id="7">
+      <application><![CDATA[Its application is directly related to all the electrical consumption components.]]></application>
+      <functional_unit><![CDATA[1 unit with 1 kW power]]></functional_unit>
+      <advantages><![CDATA[_ Turbines produce no particulate emissions that contribute to mercury contamination in our lakes and streams
+_Other sources of electricity produce harmful particulate emissions which contribute to global climate change and acid rain. Wind energy is pollution free.
+_Land Preservation: Wind farms are spaced over a large geographic area, but their actual "footprint" covers only a small portion of the land resulting in a minimum impact on crop production or livestock grazing]]></advantages>
+      <disadvantages><![CDATA[_A Variable Resource: Turbines produce electricity only when the wind blows. 
+_Aesthetics: People have widely varied reactions to seeing wind turbines on the landscape
+_Shadow Flicker: Shadow flicker occurs when the blades of the rotor cast a shadow as they turn
+_Sound: Wind turbines are not silent. The sounds they produce are typically foreign to the rural settings where wind turbines are most often used, but as turbine technology has improved over the years, the amount of sound has fallen considerably. 
+_Construction: Wind systems can involve the transportation of large and heavy equipment. This can cause a large temporarily disturbed area near the turbines]]></disadvantages>
+      <links_to_barriers><![CDATA[_Legal classification of plot doesn't allow to intervene]]></links_to_barriers>
+      <links_to_targets><![CDATA[_Implement renewable heat generation systems
+_Change energy generation system
+_Implement renewable generation systems]]></links_to_targets>
+      <boundaries><![CDATA[Useful land surface. It needs 14.6 m2 of land surface per each wind-turbine]]></boundaries>
+      <application_scale><![CDATA[DL]]></application_scale>
+      <installation_data><![CDATA[In a small wind turbine project installation, there are two critical issues: the foundation and the lift. That is, one the one hand, it is very important to prepar a proper cement foundation to instal the tower of the wind turbine system (directly related to the ground properties). On the other hand, in order to install teh system safely, it is necessary to have a access to a lift or a way of erecting the tower in a safe and correct way.  ]]></installation_data>
+      <maintenance_data><![CDATA[A wind turbine requires periodic maintenance such as oiling and greasing, and regular safety inspections. Check bolts and electrical connections annually; tighten if necessary. Once a year check wind turbines for corrosion and the guy wires supporting the tower for proper tension.]]></maintenance_data>
+      <estimated_service_life unit="year"><![CDATA[25]]></estimated_service_life>
+      <other_information_1><![CDATA[[null]]]></other_information_1>
+      <other_information_2><![CDATA[[null]]]></other_information_2>
+      <gwp_-_production_impact_a1-3 unit="kG eq CO2/unit"><![CDATA[76,7107336055847]]></gwp_-_production_impact_a1-3>
+      <gwp_-_end_of_life_impact_c1-4 unit="kG eq CO2/unit"><![CDATA[17,8500019574284]]></gwp_-_end_of_life_impact_c1-4>
+      <pec_-_production_impact_a1-3 unit="MJ/unit"><![CDATA[1273,07754188998]]></pec_-_production_impact_a1-3>
+      <pec_-_end_of_life_impact_c1-4 unit="MJ/unit"><![CDATA[311,592517723524]]></pec_-_end_of_life_impact_c1-4>
+      <sale_price unit="€/functional unit"><![CDATA[5090]]></sale_price>
+      <installation_cost unit="€/functional unit"><![CDATA[725]]></installation_cost>
+      <maintenance_cost unit="€/functional unit·year"><![CDATA[124]]></maintenance_cost>
+      <end_of_life_cost unit="€/functional unit"><![CDATA[165]]></end_of_life_cost>
+      <renewable_ecm id="1">
+        <swept_area_of_the_rotor unit="[m2]"><![CDATA[2,54]]></swept_area_of_the_rotor>
+        <cut-_in_wind_speed unit="[m/s]"><![CDATA[2,5]]></cut-_in_wind_speed>
+        <cut-_off_wind_speed unit="[m/s]"><![CDATA[25]]></cut-_off_wind_speed>
+      </renewable_ecm>
+    </level>
+  </component_catalogue>
+</ECM>

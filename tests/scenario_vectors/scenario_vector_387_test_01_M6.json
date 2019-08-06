@@ -1,0 +1,14 @@
+{
+	"IterationId": 1,
+	"Projectid": "387",
+	"scenarios": [{
+		"district": [{
+			"buildings": [{
+				"building_id": 6317,
+				"ecms": ["PA.OP.DG.DE.03"]
+			}],
+			"ecms": []
+		}],
+		"scenario_id": 1
+	}]
+}
