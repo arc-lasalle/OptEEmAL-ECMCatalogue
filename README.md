@@ -16,7 +16,7 @@ Usage:
  `-r: generate a report file.`  
  `-e: show extra info.`  
  `-t: shows execution times.`  
- `-b: specifies a specific baseline file (if not, check the nomenclature below).`   
+ `-b: specifies a specific baseline file.`   
  
 Example:
 
