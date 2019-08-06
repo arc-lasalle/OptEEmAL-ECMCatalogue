@@ -9,14 +9,14 @@ The [Instance Creator Lite](https://github.com/arc-lasalle/OptEEmAL-ECMCatalogue
 
 Usage:
 
-`java -jar InsCreatorLite.jar [-hret] <scenario_vector.json> [-b <baseline_model.ttl>]`
-
-`optional arguments:` 
-` -h: help.` 
-` -r: generate a report file.` 
-` -e: show extra info.` 
-` -t: shows execution times.` 
-` -b: specifies a specific baseline file (if not, check the nomenclature below).`  
+`java -jar InsCreatorLite.jar [-hret] <scenario_vector.json> [-b <baseline_model.ttl>]`  
+  
+`optional arguments:`  
+` -h: help.`  
+` -r: generate a report file.`  
+` -e: show extra info.`  
+` -t: shows execution times.`  
+` -b: specifies a specific baseline file (if not, check the nomenclature below).`   
  
 Example:
 
